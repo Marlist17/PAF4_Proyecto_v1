@@ -29,7 +29,7 @@ public class TransicionLobby : MonoBehaviour
     void cargarEscena()
     {
         int escenaActual = SceneManager.GetActiveScene().buildIndex; //secen ,amager accedes a la opcion de file (build settings) --> y busca el indice
-        int lobby = 0;
+        int lobby = 1;
         SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
     }
 
