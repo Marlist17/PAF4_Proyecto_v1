@@ -70,43 +70,49 @@ public class MovRaton : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision) //Cuando sale del trigger:
     {
         SobreBaldosa = false; //Marcamos qu eya no está pisando la baldosa.
-
-        if (collision.CompareTag("Pared")) //Si colisiona con la pared del escenario:
+        if (collision.CompareTag("Meta"))
         {
-           
-            //cambiamos la direcciçon del movimiento:
+            direccionMov = Vector2.zero;
+            Victoria.SetActive(true);
+
+        }
+        else if (collision.CompareTag("Pared")) //Si colisiona con la pared del escenario:
+        {
+
+            //cambiamos la dirección del movimiento:
             direccionMov = -direccionMov;
 
             Debug.Log(direccionMov);
-         
+
             if (direccionMov.x == -1)  // Se mueve a la izquierda
             {
-              
+
                 transform.localRotation = Quaternion.Euler(0, 0, -90);
             }
             else if (direccionMov.x == 1) // Se mueve a la derecha
             {
-       
+
                 transform.localRotation = Quaternion.Euler(0, 0, 90);
             }
             else if (direccionMov.y == -1) // Se mueve hacia abajo
             {
-       
+
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
             else if (direccionMov.y == 1) // Se mueve hacia arriba (positivo porque cambia la dirección)
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 180);
             }
-            
+
         }
         
    
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Baldosa_Flecha_Tutorial"))
-        { 
+      
+         if (collision.CompareTag("Baldosa_Flecha_Tutorial"))
+        {
             if (!PisadoBaldosaTutorial)
             {
                 PisadoBaldosaTutorial = true;
@@ -117,7 +123,7 @@ public class MovRaton : MonoBehaviour
                 direccionMov = Vector2.zero;
 
             }
-            
+
         }
         else if (collision.CompareTag("Baldosa_Flecha"))
         {
@@ -143,8 +149,8 @@ public class MovRaton : MonoBehaviour
             }
             NumAleatorio = -1;
         }
-       else if (collision.CompareTag("BordeSuperior"))
-       {
+        else if (collision.CompareTag("BordeSuperior"))
+        {
             NumAleatorio = Random.Range(0, 2);
             if (NumAleatorio == 1)
             {
@@ -162,16 +168,10 @@ public class MovRaton : MonoBehaviour
             NumAleatorio = -1;
 
 
-       }
-
-        else if (collision.CompareTag("Meta"))
-        {
-
-            direccionMov = Vector2.zero;
-            Victoria.SetActive(true);
-
         }
     }
+
+
 
 }
 
