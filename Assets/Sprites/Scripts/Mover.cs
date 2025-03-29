@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 
+
 public class Mover : MonoBehaviour
 {
     private float VelocidadMovimiento = 3f;
@@ -45,7 +46,13 @@ public class Mover : MonoBehaviour
                 Invoke("TransicionLobby", 1f);
 
             }
-        
+            if (collision.gameObject.tag == "CasaProta" && GameManager.Instance.TutorialRealizado)
+            {
+
+            Invoke("TransicionLobby", 1f);
+
+        }
+        //Poner que coga la escena y si es diferente del del lobby ( va al lobby siempre)
         
 
 

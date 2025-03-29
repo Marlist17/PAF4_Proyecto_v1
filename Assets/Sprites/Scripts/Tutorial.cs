@@ -26,7 +26,8 @@ public class Tutorial : MonoBehaviour
         if (GameManager.Instance.ObjetoObtenido) //Si esta variable es verdadera (solo cuando se ha cogido el objeto)
         {
             Invoke("TransicionLobby", 1f);
-            FueradeEscena = true;    
+            FueradeEscena = true;
+            GameManager.Instance.TutorialRealizado = true;
         }
         else
         {

@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miTexto: {fileID: 0}
+  TextoNombre: {fileID: 0}
   cajaTexto: {fileID: 0}
   lines: []
-  textSpeed: 0.05
+  nombre: 
+  textSpeed: 0.03
   index: 0

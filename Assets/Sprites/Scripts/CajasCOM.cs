@@ -13,8 +13,8 @@ public class CajasCOM : MonoBehaviour
     public TipoCaja Caja = TipoCaja.Nada; //Lo inicializamos.
     public int escenaActual;
     [SerializeField] Dialogos dialog;
-    public string[] Aviso1; // Nuestras frases
-    public string[] Aviso2; // Nuestras frases
+    private string[] Aviso1 = {"¡No deberías coger cosas ajenas!, deberías pedir permiso"}; // Nuestras frases
+    private string[] Aviso2 = {"Ya tienes una caja, ¡No puedes llevar más!"}; // Nuestras frases
     bool conversacionFinalizada = false;
 
     // Start is called before the first frame update
@@ -22,8 +22,11 @@ public class CajasCOM : MonoBehaviour
     {
         bordes.SetActive(false);
         escenaActual = SceneManager.GetActiveScene().buildIndex;
+        dialog.OcultarNombre(); //Ocultamos en este caso el nombre ya que es un aviso.
         
+
     }
+  
     void OnMouseOver()
     {
         bordes.SetActive(true);
@@ -44,21 +47,37 @@ public class CajasCOM : MonoBehaviour
             }
             else
             {
-                ComprobarCaja();
-               
+                if (GameManager.Instance.CajaObtenida)
+                {
+         
+                    dialog.LimpiarDialogos();
+                    conversacionFinalizada = dialog.ComenzarDialogo(Aviso2, conversacionFinalizada);
+                }
+                else
+                {
+                    GameManager.Instance.CajaObtenida = true;
+                    ComprobarCaja();
+
+                }
+
             }
 
         }
         else
         {
-            if(GameManager.Instance.CajaObtenida)
+            dialog.OcultarNombre();
+
+
+            if (GameManager.Instance.CajaObtenida)
             {
+               
                 dialog.LimpiarDialogos();
                 conversacionFinalizada = dialog.ComenzarDialogo(Aviso2, conversacionFinalizada);
 
             }
             else
             {
+                
                 ComprobarCaja();
                 GameManager.Instance.CajaObtenida = true;
             }
@@ -85,6 +104,8 @@ public class CajasCOM : MonoBehaviour
             Caja = TipoCaja.CajaOro;
 
         }
+       
+        GameManager.Instance.mensajeCoger = true; //Convertimos en true la variable MensajeCoger para usarlo en otro script y mostrar el mensaje por pantalla
         Destroy(gameObject); //"Cogemos el Objeto"
         Destroy(bordes);
         if (Caja == TipoCaja.CajaNormal || Caja == TipoCaja.CajaSucia || Caja == TipoCaja.CajaOro) //Mira si tiene alguna de esas etiquetas y si es ásí, sigue con lo de abajo:

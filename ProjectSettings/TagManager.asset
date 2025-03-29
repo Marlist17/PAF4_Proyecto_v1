@@ -12,6 +12,13 @@ TagManager:
   - Baldosa
   - "Se\xF1al"
   - CasaNPC
+  - Baldosa_Flecha
+  - Pared
+  - Baldosa_Flecha_Tutorial
+  - CasaProta
+  - Meta
+  - Laterales
+  - BordeSuperior
   layers:
   - Default
   - TransparentFX

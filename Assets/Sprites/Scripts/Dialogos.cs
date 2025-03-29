@@ -5,7 +5,9 @@ using UnityEngine;
 public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los mensajes de acción).
 {
     public TextMeshProUGUI miTexto; // Referencia pública a nuestro objeto texto
+    public TextMeshProUGUI TextoNombre; // Referencia pública a nuestro objeto texto
     public GameObject cajaTexto;
+    public GameObject CajaNombre;
     public string[] lines; // Nuestras frases
     public float textSpeed; // Velocidad del texto
     public int index; // Índice del diálogo en curso
@@ -54,6 +56,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             UltimoDialogo(lineasNuevas);
         else
         {
+           
             lines = lineasNuevas;
             index = 0;
             miTexto.gameObject.SetActive(true); //Dejamos que deje de ser visible el texto
@@ -127,6 +130,18 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     {
         miTexto.text = string.Empty;
     }
+    public void MostrarNombre(string nombre)
+    { 
+        TextoNombre.text = nombre;
+        TextoNombre.enabled = true;
+        CajaNombre.SetActive(true);
+    }
+
+    public void OcultarNombre()
+    {
+        TextoNombre.enabled = false;
+        CajaNombre.SetActive(false);
+       
+    }
 }
 
-//Si queremos que salga cuando unNPC será ajustar la tecla 

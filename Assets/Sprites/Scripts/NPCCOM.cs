@@ -9,6 +9,7 @@ public class NPCCOM : MonoBehaviour
 {
     [SerializeField] Dialogos dialog;
     public string[] lines; // Nuestras frases
+    public string nombre;
     public int indice;
     bool conversacionFinalizada = false;
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
@@ -24,6 +25,7 @@ public class NPCCOM : MonoBehaviour
 
     void Update()
     {
+       
         dialog.PasarDialogo();
 
         // Verifica si el jugador está en el área y presiona "E"
@@ -35,7 +37,7 @@ public class NPCCOM : MonoBehaviour
                 dialog.LimpiarDialogos();
 
             }
-            
+            dialog.MostrarNombre(nombre);
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
         }
     }
