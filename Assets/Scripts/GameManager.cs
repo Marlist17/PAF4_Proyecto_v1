@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
 
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -12,8 +13,13 @@ public class GameManager : MonoBehaviour
     public bool CajaObtenida = false;
     public bool mensajeCoger = false;
     public bool mensajeDejar = false;
+    public bool VictoriaMinijuegoCallejon = false;
     public bool HablarNPC = false;
+    public int baldosaRota = 0;
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
+    
+    
+
     void Awake()
     {
         if (Instance == null)
@@ -31,13 +37,14 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
+          
     }
    public  void CogerObjeto()
     {
@@ -66,7 +73,7 @@ public class GameManager : MonoBehaviour
         int escenaActual = SceneManager.GetActiveScene().buildIndex; 
         SceneManager.LoadScene(escenaActual); //Cargame la siguiente escena.
     }
-    
 
-  
+
+
 }
