@@ -19,6 +19,7 @@ TagManager:
   - Meta
   - Laterales
   - BordeSuperior
+  - Nivel3
   layers:
   - Default
   - TransparentFX

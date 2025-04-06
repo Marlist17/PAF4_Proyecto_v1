@@ -56,6 +56,7 @@ public class CajasCOM : MonoBehaviour
                 else
                 {
                     GameManager.Instance.CajaObtenida = true;
+                    Inventario.instancia.MeterObjetoInventario(caja);
                     ComprobarCaja();
 
                 }
@@ -118,4 +119,5 @@ public class CajasCOM : MonoBehaviour
 
     }
 
+    
 }
