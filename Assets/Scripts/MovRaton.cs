@@ -11,7 +11,7 @@ public class MovRaton : MonoBehaviour
     public bool SobreBaldosa = false; //Variable para controlar si está en una de las baldosas correspondientes para la elección de movimiento
     public int NumAleatorio; //Variable que almacene el nº aleatorio que salga
     public GameObject Victoria; //variable que contiene el objeto con el mensaje de victoria.
-
+    private GameObject baldosaActual; // Guardamos la baldosa pisada
 
     //IMPORTANTE A TENER EN CUENTA LAS ESCALAS, MANTENERLAS EN 1 --> CAMBAIR TAMAÑO POR PX (UNIT)
 
@@ -34,26 +34,26 @@ public class MovRaton : MonoBehaviour
             {
 
                 transform.localRotation = Quaternion.Euler(0, 0, 180); //El sprite se girará para esa dirección.
-
+                baldosaActual.transform.localRotation = Quaternion.Euler(0, 0, 90);
                 direccionMov = Vector2.up; //El sprite se moverá para esa dirección
             }
             else if (Input.GetKey(KeyCode.DownArrow)) //Si pulsa la flecha de abajo.
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 0);  //El sprite se girará para esa dirección.
-
+                baldosaActual.transform.localRotation = Quaternion.Euler(0, 0, -90);
                 direccionMov = Vector2.down; //El sprite se moverá para esa dirección
 
             }
             else if (Input.GetKey(KeyCode.LeftArrow)) //Si pulsa la flecha de la izquierda.
             {
                 transform.localRotation = Quaternion.Euler(0, 0, -90);  //El sprite se girará para esa dirección.
-
+                baldosaActual.transform.localRotation = Quaternion.Euler(0, 0, 180);
                 direccionMov = Vector2.left; //El sprite se moverá para esa dirección
             }
             else if (Input.GetKey(KeyCode.RightArrow)) //Si pulsa la flecha de la derecha.
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 90);  //El sprite se girará para esa dirección.
-
+                baldosaActual.transform.localRotation = Quaternion.Euler(0, 0, 0);
                 direccionMov = Vector2.right; //El sprite se moverá para esa dirección
 
             }
@@ -70,7 +70,11 @@ public class MovRaton : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision) //Cuando sale del trigger:
     {
         SobreBaldosa = false; //Marcamos qu eya no está pisando la baldosa.
-        if (collision.CompareTag("Meta"))
+        if (collision.CompareTag("Baldosa_Flecha"))
+        {
+            baldosaActual = null; // Resetear cuando salimos de la baldosa
+        }
+        else if (collision.CompareTag("Meta"))
         {
             direccionMov = Vector2.zero;
             Victoria.SetActive(true);
@@ -121,7 +125,7 @@ public class MovRaton : MonoBehaviour
             {
                 SobreBaldosa = true;
                 direccionMov = Vector2.zero;
-
+                baldosaActual = collision.gameObject; // Guardamos la baldosa exacta
             }
 
         }
@@ -129,6 +133,7 @@ public class MovRaton : MonoBehaviour
         {
             SobreBaldosa = true;
             direccionMov = Vector2.zero;
+            baldosaActual = collision.gameObject; // Guardamos la baldosa exacta
         }
 
         else if (collision.CompareTag("Laterales"))

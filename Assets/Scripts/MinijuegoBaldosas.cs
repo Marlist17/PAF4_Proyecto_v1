@@ -7,6 +7,7 @@ public class MinijuegoBaldosas : MonoBehaviour
     public GameObject señal;
     public GameObject baldosa;
     public int contador = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,7 @@ public class MinijuegoBaldosas : MonoBehaviour
             contador = 0;
             Invoke("reiniciar", 0.3f);
         }
-
+      
     }
     void OnTriggerExit2D(Collider2D col)
     {
@@ -36,11 +37,13 @@ public class MinijuegoBaldosas : MonoBehaviour
 
             señal.SetActive(false);
             contador++;
+            GameManager.Instance.baldosaRota++;
         }
 
     }
     void reiniciar()
     {
+        GameManager.Instance.baldosaRota = 0;
         GameManager.Instance.ReiniciarNivel();
 
     }
