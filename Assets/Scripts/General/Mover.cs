@@ -86,18 +86,16 @@ public class Mover : MonoBehaviour
             if (collision.gameObject.tag == "CasaProta" && GameManager.Instance.TutorialRealizado)
             {
 
-            Invoke("TransicionLobby", 1f);
+            GameManager.Instance.TransicionLobby();
 
-        }
+            }
+          
         //Poner que coga la escena y si es diferente del del lobby ( va al lobby siempre)
-        
+
 
 
     }
-    void TransicionLobby()
-    {
-        GameManager.Instance.TransicionLobby();
-    }
+   
 }
 
     

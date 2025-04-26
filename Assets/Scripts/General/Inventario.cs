@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
 
 public class Inventario : MonoBehaviour
 {
@@ -55,7 +56,12 @@ public class Inventario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int escenaActual = SceneManager.GetActiveScene().buildIndex;
+
+        if (escenaActual == 4)
+        {
+            instancia.gameObject.SetActive(false);
+        }
     }
  
 }

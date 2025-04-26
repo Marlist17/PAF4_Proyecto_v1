@@ -12,6 +12,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     public string[] lines; // Nuestras frases
     public float textSpeed; // Velocidad del texto
     public int index; // Índice del diálogo en curso
+    public bool DialogoActivo = false;
     Animator anim; // Referencia al componente Animator
 
     void Start()
@@ -53,7 +54,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     public bool ComenzarDialogo(string[] lineasNuevas, bool finalizado)
     {
-
+        DialogoActivo =true;
         if (finalizado)
             UltimoDialogo(lineasNuevas);
         else
@@ -65,6 +66,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             miTexto.gameObject.SetActive(true); //Dejamos que sea visible el texto
             cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
             StartCoroutine(TypeLine());
+
         }
         return true;
     
@@ -92,7 +94,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             raton.SetActive(false); //Dejamos que no sea visible el ratón
             miTexto.gameObject.SetActive(false); //Dejamos que deje de ser visible el texto
             cajaTexto.SetActive(false); //Dejamos que no sea visible la caja de texto
-           
+            DialogoActivo = false;
         }
     }
     public void UltimoDialogo(string[] lineasNuevas )
@@ -148,6 +150,15 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
         CajaNombre.SetActive(false);
        
     }
+
+    public void CambiarNombreDuranteDialogo(string nuevoNombre)
+    {
+        if (TextoNombre != null && CajaNombre != null)
+        {
+            TextoNombre.text = nuevoNombre;
+        }
+    }
+
 
 }
 
