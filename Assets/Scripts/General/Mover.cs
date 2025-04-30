@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
 public class Mover : MonoBehaviour
 {
+
     private float VelocidadMovimiento = 3f;
     Animator anim;
 
@@ -26,11 +24,11 @@ public class Mover : MonoBehaviour
     void FixedUpdate()
     {
         MoverPersonaje();
-       
+
     }
     void MoverPersonaje()
     {
-        
+
         float movimientoY = Input.GetAxis("Vertical") * VelocidadMovimiento * Time.deltaTime; //Si pulso felcha arriba (1) , flecha abajo (-1) y si no pulso nada (0);
         transform.Translate(0, movimientoY, 0);
         float movimientoX = Input.GetAxis("Horizontal") * VelocidadMovimiento * Time.deltaTime; //Normalizamos el tiempo de frame
@@ -76,27 +74,26 @@ public class Mover : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-            if (collision.gameObject.tag == "CasaNPC") //Si esta variable es verdadera (solo cuando se ha cogido el objeto)
-            {
-                GameManager.Instance.HablarNPC = false; //Resetear por si sale de escena.
-                Invoke("TransicionLobby", 1f);
 
-            }
-            if (collision.gameObject.tag == "CasaProta" && GameManager.Instance.TutorialRealizado)
-            {
+        if (collision.gameObject.tag == "CasaNPC") //Si esta variable es verdadera (solo cuando se ha cogido el objeto)
+        {
+            GameManager.Instance.HablarNPC = false; //Resetear por si sale de escena.
+            Invoke("TransicionLobby", 1f);
+
+        }
+        if (collision.gameObject.tag == "CasaProta" && GameManager.Instance.TutorialRealizado)
+        {
 
             GameManager.Instance.TransicionLobby();
 
-            }
-          
+        }
+
         //Poner que coga la escena y si es diferente del del lobby ( va al lobby siempre)
 
 
 
     }
-   
+
 }
 
-    
 
