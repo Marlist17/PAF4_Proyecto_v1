@@ -12,13 +12,14 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     public GameObject raton;
     public string[] lines; // Nuestras frases
     public float textSpeed; // Velocidad del texto
-    public int index; // Índice del diálogo en curso
+  
+[SerializeField] private int index; // Índice del diálogo en curso
     public bool DialogoActivo = false;
     Animator anim; // Referencia al componente Animator
 
     void Start()
     {
-       
+      
     }
 
     public void FueradeRango()
@@ -31,6 +32,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     }
 
 
+
     void Update()
     {
         
@@ -39,13 +41,14 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     public void PasarDialogo()
     {
-
+       
         if (Input.GetMouseButton(0)) // Si pulsamos el botón derecho
         {
             if (index >= 0 && index < lines.Length) // Validamos que el índice esté en rango
             {
                 if (miTexto.text == lines[index]) // Si se ha colocado todo el texto que tiene guardado el array.
                 {
+                    Debug.Log("Siguietne dialogo");
                     SiguienteDialogo();
                 }
             }
@@ -55,6 +58,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     public bool ComenzarDialogo(string[] lineasNuevas, bool finalizado)
     {
+        Debug.Log("Comenzar dialogo");
         DialogoActivo =true;
         if (finalizado)
             UltimoDialogo(lineasNuevas);
@@ -66,6 +70,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             raton.SetActive(true); //Dejamos que sea visible el ratón
             miTexto.gameObject.SetActive(true); //Dejamos que sea visible el texto
             cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
+            Debug.Log($"index:{index}");
             StartCoroutine(TypeLine());
 
         }
@@ -75,15 +80,23 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     IEnumerator TypeLine()
     {
+        /*for(int i = 0;  i < lines[index].Length; i++)
+        {
+            miTexto.text = lines[index][..i];
+            yield return new WaitForSeconds(textSpeed);
+
+        }*/
+        
         foreach (char c in lines[index].ToCharArray())
         {
             miTexto.text += c; // Aparece letra a letra
             yield return new WaitForSeconds(textSpeed);
-        }
+        } 
     }
 
     public void SiguienteDialogo()
     {
+        Debug.Log("Siguietne dialogo");
         if (index < lines.Length -1) //índice empieza de 0 (la longitud del texto del 1)
         {
             index++;
@@ -107,6 +120,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
         miTexto.gameObject.SetActive(true); //Dejamos que deje de ser visible el texto
         cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
         index = lines.Length - 1;
+        Debug.Log("Mostrando ultimo dialogo");
         StartCoroutine(TypeLine());
         
     }

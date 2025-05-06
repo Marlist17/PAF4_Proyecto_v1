@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public bool ObjetoObtenido = false;
     public bool TutorialRealizado = false;
+    public bool NochePasada= false;
     public bool CajaObtenida = false;
     public bool mensajeCoger = false;
     public bool mensajeDejar = false;

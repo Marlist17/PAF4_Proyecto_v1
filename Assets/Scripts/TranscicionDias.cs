@@ -17,6 +17,7 @@ public class TranscicionDias : MonoBehaviour
             Invoke("MostrarTransicion", 0.2f);
             Invoke("QuitarTransicion", 1f);
             GameManager.Instance.TutorialRealizado = false;
+            GameManager.Instance.NochePasada = true;
         }
     }
 

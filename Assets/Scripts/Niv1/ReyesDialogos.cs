@@ -74,17 +74,17 @@ public class ReyesDialogos : MonoBehaviour
                 dialog.LimpiarDialogos();
 
             }
-            int indiceActual = dialog.index;
-            string nombre = determinarNombreSegunIndice(indiceActual);
+//            int indiceActual = dialog.index;
+      //      string nombre = determinarNombreSegunIndice(indiceActual);
             
-            dialog.MostrarNombre(nombre);
+        //    dialog.MostrarNombre(nombre);
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
         }
         if (dialog.DialogoActivo)
         {
-            int indiceActual = dialog.index;
-            string nombre = determinarNombreSegunIndice(indiceActual);
-            dialog.MostrarNombre(nombre);
+      //      int indiceActual = dialog.index;
+            //string nombre = determinarNombreSegunIndice(indiceActual);
+       //     dialog.MostrarNombre(nombre);
         }
     }
     public string determinarNombreSegunIndice(int indiceDialogo)
