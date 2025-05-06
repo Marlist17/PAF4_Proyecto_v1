@@ -20,6 +20,9 @@ TagManager:
   - Laterales
   - BordeSuperior
   - Nivel3
+  - CasaProtaExterior
+  - Sardina
+  - CamaProta
   layers:
   - Default
   - TransparentFX

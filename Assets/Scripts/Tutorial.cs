@@ -27,7 +27,7 @@ public class Tutorial : MonoBehaviour
         {
             Invoke("TransicionLobby", 1f);
             FueradeEscena = true;
-            GameManager.Instance.TutorialRealizado = true;
+          
         }
         else
         {

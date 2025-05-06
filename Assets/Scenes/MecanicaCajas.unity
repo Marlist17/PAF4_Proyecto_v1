@@ -421,6 +421,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1591609946882357522, guid: 69bb8f80a859054458d0f602109f30f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591609946882357522, guid: 69bb8f80a859054458d0f602109f30f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591609946882357522, guid: 69bb8f80a859054458d0f602109f30f1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591609946882357522, guid: 69bb8f80a859054458d0f602109f30f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2611775
       objectReference: {fileID: 0}
@@ -971,6 +983,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1010501588651094022, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010501588651094022, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010501588651094022, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010501588651094022, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.7154229
       objectReference: {fileID: 0}
@@ -1010,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1923109454800766345, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3355776892426107845, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
       propertyPath: dialog
       value: 
@@ -1017,6 +1045,22 @@ PrefabInstance:
     - target: {fileID: 4008987249275266328, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
       propertyPath: m_Name
       value: NPC (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872959273836790186, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -228132177, guid: c69e87a51b33a134c86ad7a322c0dcaf, type: 3}
+    - target: {fileID: 7872959273836790186, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872959273836790186, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872959273836790186, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1592200837456640009, guid: 3b311d00530ab6940879cbf8a101d597, type: 3}
@@ -1074,6 +1118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1785431734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7777127431369892149, guid: 0f66d22ce24bdf14f8066db516314b47, type: 3}
+  m_PrefabInstance: {fileID: 1817836731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1817836731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1428,6 +1477,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8715947865396128952, guid: aaa550df05fa60842b7eb015b3ac6c5a, type: 3}
+      propertyPath: raton
+      value: 
+      objectReference: {fileID: 1785431734}
     - target: {fileID: 8715947865396128952, guid: aaa550df05fa60842b7eb015b3ac6c5a, type: 3}
       propertyPath: miTexto
       value: 
