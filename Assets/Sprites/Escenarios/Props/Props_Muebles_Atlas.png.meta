@@ -1,0 +1,1997 @@
+fileFormatVersion: 2
+guid: 7745c7b9b233cf040bdc1330c6ac1e3c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 3945
+        width: 138
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4d1be7c2adfc7499759e989ce93fe1
+      internalID: -1783341722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2491
+        width: 261
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9bd2bf2810db44e85ecd740ade1e72
+      internalID: 1659229766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 3821
+        width: 536
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5431f1ebe56754db609d37551b7caf
+      internalID: 1043415224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 3463
+        width: 427
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c5d18736f908f46a40813d6e33c46d
+      internalID: 436771346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3779
+        width: 412
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928e38b97aa5ef3489490b4510e05953
+      internalID: -1117778965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 3115
+        width: 291
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43a7ccfa9cc01043b789639cf83d0ee
+      internalID: 1986897128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 3787
+        width: 688
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cd778f0d9db9e49a411fdbe70a2ee5
+      internalID: -1839070689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 3200
+        width: 553
+        height: 812
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fe2e96cb97e4a45a2dacf504bf6ca4
+      internalID: -1444965289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 3678
+        width: 380
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de0330c853c04341b4f6f958164fec8
+      internalID: -1389973471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 3545
+        width: 514
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec8796ea56e8004f8591e22daf90f17
+      internalID: 615401024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 3714
+        width: 204
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bfb4d50f4290c4fbcb184fe224198b
+      internalID: 692574888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 3395
+        width: 496
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b825d5f0caa436845b4f1d80aa46b029
+      internalID: -24063776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3365
+        width: 167
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ea2156e22217d41b1a697580e996aa
+      internalID: -2107832878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3264
+        width: 352
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0197e3d2a22d64da2eab2ae09fe7e4
+      internalID: 1734257766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 3624
+        width: 69
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dc850320a222f4abcc5efebf6b72ee
+      internalID: 182829088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 3391
+        width: 553
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a69de15061de949b7a43daf5a492e4
+      internalID: -1436195068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 3107
+        width: 812
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590788296ce894944841fea5ec76fb27
+      internalID: -1464752275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 2826
+        width: 415
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff9375d5ba456648a2e4ed9dba8ba8b
+      internalID: 2040692486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2828
+        width: 318
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175ce16fadfeec9428b27ff0dc49974a
+      internalID: 1351261224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_57
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 3003
+        width: 473
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f0fc5eece7c4b4a917f27cfd16ca20
+      internalID: 383700302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_59
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 3041
+        width: 476
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c102dd147282a2e44a08e02ebca3eab2
+      internalID: 225612196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_65
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 2311
+        width: 553
+        height: 818
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfd790da9e665c4dbbebb0e912ca757
+      internalID: 157096093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_67
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 2647
+        width: 247
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4a91edcfd0d374193f63c44f481581
+      internalID: -1562853297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_74
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2428
+        width: 215
+        height: 599
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b31d4040051a14db63822d9c2fb8ad
+      internalID: -1151711870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_78
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 2713
+        width: 376
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df948b1395f6d00499dd50190b59aa2b
+      internalID: 1936780789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_79
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 2705
+        width: 639
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bff000a4fc08ee499ef053ef084de4b
+      internalID: -2014437562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_83
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2677
+        width: 318
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272e6ac365b3ead4d883eeb8f12294b6
+      internalID: -287656334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_101
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2341
+        width: 400
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050b56f3fc2f6e844af20e0c9e185fdb
+      internalID: -1405752990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_113
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 2356
+        width: 159
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227a72a32603fb542a9d818d3315ede6
+      internalID: 513127073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_115
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 2474
+        width: 146
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1133f44a84666734c98d38969513c0b5
+      internalID: -1531741584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_118
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 2215
+        width: 493
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1dd444cfdabf845830ce3add11825f
+      internalID: -971679488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_119
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 2368
+        width: 129
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6193b9133130c4d4c9b975b30792c6e0
+      internalID: 104982209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_121
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 2368
+        width: 135
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97c3896ca17d64b8d98fec8d898747
+      internalID: -1652877329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_122
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2372
+        width: 155
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5701df9933ea60b4780f15588fd3a1ae
+      internalID: 2037926465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_125
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 2149
+        width: 217
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bda748bdbffe5c40a4dd6f5a76658d5
+      internalID: -767510340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_132
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2350
+        width: 179
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c97188b8186cc04b9183e6be4e57089
+      internalID: 1583457542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_133
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1897
+        width: 433
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f91b3f3dc4a8ec48b9edafabf9e8107
+      internalID: -106957031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_136
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 2265
+        width: 197
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98406a29093beb749bb82a5f82b907fb
+      internalID: -1475683440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_137
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 1887
+        width: 191
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b486c576b2ef58d4888aca92a228a531
+      internalID: 504473798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_144
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 2203
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f831e69180e334b9bf53735566a8b1
+      internalID: -2057237955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_149
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1873
+        width: 297
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5eec0effe177834fb9fa6aef3f8cee1
+      internalID: -1462090200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_151
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1865
+        width: 297
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc77542ad48132459020e355577a672
+      internalID: 487437437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_152
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1907
+        width: 152
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67710bf1a8a9f6a478df71adfc0ff186
+      internalID: -187618232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_158
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2088
+        width: 140
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d93069d1a7dbc445b1fd68137acea03
+      internalID: -1569908617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_160
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 1952
+        width: 607
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4fd47460678944aaa92dd8d2e4f4d4
+      internalID: 704734933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_166
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 1791
+        width: 279
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2428e7bec08e25499d22bf3f4a2be5e
+      internalID: -852049313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_167
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 2034
+        width: 106
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989eea2046a2c7a4393da614bada707b
+      internalID: 692618461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_168
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1879
+        width: 193
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517c9b904466a4e4c9278baf06a252bc
+      internalID: -262254455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_176
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1507
+        width: 215
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914a6bf94e8534447a488d8b9106eda7
+      internalID: -439825637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_177
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 1946
+        width: 130
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3028c176c71604c85d9019986c2f01
+      internalID: -1268534283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_183
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1807
+        width: 252
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f671e41c2daf9b4a911e259b1b97230
+      internalID: 1741758976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_185
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 1461
+        width: 380
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6151c609e928f46bf63609f7585899
+      internalID: -1727916480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_187
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 967
+        width: 265
+        height: 878
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef885663c21a894ab4e57d95f9225a3
+      internalID: -1531401984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_189
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1306
+        width: 660
+        height: 519
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba02966c99222e45b35d1f8cba236d7
+      internalID: -582112784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_192
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1415
+        width: 310
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7648ddca24bcc446b7bfcab272ff7f2
+      internalID: 1096644197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_195
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 1491
+        width: 531
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cdf78611b922449abeeb04ca0aa69d
+      internalID: -845147163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_196
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1399
+        width: 195
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b80495e0c15db346b6f46fcd4a0e991
+      internalID: 2054897268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_197
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 1511
+        width: 474
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bf26d53d8523a418a5ab6814039223
+      internalID: -1672576226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_202
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 1107
+        width: 406
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd464f568640c9541ac09af6dd88f83c
+      internalID: -698402676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_205
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 1117
+        width: 438
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289f6f5f6bb3b1a41abd3e9230a8466b
+      internalID: 1809802106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_208
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1021
+        width: 268
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddbeb495dae76548a7e76f016a94a2d
+      internalID: 313683400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_209
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1128
+        width: 404
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19430b6d033c8464bae442756f59f07e
+      internalID: -1350582964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_212
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 856
+        width: 348
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca682d64cf49db47a8225b5628aab5d
+      internalID: 1568837231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_220
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1035
+        width: 637
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caded9b674d45e04e961cbfdec346cc3
+      internalID: 256569699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_225
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 760
+        width: 444
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae79391c68104a49abb13737355590e
+      internalID: -401333592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_226
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 738
+        width: 429
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7442a55083198e47a44b95dd2893eee
+      internalID: -236535336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_227
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 736
+        width: 480
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3175ad4c377dfe4dad299ff33a51916
+      internalID: 478406565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_228
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 872
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb910f246c80e2468d784f58098890f
+      internalID: -134793117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_229
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 878
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831abdc958d1e0e46924abc7af28772d
+      internalID: 1435816345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_233
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 870
+        width: 125
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001f0c6af5bc27e449c0cf88fd8cb85a
+      internalID: 1086416196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_234
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 131
+        width: 265
+        height: 788
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96092ad644f2ba040aef5867bb29e0cd
+      internalID: -1640305054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_240
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 211
+        width: 520
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a12b94a48c5894a8d5c830d43c65da
+      internalID: 1951189517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_241
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 96
+        width: 535
+        height: 730
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9bc5a0e1130554bb7da7bbfb18cc2c
+      internalID: -2127205399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_242
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 94
+        width: 535
+        height: 732
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa57bd5ecdbf5ed43914000917c1c775
+      internalID: -501646767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_244
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 388
+        width: 404
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba70420521f5e240a85fccaa6d30229
+      internalID: 350764246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_246
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 370
+        width: 428
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbed567c2e9a5d41906fbb746cf2aeb
+      internalID: 934335656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_Muebles_Atlas_247
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 376
+        width: 438
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a84832637fa340a4e915af0d33774
+      internalID: 1468109051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Props_Muebles_Atlas_0: -1783341722
+      Props_Muebles_Atlas_1: 1659229766
+      Props_Muebles_Atlas_10: 1642564237
+      Props_Muebles_Atlas_100: -1049177981
+      Props_Muebles_Atlas_101: -1405752990
+      Props_Muebles_Atlas_102: -995804527
+      Props_Muebles_Atlas_103: -1365132570
+      Props_Muebles_Atlas_104: 601521047
+      Props_Muebles_Atlas_105: -45216582
+      Props_Muebles_Atlas_106: 1925426998
+      Props_Muebles_Atlas_107: 906427034
+      Props_Muebles_Atlas_108: -1948639843
+      Props_Muebles_Atlas_109: 1633251183
+      Props_Muebles_Atlas_11: 982893256
+      Props_Muebles_Atlas_110: 369283944
+      Props_Muebles_Atlas_111: -369997285
+      Props_Muebles_Atlas_112: -703726837
+      Props_Muebles_Atlas_113: 513127073
+      Props_Muebles_Atlas_114: -125025704
+      Props_Muebles_Atlas_115: -1531741584
+      Props_Muebles_Atlas_116: -452106113
+      Props_Muebles_Atlas_117: -1340283627
+      Props_Muebles_Atlas_118: -971679488
+      Props_Muebles_Atlas_119: 104982209
+      Props_Muebles_Atlas_12: -577705132
+      Props_Muebles_Atlas_120: 769933029
+      Props_Muebles_Atlas_121: -1652877329
+      Props_Muebles_Atlas_122: 2037926465
+      Props_Muebles_Atlas_123: 380294476
+      Props_Muebles_Atlas_124: -1289154591
+      Props_Muebles_Atlas_125: -767510340
+      Props_Muebles_Atlas_126: 1629765084
+      Props_Muebles_Atlas_127: -592933385
+      Props_Muebles_Atlas_128: -1598579734
+      Props_Muebles_Atlas_129: -318147849
+      Props_Muebles_Atlas_13: -1444965289
+      Props_Muebles_Atlas_130: -915104044
+      Props_Muebles_Atlas_131: -1957578690
+      Props_Muebles_Atlas_132: 1583457542
+      Props_Muebles_Atlas_133: -106957031
+      Props_Muebles_Atlas_134: -41271823
+      Props_Muebles_Atlas_135: 1018685028
+      Props_Muebles_Atlas_136: -1475683440
+      Props_Muebles_Atlas_137: 504473798
+      Props_Muebles_Atlas_138: 1371942599
+      Props_Muebles_Atlas_139: 1741654538
+      Props_Muebles_Atlas_14: -1008593216
+      Props_Muebles_Atlas_140: 511649122
+      Props_Muebles_Atlas_141: -1106331832
+      Props_Muebles_Atlas_142: -308228604
+      Props_Muebles_Atlas_143: -1148608179
+      Props_Muebles_Atlas_144: -2057237955
+      Props_Muebles_Atlas_145: -1660695658
+      Props_Muebles_Atlas_146: -1478255647
+      Props_Muebles_Atlas_147: 123422065
+      Props_Muebles_Atlas_148: -1890877490
+      Props_Muebles_Atlas_149: -1462090200
+      Props_Muebles_Atlas_15: -1389973471
+      Props_Muebles_Atlas_150: -795759822
+      Props_Muebles_Atlas_151: 487437437
+      Props_Muebles_Atlas_152: -187618232
+      Props_Muebles_Atlas_153: 587333641
+      Props_Muebles_Atlas_154: -1828540676
+      Props_Muebles_Atlas_155: -1761091212
+      Props_Muebles_Atlas_156: -867983281
+      Props_Muebles_Atlas_157: 1801002435
+      Props_Muebles_Atlas_158: -1569908617
+      Props_Muebles_Atlas_159: 843514775
+      Props_Muebles_Atlas_16: 1663626366
+      Props_Muebles_Atlas_160: 704734933
+      Props_Muebles_Atlas_161: 463565130
+      Props_Muebles_Atlas_162: -1435942953
+      Props_Muebles_Atlas_163: 817476439
+      Props_Muebles_Atlas_164: -2121465770
+      Props_Muebles_Atlas_165: -1048280104
+      Props_Muebles_Atlas_166: -852049313
+      Props_Muebles_Atlas_167: 692618461
+      Props_Muebles_Atlas_168: -262254455
+      Props_Muebles_Atlas_169: 1548995397
+      Props_Muebles_Atlas_17: -214006785
+      Props_Muebles_Atlas_170: -118969600
+      Props_Muebles_Atlas_171: -546117427
+      Props_Muebles_Atlas_172: -597063342
+      Props_Muebles_Atlas_173: -429723845
+      Props_Muebles_Atlas_174: 1956726987
+      Props_Muebles_Atlas_175: 2075844966
+      Props_Muebles_Atlas_176: -439825637
+      Props_Muebles_Atlas_177: -1268534283
+      Props_Muebles_Atlas_178: 1651046791
+      Props_Muebles_Atlas_179: 458549450
+      Props_Muebles_Atlas_18: 615401024
+      Props_Muebles_Atlas_180: 560216280
+      Props_Muebles_Atlas_181: 498624183
+      Props_Muebles_Atlas_182: -1908424703
+      Props_Muebles_Atlas_183: 1741758976
+      Props_Muebles_Atlas_184: -776547086
+      Props_Muebles_Atlas_185: -1727916480
+      Props_Muebles_Atlas_186: -2120604491
+      Props_Muebles_Atlas_187: -1531401984
+      Props_Muebles_Atlas_188: 1455754870
+      Props_Muebles_Atlas_189: -582112784
+      Props_Muebles_Atlas_19: 692574888
+      Props_Muebles_Atlas_190: 952395570
+      Props_Muebles_Atlas_191: -1373107094
+      Props_Muebles_Atlas_192: 1096644197
+      Props_Muebles_Atlas_193: 1214177701
+      Props_Muebles_Atlas_194: -309916674
+      Props_Muebles_Atlas_195: -845147163
+      Props_Muebles_Atlas_196: 2054897268
+      Props_Muebles_Atlas_197: -1672576226
+      Props_Muebles_Atlas_198: 757764290
+      Props_Muebles_Atlas_199: -2128693428
+      Props_Muebles_Atlas_2: 1043415224
+      Props_Muebles_Atlas_20: -680590189
+      Props_Muebles_Atlas_200: -183072087
+      Props_Muebles_Atlas_201: 515215508
+      Props_Muebles_Atlas_202: -698402676
+      Props_Muebles_Atlas_203: -2083817727
+      Props_Muebles_Atlas_204: 309147629
+      Props_Muebles_Atlas_205: 1809802106
+      Props_Muebles_Atlas_206: -1398720327
+      Props_Muebles_Atlas_207: 1734065967
+      Props_Muebles_Atlas_208: 313683400
+      Props_Muebles_Atlas_209: -1350582964
+      Props_Muebles_Atlas_21: 1761374784
+      Props_Muebles_Atlas_210: -946841447
+      Props_Muebles_Atlas_211: -429133046
+      Props_Muebles_Atlas_212: 1568837231
+      Props_Muebles_Atlas_213: 217813054
+      Props_Muebles_Atlas_214: 233956131
+      Props_Muebles_Atlas_215: -6272456
+      Props_Muebles_Atlas_216: 997177626
+      Props_Muebles_Atlas_217: 1185945272
+      Props_Muebles_Atlas_218: -771381206
+      Props_Muebles_Atlas_219: 1684196068
+      Props_Muebles_Atlas_22: 598128083
+      Props_Muebles_Atlas_220: 256569699
+      Props_Muebles_Atlas_221: -1716801564
+      Props_Muebles_Atlas_222: 492520038
+      Props_Muebles_Atlas_223: 712631032
+      Props_Muebles_Atlas_224: 2101115145
+      Props_Muebles_Atlas_225: -401333592
+      Props_Muebles_Atlas_226: -236535336
+      Props_Muebles_Atlas_227: 478406565
+      Props_Muebles_Atlas_228: -134793117
+      Props_Muebles_Atlas_229: 1435816345
+      Props_Muebles_Atlas_23: -1181710025
+      Props_Muebles_Atlas_230: 1647960161
+      Props_Muebles_Atlas_231: -1039700092
+      Props_Muebles_Atlas_232: 1377673485
+      Props_Muebles_Atlas_233: 1086416196
+      Props_Muebles_Atlas_234: -1640305054
+      Props_Muebles_Atlas_235: 1836125192
+      Props_Muebles_Atlas_236: -206540169
+      Props_Muebles_Atlas_237: 1386913840
+      Props_Muebles_Atlas_238: -1401911206
+      Props_Muebles_Atlas_239: -236341134
+      Props_Muebles_Atlas_24: -24063776
+      Props_Muebles_Atlas_240: 1951189517
+      Props_Muebles_Atlas_241: -2127205399
+      Props_Muebles_Atlas_242: -501646767
+      Props_Muebles_Atlas_243: 1125043616
+      Props_Muebles_Atlas_244: 350764246
+      Props_Muebles_Atlas_245: -1790908528
+      Props_Muebles_Atlas_246: 934335656
+      Props_Muebles_Atlas_247: 1468109051
+      Props_Muebles_Atlas_248: 1346094293
+      Props_Muebles_Atlas_249: -833510320
+      Props_Muebles_Atlas_25: -2107832878
+      Props_Muebles_Atlas_250: 1254202347
+      Props_Muebles_Atlas_251: 691711722
+      Props_Muebles_Atlas_252: 1015975966
+      Props_Muebles_Atlas_26: 316437480
+      Props_Muebles_Atlas_27: 605093547
+      Props_Muebles_Atlas_28: 1734257766
+      Props_Muebles_Atlas_29: -799340032
+      Props_Muebles_Atlas_3: 436771346
+      Props_Muebles_Atlas_30: 1243109502
+      Props_Muebles_Atlas_31: 182829088
+      Props_Muebles_Atlas_32: -1557027961
+      Props_Muebles_Atlas_33: 873853340
+      Props_Muebles_Atlas_34: -1436195068
+      Props_Muebles_Atlas_35: 1928425960
+      Props_Muebles_Atlas_36: 735788891
+      Props_Muebles_Atlas_37: 659645615
+      Props_Muebles_Atlas_38: 344452846
+      Props_Muebles_Atlas_39: -1686206968
+      Props_Muebles_Atlas_4: -1117778965
+      Props_Muebles_Atlas_40: 1570031323
+      Props_Muebles_Atlas_41: 1873629340
+      Props_Muebles_Atlas_42: 1371371060
+      Props_Muebles_Atlas_43: -456819666
+      Props_Muebles_Atlas_44: -1464752275
+      Props_Muebles_Atlas_45: -1083043187
+      Props_Muebles_Atlas_46: 207446304
+      Props_Muebles_Atlas_47: -457119124
+      Props_Muebles_Atlas_48: -1138498083
+      Props_Muebles_Atlas_49: 2040692486
+      Props_Muebles_Atlas_5: 1986897128
+      Props_Muebles_Atlas_50: -1761138042
+      Props_Muebles_Atlas_51: -1619669946
+      Props_Muebles_Atlas_52: -363180884
+      Props_Muebles_Atlas_53: -807484779
+      Props_Muebles_Atlas_54: 1451722785
+      Props_Muebles_Atlas_55: -1470204075
+      Props_Muebles_Atlas_56: 1351261224
+      Props_Muebles_Atlas_57: 383700302
+      Props_Muebles_Atlas_58: 1549863109
+      Props_Muebles_Atlas_59: 225612196
+      Props_Muebles_Atlas_6: -1839070689
+      Props_Muebles_Atlas_60: 1967610833
+      Props_Muebles_Atlas_61: 654384467
+      Props_Muebles_Atlas_62: 1670815776
+      Props_Muebles_Atlas_63: -1244975694
+      Props_Muebles_Atlas_64: 1987877067
+      Props_Muebles_Atlas_65: 157096093
+      Props_Muebles_Atlas_66: -270948807
+      Props_Muebles_Atlas_67: -1562853297
+      Props_Muebles_Atlas_68: -473189543
+      Props_Muebles_Atlas_69: 1784911471
+      Props_Muebles_Atlas_7: -159132858
+      Props_Muebles_Atlas_70: 1308497351
+      Props_Muebles_Atlas_71: -1313409072
+      Props_Muebles_Atlas_72: -95297936
+      Props_Muebles_Atlas_73: -1341942655
+      Props_Muebles_Atlas_74: -1151711870
+      Props_Muebles_Atlas_75: -808063872
+      Props_Muebles_Atlas_76: -188998035
+      Props_Muebles_Atlas_77: 930755864
+      Props_Muebles_Atlas_78: 1936780789
+      Props_Muebles_Atlas_79: -2014437562
+      Props_Muebles_Atlas_8: -776343168
+      Props_Muebles_Atlas_80: -1566060299
+      Props_Muebles_Atlas_81: 751707917
+      Props_Muebles_Atlas_82: 1174050077
+      Props_Muebles_Atlas_83: -287656334
+      Props_Muebles_Atlas_84: 556988619
+      Props_Muebles_Atlas_85: 1791472057
+      Props_Muebles_Atlas_86: -448865136
+      Props_Muebles_Atlas_87: -1602206999
+      Props_Muebles_Atlas_88: 674206586
+      Props_Muebles_Atlas_89: 1413658999
+      Props_Muebles_Atlas_9: 5439815
+      Props_Muebles_Atlas_90: -740376361
+      Props_Muebles_Atlas_91: 206769387
+      Props_Muebles_Atlas_92: 2017890659
+      Props_Muebles_Atlas_93: 1356137021
+      Props_Muebles_Atlas_94: 1857644266
+      Props_Muebles_Atlas_95: 1140890936
+      Props_Muebles_Atlas_96: -577520806
+      Props_Muebles_Atlas_97: 565614385
+      Props_Muebles_Atlas_98: -947542696
+      Props_Muebles_Atlas_99: 377906832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
