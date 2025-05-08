@@ -39,6 +39,8 @@ public class Inventario : MonoBehaviour
         sardina.SetActive(false);
     }
 
+    
+    
     public void MeterObjetoInventario(GameObject objetoInteractivo) //Función para almacenar que objeto hemos clickado
     {
         objeto = objetoInteractivo;
@@ -75,14 +77,7 @@ public class Inventario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int escenaActual = SceneManager.GetActiveScene().buildIndex;
-        
-      
-        if (escenaActual == 4)
-        {
-            instancia.gameObject.SetActive(false);
-        }
-        else { instancia.gameObject.SetActive(true); }
+       
     }
 
 }

@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transic
 
 public class ControlCasaProta : MonoBehaviour
 {
-    public GameObject sardina;
-    public GameObject transicion;
-    public GameObject aviso1;
-    public GameObject aviso2;
+    public GameObject sardina; //recibimos el prop presente
+    public GameObject transicion; //recibimos el objeto de la transicion
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +17,12 @@ public class ControlCasaProta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int escenaActual = SceneManager.GetActiveScene().buildIndex; //secen ,amager accedes a la opcion de file (build settings) --> y busca el indice
-        if (escenaActual == 1 && GameManager.Instance.TutorialRealizado)
+        int escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
+        if (escenaActual == 1 && GameManager.Instance.TutorialRealizado) //Si volvemos ha casa tras haber cogido la ofrenda:
         {
-            Destroy(sardina);
-            Destroy(transicion);
-            Destroy(aviso1);
-            Destroy(aviso2);
+            Destroy(sardina); //Lo destruimos para que no vuelva a aparecer y no lo veamos
+            Destroy(transicion); //Al igual que la transición que ya la tenemos creada y con don't destroy
+        
 
         }
     }

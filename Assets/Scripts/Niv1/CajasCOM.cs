@@ -37,7 +37,7 @@ public class CajasCOM : MonoBehaviour
     }
     void OnMouseDown() //Cuando clickemos 
     {
-        if(escenaActual == 3)
+        if(escenaActual == 3 || escenaActual == 5)
         {
              
             if (!GameManager.Instance.HablarNPC)
@@ -103,6 +103,7 @@ public class CajasCOM : MonoBehaviour
         if (CompareTag("CajaOro"))
         {
             Caja = TipoCaja.CajaOro;
+            GameManager.Instance.cajaOroCogida = true;
 
         }
        
