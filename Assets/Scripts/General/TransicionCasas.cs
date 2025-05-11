@@ -21,16 +21,21 @@ public class TransicionCasas : MonoBehaviour
         if (collision.gameObject.tag == "CasaProtaExterior" && GameManager.Instance.TutorialRealizado)
         {
 
-            int casa = 1;
+            int casa = 3;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
-        else if (collision.gameObject.tag == "CasaRico")
+        else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
-            GameManager.Instance.TransicionLobby();
+            int sala = 8;
+            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
         }
-        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.NochePasada)
+        else if (collision.gameObject.tag == "CasaRico") 
         {
-            int casa = 5;
+            GameManager.Instance.TransicionLobby_2();
+        }
+        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
+        {
+            int casa = 7;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
     }

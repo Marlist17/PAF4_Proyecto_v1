@@ -340,4 +340,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 0}
+  icono: {fileID: 0}
   escenaActual: 0

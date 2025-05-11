@@ -30,21 +30,28 @@ public class Tutorial : MonoBehaviour
 
         if (GameManager.Instance.ObjetoObtenido) //Si esta variable es verdadera (solo cuando se ha cogido el objeto)
         {
-            Invoke("TransicionLobby", 1f);
+            GameManager.Instance.TransicionLobby();
             FueradeEscena = true;
           
         }
         else
         {
           
+                
             if (GameManager.Instance.NochePasada)
+            {
+                GameManager.Instance.TransicionLobby_2();
+                FueradeEscena = true;
+                return; //detiene la ejecución siguiente para poder transicionar al lobby
+            }
+            else if (GameManager.Instance.TutorialRealizado)
             {
                 GameManager.Instance.TransicionLobby();
                 FueradeEscena = true;
                 return; //detiene la ejecución siguiente para poder transicionar al lobby
             }
-
-            conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
+            else
+                conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
            
         }
        
@@ -57,8 +64,5 @@ public class Tutorial : MonoBehaviour
             dialog.FueradeRango();
 
     }
-    void TransicionLobby()
-    {
-        GameManager.Instance.TransicionLobby();
-    }
+
 }

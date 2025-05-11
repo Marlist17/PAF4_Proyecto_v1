@@ -37,7 +37,7 @@ public class CajasCOM : MonoBehaviour
     }
     void OnMouseDown() //Cuando clickemos 
     {
-        if(escenaActual == 3 || escenaActual == 5)
+        if(escenaActual == 9 || escenaActual == 7)
         {
              
             if (!GameManager.Instance.HablarNPC)
@@ -47,6 +47,17 @@ public class CajasCOM : MonoBehaviour
             }
             else
             {
+                // Primero detectamos si es la caja sucia
+                bool esCajaSucia = CompareTag("CajaSucia");
+
+                if (esCajaSucia && !GameManager.Instance.Mision_2)
+                {
+                    // No bloqueamos aunque ya tengas caja — se activará el diálogo especial más adelante
+                    GameManager.Instance.CajaObtenida = true;
+                    ComprobarCaja();
+                    return;
+                }
+
                 if (GameManager.Instance.CajaObtenida)
                 {
          
@@ -93,12 +104,18 @@ public class CajasCOM : MonoBehaviour
         if (CompareTag("CajaNormal")) //Mirara el tag para asignar un su tipo de enum correspondiente (si lo hay)
         {
             Caja = TipoCaja.CajaNormal;
-
+            GameManager.Instance.cajaNormalCogida = true;
         }
         if (CompareTag("CajaSucia"))
         {
             Caja = TipoCaja.CajaSucia;
-
+            if (!GameManager.Instance.Mision_2)
+            {
+                GameManager.Instance.cajaSuciaCogida = true;
+                return; 
+            }
+          
+              
         }
         if (CompareTag("CajaOro"))
         {

@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Transicion : MonoBehaviour
+{
+  
+    public GameObject transcicion; //Hacemos referencia a la pantalla en negro
+
+    private void Awake()
+    {
+    }
+    void Start()
+    {
+        transcicion.SetActive(false); //Al inicio no se muestra
+
+    }
+
+    void Update()
+    {
+
+
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && GameManager.Instance.TutorialRealizado && !GameManager.Instance.NochePasada) //Si el jugador entra en el trigger tras realizar el tutorial, y es la priemra vez:
+        {
+            Invoke("MostrarTransicion", 0.2f); //Mostramos la transición
+            Invoke("QuitarTransicion", 1f); //La quitamos
+            GameManager.Instance.TutorialRealizado = false; //desactivamos esta condición
+            GameManager.Instance.NochePasada = true; //Activamos esta otra condición
+        }
+    }
+
+    void MostrarTransicion()
+    {
+        if (transcicion != null)
+        {
+
+            transcicion.SetActive(true); //Volvemos visible
+        }
+    }
+
+    void QuitarTransicion()
+    {
+        if (transcicion != null)
+        {
+            transcicion.SetActive(false); //Volvemos invisible
+        }
+    }
+
+}

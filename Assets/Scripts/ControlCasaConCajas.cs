@@ -17,7 +17,7 @@ public class ControlCasaConCajas : MonoBehaviour
     void Update()
     {
         int escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
-        if (escenaActual == 5 && GameManager.Instance.cajaOroCogida) //Si volvemos ha casa tras haber cogido la ofrenda:
+        if (escenaActual == 5 && GameManager.Instance.cajaSuciaCogida) //Si volvemos ha casa tras haber cogido la ofrenda:
         {
             Destroy(caja); //Lo destruimos para que no vuelva a aparecer y no lo veamos
            

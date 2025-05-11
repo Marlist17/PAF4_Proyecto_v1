@@ -12,8 +12,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     public GameObject raton;
     public string[] lines; // Nuestras frases
     public float textSpeed; // Velocidad del texto
-  
-[SerializeField] private int index; // Índice del diálogo en curso
+    public int index; // Índice del diálogo en curso
     public bool DialogoActivo = false;
     Animator anim; // Referencia al componente Animator
 
@@ -137,23 +136,14 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
         StartCoroutine(TypeLine());
 
     }
-
-    public void DialogoOpciones(string[] respuestas)
-    {
-
-        raton.SetActive(true); //Dejamos que sea visible el ratón
-        miTexto.gameObject.SetActive(true); //Dejamos que deje de ser visible el texto
-        cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
-        
-            DialogoConcreto(respuestas);
-
-    }
     public void LimpiarDialogos()
     {
         miTexto.text = string.Empty;
     }
     public void MostrarNombre(string nombre)
-    { 
+    {
+
+      
         TextoNombre.text = nombre;
         TextoNombre.enabled = true;
         CajaNombre.SetActive(true);

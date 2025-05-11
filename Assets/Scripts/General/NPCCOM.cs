@@ -17,6 +17,7 @@ public class NPCCOM : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Nombre en Start(): " + nombre);
         dialog.FueradeRango(); //Marcamos que estamos fuera del rango para que no se muestre el canvas
         escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
         icono.SetActive(false); //Volvemos false el icono
@@ -30,13 +31,18 @@ public class NPCCOM : MonoBehaviour
         // Verifica si el jugador está en el área y presiona "E"
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
         {
+            if (nombre == "Ryo") //Si hemos hablado con ryo:
+            {
+                GameManager.Instance.HablarNPC = true; //Se volverá true la condición
+            }
             icono.SetActive(false); //Desaparece el icono
-            if(escenaActual == 3 || escenaActual == 5) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
+            if(escenaActual == 9 || escenaActual == 7) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
             {
                 GameManager.Instance.HablarNPC = true; //Marcamos verdadera la condición para poder coger caja
                 dialog.LimpiarDialogos(); //Pos si acaso limpiamos posibles diálogos
 
             }
+            Debug.Log(nombre);
             dialog.MostrarNombre(nombre); //Mostramos nombre
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
         }

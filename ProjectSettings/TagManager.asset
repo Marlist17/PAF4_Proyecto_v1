@@ -27,6 +27,9 @@ TagManager:
   - ExteriorCasaRico
   - AvisoCoger
   - AvisoDejar
+  - Inventario
+  - Transicion
+  - Callejon
   layers:
   - Default
   - TransparentFX

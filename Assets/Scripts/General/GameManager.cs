@@ -17,9 +17,15 @@ public class GameManager : MonoBehaviour
     public bool VictoriaMinijuegoCallejon = false;
     public bool HablarNPC = false;
     public int baldosaRota = 0;
+
     public bool cajaOroCogida = false;
     public bool cajaNormalCogida = false;
     public bool cajaSuciaCogida = false;
+
+    public bool ConversacionCabecilla = false;
+    public bool ConversacionTonti = false;
+    public bool Mision_1 = false;
+    public bool Mision_2 = false;
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
 
 
@@ -70,8 +76,14 @@ public class GameManager : MonoBehaviour
     }
     public void TransicionLobby()
     {
-        int escenaActual = SceneManager.GetActiveScene().buildIndex; 
+        
         int lobby = 0;
+        SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
+    }
+    public void TransicionLobby_2()
+    {
+
+        int lobby = 1;
         SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
     }
     public void ReiniciarNivel()

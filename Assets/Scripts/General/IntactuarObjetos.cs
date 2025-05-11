@@ -54,13 +54,18 @@ public class IntactuarObjetos : MonoBehaviour
 
         }
 
-        else if (GameManager.Instance.ObjetoObtenido && CompareTag("Altar"))//Dejamos objeto en el altar cuando tenemos la condicion de ObjetoObtenido
+        else if (GameManager.Instance.ObjetoObtenido && CompareTag("Altar") && GameManager.Instance.HablarNPC)//Dejamos objeto en el altar cuando tenemos la condicion de ObjetoObtenido y hemos hablado con Ryo
         {
             GameManager.Instance.TutorialRealizado = true;
             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
             GameManager.Instance.ObjetoObtenido = false; //Volvemos la variable false ya que no tenemos el objeto
+            GameManager.Instance.HablarNPC = false; //Dejamos de marcar que ha hablado con Ryo.
             objetoActivo.SetActive(false);
+        }
+        else if (GameManager.Instance.ObjetoObtenido && !GameManager.Instance.HablarNPC)
+        {
+
         }
         else //Si hemos cogido el objeto y clickamos en otros sitios interactuables que no sean para dejar el objeto
         {

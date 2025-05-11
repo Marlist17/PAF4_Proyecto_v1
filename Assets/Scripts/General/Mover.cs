@@ -13,15 +13,7 @@ public class Mover : MonoBehaviour
 
     void Awake()
     {
-        if (instancia == null)
-        {
-            instancia = this.gameObject; //Le asignamos este objeto a ese gameObject
-            DontDestroyOnLoad(instancia); //No lo destruimos durante escenas si no hay nada.
-        }
-        else
-        {
-            Destroy(gameObject); //Si lo hay, se destruirán el resto de jugadores que haya en escena.
-        }
+        
     }
     void Start()
     {

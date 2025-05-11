@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transic
 
 public class ReyesDialogos : MonoBehaviour
 {
-    [SerializeField] Dialogos dialog;
+    public Dialogos dialog;
+    public GameObject icono;
     private string[] lines =
+   
 {
     "Mm hm hm...",
     "Pero bueno... ¡Freud, Keaton! Mirad qué cosita tan mona ha venido a visitarnos...",
@@ -32,7 +34,8 @@ public class ReyesDialogos : MonoBehaviour
     "Y 'tres', creo.",
     "Bueno, lo que quiero decir, sin tanto circunloquio, es que tus tres reyes te han elegido para cumplir una serie de misiones MUY importantes...",
     "Nos vas a hacer casito, ¿verdad, cariñín?",
-    "Bueno, tampoco es como si tuvieras otra opción... deberías sentirte agradecida, ¡honrada!, ¡llena de júbilo por tener la oportunidad de complacernos tan gratamente!",
+    "Bueno, tampoco es como si tuvieras otra opción...",
+    "Deberías sentirte agradecida, ¡honrada!, ¡llena de júbilo por tener la oportunidad de complacernos tan gratamente!",
     "Nunca jamás tendrás una oportunidad tan grande y valiosa como esta... ¿a qué no, Freud?",
     "...",
     "Ciertamente, no la tendrás.",
@@ -55,37 +58,42 @@ public class ReyesDialogos : MonoBehaviour
 
     void Start()
     {
-        dialog.FueradeRango();
-        escenaActual = SceneManager.GetActiveScene().buildIndex;
+        
+
+        if (dialog == null)
+        {
+            return;
+        }
+            dialog.FueradeRango();
+        icono.SetActive(false);
 
     }
 
     void Update()
     {
-       
-        dialog.PasarDialogo();
-        
-        // Verifica si el jugador está en el área y presiona "E"
-        if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
+        if (!GameManager.Instance.ConversacionCabecilla)
         {
-            if (escenaActual == 3)
-            {
-                GameManager.Instance.HablarNPC = true;
-                dialog.LimpiarDialogos();
+            if (dialog == null) return;
+            dialog.PasarDialogo();
 
+            // Verifica si el jugador está en el área y presiona "E"
+            if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
+            {
+                icono.SetActive(false);
+                int indiceActual = dialog.index;
+                string nombre = determinarNombreSegunIndice(indiceActual);
+
+                dialog.MostrarNombre(nombre);
+                conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
             }
-//            int indiceActual = dialog.index;
-      //      string nombre = determinarNombreSegunIndice(indiceActual);
-            
-        //    dialog.MostrarNombre(nombre);
-            conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
+            if (dialog.DialogoActivo)
+            {
+                int indiceActual = dialog.index;
+                string nombre = determinarNombreSegunIndice(indiceActual);
+                dialog.MostrarNombre(nombre);
+            }
         }
-        if (dialog.DialogoActivo)
-        {
-      //      int indiceActual = dialog.index;
-            //string nombre = determinarNombreSegunIndice(indiceActual);
-       //     dialog.MostrarNombre(nombre);
-        }
+        
     }
     public string determinarNombreSegunIndice(int indiceDialogo)
     {
@@ -99,13 +107,19 @@ public class ReyesDialogos : MonoBehaviour
         else if (indiceDialogo == 10) return Listo; // Octava línea (índice 7)
         else if (indiceDialogo > 10 && indiceDialogo < 18) return Cabecilla; // Novena línea (índice 8)
         else if (indiceDialogo > 18 && indiceDialogo < 21) return Tonti; // Décima línea (índice 9)
-        else if (indiceDialogo > 20 && indiceDialogo < 25) return Cabecilla; // Corregido aquí
-        else if (indiceDialogo > 24 && indiceDialogo < 27) return Listo; // Undécima línea (índice 10)
-        else if (indiceDialogo == 27) return Cabecilla; // Duodécima línea (índice 11)
-        else if (indiceDialogo > 27 && indiceDialogo < 30) return Listo; // Decimotercera línea (índice 12)
-        else if (indiceDialogo == 30) return Cabecilla; // Decimocuarta línea (índice 13)
-        else if (indiceDialogo > 30 && indiceDialogo < 33) return Tonti; // Decimoquinta línea (índice 14)
-        else if (indiceDialogo > 32) return Cabecilla; // Decimosexta línea (índice 15)
+        else if (indiceDialogo > 20 && indiceDialogo < 26) return Cabecilla; // Corregido aquí
+        else if (indiceDialogo > 25 && indiceDialogo < 28) return Listo; // Undécima línea (índice 10)
+        else if (indiceDialogo == 28) return Cabecilla; // Duodécima línea (índice 11)
+        else if (indiceDialogo > 28 && indiceDialogo < 31) return Listo; // Decimotercera línea (índice 12)
+        else if (indiceDialogo == 31) return Cabecilla; // Decimocuarta línea (índice 13)
+        else if (indiceDialogo > 31 && indiceDialogo < 34) return Tonti; // Decimoquinta línea (índice 14)
+        else if (indiceDialogo > 33)
+        {
+            GameManager.Instance.ConversacionCabecilla = true;
+            return Cabecilla; // Decimosexta línea (índice 15)
+        }
+            
+        
         return Cabecilla; // Añadido valor por defecto por si algún caso no está cubierto
 
 
@@ -117,6 +131,10 @@ public class ReyesDialogos : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorEnRango = true;
+            if (GameManager.Instance.ConversacionCabecilla)
+                icono.SetActive(false);
+            else
+                icono.SetActive(true); //Y vuelve visible el icono
         }
     }
 
@@ -126,6 +144,7 @@ public class ReyesDialogos : MonoBehaviour
         {
             jugadorEnRango = false;
             dialog.FueradeRango();
+            icono.SetActive(false); //Y vuelve invisible el icono
         }
     }
 }
