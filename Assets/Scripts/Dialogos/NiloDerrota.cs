@@ -1,61 +1,61 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
+using UnityEngine.SceneManagement;
 
-
-public class NPCCOM : MonoBehaviour
+public class NiloDerrota : MonoBehaviour
 {
     [SerializeField] Dialogos dialog; //Accedemos al script dialogos.
-    public string[] lines; // Nuestras frases
+    private string[] lines =
+    {
+       " Qué, ¿lista para otro canutillo?"
+    };// Nuestras frases
     public string nombre; //EL nombre del NPC
     public GameObject icono; //Señal de que puedes hablar con él
     bool conversacionFinalizada = false; //Comprobación de si la conversación ha finalizado
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
-    private int escenaActual; //Comprobamos escena en la que estamos
+
 
     void Start()
     {
-        Debug.Log("Nombre en Start(): " + nombre);
+       
         dialog.FueradeRango(); //Marcamos que estamos fuera del rango para que no se muestre el canvas
-        escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
         icono.SetActive(false); //Volvemos false el icono
     }
 
     void Update()
     {
-       
+
         dialog.PasarDialogo(); //Comprobamos todo el rato si el jugador pasa de diálogo
 
         // Verifica si el jugador está en el área y presiona "E"
-        if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
-        {   
-            if (nombre == "Ryo") //Si hemos hablado con ryo:
-            {
-                GameManager.Instance.HablarNPC = true; //Se volverá true la condición
-            }
+        if (jugadorEnRango && Input.GetKeyDown(KeyCode.E) && GameManager.Instance.tiempoCompletado)
+        {
+            
             icono.SetActive(false); //Desaparece el icono
-            if(escenaActual == 9 || escenaActual == 7) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
-            {
-                GameManager.Instance.HablarNPC = true; //Marcamos verdadera la condición para poder coger caja
-                dialog.LimpiarDialogos(); //Pos si acaso limpiamos posibles diálogos
-
-            }
-            Debug.Log(nombre);
             dialog.MostrarNombre(nombre); //Mostramos nombre
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
+
+        }
+        if (conversacionFinalizada && dialog.DialogoActivo == false)
+        {
+            VolverMinijuego();
+            conversacionFinalizada = false; // Para que no se repita cada frame
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //Si ha entrado en el trigger
     {
-        
+
         // Verifica si el objeto que entra es el jugador
         if (collision.CompareTag("Player"))
         {
-            jugadorEnRango = true; //Marca que si está en rango
-            icono.SetActive(true); //Y vuelve visible el icono
+            if (!GameManager.Instance.Mision_1)
+            {
+                jugadorEnRango = true; //Marca que si está en rango
+                icono.SetActive(true); //Y vuelve visible el icono
+            }
+           
         }
     }
 
@@ -68,5 +68,10 @@ public class NPCCOM : MonoBehaviour
             icono.SetActive(false); //Y vuelve invisible el icono
         }
     }
-}
 
+    public void VolverMinijuego()
+    {
+        int LugarBatalla = 9;
+        SceneManager.LoadScene(LugarBatalla);
+    }
+}

@@ -27,7 +27,7 @@ public class Nilo : MonoBehaviour
         "¡No espera ya sé!",
         "Batalla",
         "de porros.",
-        "Si te calzas un canuto antes que yo mediante clicks te llevas la caja.",
+        "Si te calzas un canuto antes que yo te llevas la caja.",
         "Te mola más esta idea eh… Si ya sabía yo que eras de las mías…",
         "Venga, al lío."
     };
@@ -51,7 +51,7 @@ public class Nilo : MonoBehaviour
         }
 
         dialog.PasarDialogo(); //Comprobamos si estamos pasando diálogo.
-        if (dialog.DialogoActivo) //Si el diálogo se ha activado: 
+        if (conversacionIniciada) //Si el diálogo se ha activado (este en concreto): 
         {
             int indiceActual = dialog.index; //Guardamos el índice actual de nuestro array de frases
             string nombreActual = determinarNombreSegunIndice(indiceActual); //Almacenamos el nombre que debemos poner en determinada línea

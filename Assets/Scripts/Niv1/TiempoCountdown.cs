@@ -7,30 +7,30 @@ public class TiempoCountdown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI TextoTiempo; // Metemos el texto que mostrará el tiempo
     private float Tiempo = 26f; // Tiempo inicial para la cuenta atrás
-    public GameObject Derrota;
 
     void Start()
     {
-        Derrota.SetActive(false);
-        
+
+        GameManager.Instance.tiempoCompletado = false;
     }
 
     void Update()
     {
-        if (Tiempo > 0 && !GameManager.Instance.VictoriaMinijuegoCallejon) // Solo restamos tiempo si es mayor a 0
+        if (Tiempo > 0 && !GameManager.Instance.Mision_2) // Solo restamos tiempo si es mayor a 0
         {
             Tiempo -= Time.deltaTime; // Restamos el tiempo que vaya pasando
             Tiempo = Mathf.Max(Tiempo, 0); // Aseguramos que no baje de 0
             ActualizarTextoTiempo(); // Actualizamos el texto del tiempo
         }
-        else if (GameManager.Instance.VictoriaMinijuegoCallejon)
+        else if (GameManager.Instance.Mision_2) //Si ganamos
         {
-            TextoTiempo.text = "";
-        }// Si el tiempo llega a 0, activamos Derrota solo una vez
+            TextoTiempo.text = ""; //Ya no se mostrará el contador del tiempo
+        }
         else
         {
-            Derrota.SetActive(true);
+         
             TextoTiempo.text = "00:00"; // Nos aseguramos de que el texto no muestre números negativos
+            GameManager.Instance.tiempoCompletado = true;
         }
     }
 

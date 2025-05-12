@@ -20,6 +20,7 @@ public class CajasCOM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         bordes.SetActive(false);
         escenaActual = SceneManager.GetActiveScene().buildIndex;
         dialog.OcultarNombre(); //Ocultamos en este caso el nombre ya que es un aviso.
@@ -47,17 +48,6 @@ public class CajasCOM : MonoBehaviour
             }
             else
             {
-                // Primero detectamos si es la caja sucia
-                bool esCajaSucia = CompareTag("CajaSucia");
-
-                if (esCajaSucia && !GameManager.Instance.Mision_2)
-                {
-                    // No bloqueamos aunque ya tengas caja — se activará el diálogo especial más adelante
-                    GameManager.Instance.CajaObtenida = true;
-                    ComprobarCaja();
-                    return;
-                }
-
                 if (GameManager.Instance.CajaObtenida)
                 {
          
@@ -87,11 +77,15 @@ public class CajasCOM : MonoBehaviour
                 conversacionFinalizada = dialog.ComenzarDialogo(Aviso2, conversacionFinalizada);
 
             }
+            else if (GameManager.Instance.tiempoCompletado)
+            {
+                //No puedes interactuar con la caja hasta que ganes el minijuego.
+            }
             else
             {
                 
                 ComprobarCaja();
-                GameManager.Instance.CajaObtenida = true;
+               
             }
            
         }

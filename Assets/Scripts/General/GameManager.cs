@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     public bool CajaObtenida = false;
     public bool mensajeCoger = false;
     public bool mensajeDejar = false;
-    public bool VictoriaMinijuegoCallejon = false;
     public bool HablarNPC = false;
     public int baldosaRota = 0;
 
@@ -26,6 +25,7 @@ public class GameManager : MonoBehaviour
     public bool ConversacionTonti = false;
     public bool Mision_1 = false;
     public bool Mision_2 = false;
+    public bool tiempoCompletado = false;
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
 
 

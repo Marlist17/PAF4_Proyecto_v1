@@ -3183,6 +3183,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1312735156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+  m_PrefabInstance: {fileID: 5839952223294804812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1339234177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,6 +3455,10 @@ PrefabInstance:
     - target: {fileID: 2992230942835335297, guid: 0f66d22ce24bdf14f8066db516314b47, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992230942835335297, guid: 0f66d22ce24bdf14f8066db516314b47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4916,6 +4925,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5839952223294804814}
+    - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5839952223294804819}
+    - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5839952223294804820}
   m_SourcePrefab: {fileID: 100100000, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
 --- !u!1 &5839952223294804813 stripped
 GameObject:
@@ -4935,12 +4950,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 833700401}
-  icono: {fileID: 5839952223294804815}
---- !u!1 &5839952223294804815 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
-  m_PrefabInstance: {fileID: 5839952223294804812}
+--- !u!114 &5839952223294804819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5839952223294804813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75822e81b874aa4991ca898bd25c083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5839952223294804820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5839952223294804813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f323d2d4b6b4e4c41aec3b8ba7d169cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 833700401}
+  nombre: Nilo
+  icono: {fileID: 1312735156}
 --- !u!1001 &6497499553039044759
 PrefabInstance:
   m_ObjectHideFlags: 0

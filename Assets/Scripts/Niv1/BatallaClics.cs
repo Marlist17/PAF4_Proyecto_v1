@@ -5,10 +5,10 @@ using UnityEngine;
 public class BatallaClics : MonoBehaviour
 {
     private int contador = 0;
-    public GameObject Victoria;
+ 
     void Start()
     {
-        Victoria.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -30,8 +30,7 @@ public class BatallaClics : MonoBehaviour
     {
         if (contador == 125)
         {
-            Victoria.SetActive(true);
-            GameManager.Instance.VictoriaMinijuegoCallejon = true;
+            GameManager.Instance.Mision_2 = true;
         }
         
     }
