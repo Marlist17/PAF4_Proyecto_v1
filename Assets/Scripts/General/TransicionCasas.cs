@@ -38,5 +38,14 @@ public class TransicionCasas : MonoBehaviour
             int casa = 7;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
+        else if (collision.gameObject.tag == "CasaRico")
+        {
+            GameManager.Instance.TransicionLobby();
+        }
+        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.NochePasada)
+        {
+            int casa = 5;
+            SceneManager.LoadScene(casa); //Cargame la siguiente escena.
+        }
     }
 }
