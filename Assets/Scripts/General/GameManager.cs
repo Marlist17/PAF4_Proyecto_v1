@@ -17,9 +17,13 @@ public class GameManager : MonoBehaviour
     public bool VictoriaMinijuegoCallejon = false;
     public bool HablarNPC = false;
     public int baldosaRota = 0;
+    public bool cajaOroCogida = false;
+    public bool cajaNormalCogida = false;
+    public bool cajaSuciaCogida = false;
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
-    
-    
+
+
+
 
     void Awake()
     {
@@ -44,9 +48,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-          
+
+        
     }
+
    public  void CogerObjeto()
     {
         ObjetoObtenido=true;

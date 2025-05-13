@@ -7,57 +7,59 @@ using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transic
 
 public class NPCCOM : MonoBehaviour
 {
-    [SerializeField] Dialogos dialog;
+    [SerializeField] Dialogos dialog; //Accedemos al script dialogos.
     public string[] lines; // Nuestras frases
-    public string nombre;
-    public int indice;
-    bool conversacionFinalizada = false;
+    public string nombre; //EL nombre del NPC
+    public GameObject icono; //Señal de que puedes hablar con él
+    bool conversacionFinalizada = false; //Comprobación de si la conversación ha finalizado
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
-    public int escenaActual;
+    private int escenaActual; //Comprobamos escena en la que estamos
 
     void Start()
     {
-        dialog.FueradeRango();
-        indice = 0;
-        escenaActual = SceneManager.GetActiveScene().buildIndex;
-        
+        dialog.FueradeRango(); //Marcamos que estamos fuera del rango para que no se muestre el canvas
+        escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
+        icono.SetActive(false); //Volvemos false el icono
     }
 
     void Update()
     {
        
-        dialog.PasarDialogo();
+        dialog.PasarDialogo(); //Comprobamos todo el rato si el jugador pasa de diálogo
 
         // Verifica si el jugador está en el área y presiona "E"
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
         {
-            if(escenaActual == 3)
+            icono.SetActive(false); //Desaparece el icono
+            if(escenaActual == 3 || escenaActual == 5) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
             {
-                GameManager.Instance.HablarNPC = true;
-                dialog.LimpiarDialogos();
+                GameManager.Instance.HablarNPC = true; //Marcamos verdadera la condición para poder coger caja
+                dialog.LimpiarDialogos(); //Pos si acaso limpiamos posibles diálogos
 
             }
-            dialog.MostrarNombre(nombre);
-            conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
+            dialog.MostrarNombre(nombre); //Mostramos nombre
+            conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //Si ha entrado en el trigger
     {
         
         // Verifica si el objeto que entra es el jugador
         if (collision.CompareTag("Player"))
         {
-            jugadorEnRango = true;
+            jugadorEnRango = true; //Marca que si está en rango
+            icono.SetActive(true); //Y vuelve visible el icono
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) //Si sale del trigger
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")) //Y es el jugador
         {
-            jugadorEnRango = false;
-            dialog.FueradeRango();
+            jugadorEnRango = false; //Volvemos falsa la condición
+            dialog.FueradeRango(); //Ponemos que estamos fuera del rango
+            icono.SetActive(false); //Y vuelve invisible el icono
         }
     }
 }

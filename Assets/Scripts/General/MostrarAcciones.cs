@@ -6,7 +6,10 @@ public class MostrarAcciones : MonoBehaviour
 {
     public GameObject accionCoger;
     public GameObject accionDejar;
-    // Start is called before the first frame update
+
+    private bool mostrandoCoger = false;
+    private bool mostrandoDejar = false;
+
     void Start()
     {
         accionCoger.SetActive(false);   
@@ -17,15 +20,17 @@ public class MostrarAcciones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.Instance.mensajeCoger)
+        if(GameManager.Instance.mensajeCoger && !mostrandoCoger)
         {
             StartCoroutine(MostrarYOcultarAviso(accionCoger));
             GameManager.Instance.mensajeCoger = false;
+            mostrandoCoger = true;
         }
-        else if (GameManager.Instance.mensajeDejar)
+        else if (GameManager.Instance.mensajeDejar && !mostrandoDejar)
         {
             StartCoroutine(MostrarYOcultarAviso(accionDejar));
             GameManager.Instance.mensajeDejar = false;
+
         }
         else
         {

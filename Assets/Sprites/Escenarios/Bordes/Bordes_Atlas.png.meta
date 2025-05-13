@@ -155,13 +155,13 @@ TextureImporter:
       name: Bordes_Atlas_2
       rect:
         serializedVersion: 2
-        x: 170
-        y: 2277
-        width: 2806
-        height: 1226
+        x: 155
+        y: 1679
+        width: 2851
+        height: 1839
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 127, y: 0, z: 130, w: 132}
+      pivot: {x: 0, y: 0}
+      border: {x: 140, y: 151, z: 158, w: 143}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -189,27 +189,6 @@ TextureImporter:
       bones: []
       spriteID: 7d7c13ffddb444341bb28e206934883d
       internalID: -1724294059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bordes_Atlas_4
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 1699
-        width: 2806
-        height: 370
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 127, y: 132, z: 128, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf1283aec39640844b5b4e3d7c32dca8
-      internalID: 1387796656
       vertices: []
       indices: 
       edges: []

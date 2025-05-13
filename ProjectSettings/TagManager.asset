@@ -23,6 +23,10 @@ TagManager:
   - CasaProtaExterior
   - Sardina
   - CamaProta
+  - CasaRico
+  - ExteriorCasaRico
+  - AvisoCoger
+  - AvisoDejar
   layers:
   - Default
   - TransparentFX

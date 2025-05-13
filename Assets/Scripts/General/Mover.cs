@@ -1,38 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
+
 
 public class Mover : MonoBehaviour
 {
 
-    private float VelocidadMovimiento = 3f;
+    private float VelocidadMovimiento = 3f; 
     Animator anim;
-
-    // Start is called before the first frame update
-    public static GameObject instancia;
+    public static GameObject instancia; //Creamos una gameObject
 
     void Awake()
     {
         if (instancia == null)
         {
-            instancia = this.gameObject;
-            DontDestroyOnLoad(instancia);
+            instancia = this.gameObject; //Le asignamos este objeto a ese gameObject
+            DontDestroyOnLoad(instancia); //No lo destruimos durante escenas si no hay nada.
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //Si lo hay, se destruirán el resto de jugadores que haya en escena.
         }
     }
     void Start()
     {
         anim = GetComponent<Animator>();
+
     }
 
 
     void Update()
     {
-
-
+        
 
     }
     void FixedUpdate()
@@ -43,10 +43,10 @@ public class Mover : MonoBehaviour
     void MoverPersonaje()
     {
 
-        float movimientoY = Input.GetAxis("Vertical") * VelocidadMovimiento * Time.deltaTime; //Si pulso felcha arriba (1) , flecha abajo (-1) y si no pulso nada (0);
-        transform.Translate(0, movimientoY, 0);
-        float movimientoX = Input.GetAxis("Horizontal") * VelocidadMovimiento * Time.deltaTime; //Normalizamos el tiempo de frame
-        transform.Translate(movimientoX, 0, 0);
+        float movimientoY = Input.GetAxis("Vertical") * VelocidadMovimiento * Time.deltaTime; // Almacenamos la cantidad de mov en el eje vertical que vamos a ejercer mediante inputs (teclas)
+        transform.Translate(0, movimientoY, 0); //Lo movemos en esa dirección
+        float movimientoX = Input.GetAxis("Horizontal") * VelocidadMovimiento * Time.deltaTime; // Almacenamos la cantidad de mov en el eje horizontal que vamos a ejercer mediante inputs (teclas)
+        transform.Translate(movimientoX, 0, 0); //Lo movemos en esa dirección
 
         if (Input.GetKey(KeyCode.S))
         {
@@ -86,27 +86,7 @@ public class Mover : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        if (collision.gameObject.tag == "CasaNPC") //Si esta variable es verdadera (solo cuando se ha cogido el objeto)
-        {
-            GameManager.Instance.HablarNPC = false; //Resetear por si sale de escena.
-            Invoke("TransicionLobby", 1f);
-
-        }
-        if (collision.gameObject.tag == "CasaProta" && GameManager.Instance.TutorialRealizado)
-        {
-
-            GameManager.Instance.TransicionLobby();
-
-        }
-
-        //Poner que coga la escena y si es diferente del del lobby ( va al lobby siempre)
-
-
-
-    }
+ 
 
 }
 

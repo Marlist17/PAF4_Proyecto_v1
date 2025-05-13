@@ -1,5 +1,8 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
+
 
 public class TranscicionDias : MonoBehaviour
 {
@@ -8,6 +11,13 @@ public class TranscicionDias : MonoBehaviour
     void Start()
     {
         transcicion.SetActive(false);
+    }
+
+    void Update()
+    {
+        
+
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
