@@ -57,7 +57,7 @@ public class Nilo : MonoBehaviour
             string nombreActual = determinarNombreSegunIndice(indiceActual); //Almacenamos el nombre que debemos poner en determinada línea
             dialog.MostrarNombre(nombreActual); //Ponemos el nombre correspondiente
         }
-        if (GameManager.Instance.cajaSuciaCogida) //Hemos clickado en la caja sucia sin tener ningún otro objeto
+        if (GameManager.Instance.cajaSuciaCogida && !GameManager.Instance.MinijuegoBatalla && !GameManager.Instance.tiempoCompletado) //Hemos clickado en la caja sucia sin tener ningún otro objeto
         {
            
             if (!conversacionIniciada) //Si no hay conversación iniciada:

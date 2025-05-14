@@ -666,7 +666,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 970910757}
-  - component: {fileID: 970910756}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -674,18 +673,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &970910756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970910755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f5422e98e5a774e9addfd17f5b133e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &970910757
 Transform:
   m_ObjectHideFlags: 0

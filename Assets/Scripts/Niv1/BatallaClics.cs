@@ -30,7 +30,7 @@ public class BatallaClics : MonoBehaviour
     {
         if (contador == 125)
         {
-            GameManager.Instance.Mision_2 = true;
+            GameManager.Instance.MinijuegoBatalla = true;
         }
         
     }

@@ -30,6 +30,7 @@ TagManager:
   - Inventario
   - Transicion
   - Callejon
+  - CallejonInterior
   layers:
   - Default
   - TransparentFX

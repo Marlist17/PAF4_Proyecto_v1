@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
@@ -29,8 +28,14 @@ public class TransicionCasas : MonoBehaviour
             int sala = 8;
             SceneManager.LoadScene(sala); //Cargame la siguiente escena.
         }
-        else if (collision.gameObject.tag == "CasaRico") 
+        else if (collision.gameObject.tag == "CallejonInterior")
         {
+            GameManager.Instance.TransicionLobby_2();
+           
+        }
+        else if (collision.gameObject.tag == "CasaRico")
+        {
+            GameManager.Instance.lugar = "CasaRico";
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
@@ -38,14 +43,9 @@ public class TransicionCasas : MonoBehaviour
             int casa = 7;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
-        else if (collision.gameObject.tag == "CasaRico")
-        {
-            GameManager.Instance.TransicionLobby();
-        }
-        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.NochePasada)
-        {
-            int casa = 5;
-            SceneManager.LoadScene(casa); //Cargame la siguiente escena.
-        }
+     
+
     }
 }
+
+

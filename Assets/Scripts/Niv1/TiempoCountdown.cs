@@ -16,13 +16,13 @@ public class TiempoCountdown : MonoBehaviour
 
     void Update()
     {
-        if (Tiempo > 0 && !GameManager.Instance.Mision_2) // Solo restamos tiempo si es mayor a 0
+        if (Tiempo > 0 && !GameManager.Instance.MinijuegoBatalla) // Solo restamos tiempo si es mayor a 0
         {
             Tiempo -= Time.deltaTime; // Restamos el tiempo que vaya pasando
             Tiempo = Mathf.Max(Tiempo, 0); // Aseguramos que no baje de 0
             ActualizarTextoTiempo(); // Actualizamos el texto del tiempo
         }
-        else if (GameManager.Instance.Mision_2) //Si ganamos
+        else if (GameManager.Instance.MinijuegoBatalla) //Si ganamos
         {
             TextoTiempo.text = ""; //Ya no se mostrará el contador del tiempo
         }

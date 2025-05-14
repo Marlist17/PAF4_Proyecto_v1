@@ -6,6 +6,7 @@ public class MinijuegoBaldosas : MonoBehaviour
 {
     public GameObject señal;
     public GameObject baldosa;
+
     public int contador = 0;
 
     // Start is called before the first frame update

@@ -1,24 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Transicion : MonoBehaviour
 {
   
     public GameObject transcicion; //Hacemos referencia a la pantalla en negro
-
+    private int escena;
     private void Awake()
     {
     }
     void Start()
     {
         transcicion.SetActive(false); //Al inicio no se muestra
-
+        escena = SceneManager.GetActiveScene().buildIndex;
     }
 
     void Update()
     {
-
+        if (GameManager.Instance.ConversacionListo && escena == 2 )
+        {
+            Invoke("MostrarTransicion", 0.2f); //Mostramos la transición
+            GameManager.Instance.ConversacionListo = false;
+        }
 
 
     }

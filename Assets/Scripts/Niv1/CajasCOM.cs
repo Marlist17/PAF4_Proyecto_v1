@@ -22,10 +22,13 @@ public class CajasCOM : MonoBehaviour
     {
         
         bordes.SetActive(false);
-        escenaActual = SceneManager.GetActiveScene().buildIndex;
         dialog.OcultarNombre(); //Ocultamos en este caso el nombre ya que es un aviso.
         
 
+    }
+    void Update()
+    {
+        escenaActual = SceneManager.GetActiveScene().buildIndex;
     }
   
     void OnMouseOver()
@@ -38,7 +41,7 @@ public class CajasCOM : MonoBehaviour
     }
     void OnMouseDown() //Cuando clickemos 
     {
-        if(escenaActual == 9 || escenaActual == 7)
+        if(escenaActual == 10 || escenaActual == 7)
         {
              
             if (!GameManager.Instance.HablarNPC)
@@ -54,12 +57,12 @@ public class CajasCOM : MonoBehaviour
                     dialog.LimpiarDialogos();
                     conversacionFinalizada = dialog.ComenzarDialogo(Aviso2, conversacionFinalizada);
                 }
-                else
+                else if (!GameManager.Instance.CajaObtenida)
                 {
-                    GameManager.Instance.CajaObtenida = true;
+                    
                     Inventario.instancia.MeterObjetoInventario(caja);
                     ComprobarCaja();
-
+                   
                 }
 
             }
@@ -81,12 +84,10 @@ public class CajasCOM : MonoBehaviour
             {
                 //No puedes interactuar con la caja hasta que ganes el minijuego.
             }
-            else
-            {
-                
-                ComprobarCaja();
+             
+            ComprobarCaja();
                
-            }
+            
            
         }
        
@@ -98,36 +99,50 @@ public class CajasCOM : MonoBehaviour
         if (CompareTag("CajaNormal")) //Mirara el tag para asignar un su tipo de enum correspondiente (si lo hay)
         {
             Caja = TipoCaja.CajaNormal;
-            GameManager.Instance.cajaNormalCogida = true;
+           
         }
         if (CompareTag("CajaSucia"))
         {
             Caja = TipoCaja.CajaSucia;
-            if (!GameManager.Instance.Mision_2)
+            if (!GameManager.Instance.MinijuegoBatalla)
             {
+                Debug.Log("caja sucia clickada");
                 GameManager.Instance.cajaSuciaCogida = true;
                 return; 
             }
+          
           
               
         }
         if (CompareTag("CajaOro"))
         {
             Caja = TipoCaja.CajaOro;
-            GameManager.Instance.cajaOroCogida = true;
+           
 
         }
-       
+        Debug.Log("caja cogida");
         GameManager.Instance.mensajeCoger = true; //Convertimos en true la variable MensajeCoger para usarlo en otro script y mostrar el mensaje por pantalla
         bordes.SetActive(false); //"Cogemos el Objeto"
         caja.SetActive(false);
-        if (Caja == TipoCaja.CajaNormal || Caja == TipoCaja.CajaSucia || Caja == TipoCaja.CajaOro) //Mira si tiene alguna de esas etiquetas y si es ásí, sigue con lo de abajo:
+        if (Caja == TipoCaja.CajaNormal)
         {
-           
-                GameManager.Instance.RecogerCaja(caja); //Llamamos a la función RecogerCaja del otro script que se puede, porque tiene almacenado el objeto que tiene esas funciones, por lo que es accesible)
-
-            
+            GameManager.Instance.cajaNormalCogida = true;
         }
+        else if (Caja == TipoCaja.CajaSucia)
+        {
+            GameManager.Instance.cajaSuciaCogida = true;
+        }
+        else if ( Caja == TipoCaja.CajaOro)
+        {
+            GameManager.Instance.cajaOroCogida = true;
+        }//Mira si tiene alguna de esas etiquetas y si es ásí, sigue con lo de abajo:
+         
+        GameManager.Instance.RecogerCaja(caja); //Llamamos a la función RecogerCaja del otro script que se puede, porque tiene almacenado el objeto que tiene esas funciones, por lo que es accesible)
+        Inventario.instancia.MeterObjetoInventario(caja);
+        GameManager.Instance.CajaObtenida = true;
+
+        
+       
 
     }
 

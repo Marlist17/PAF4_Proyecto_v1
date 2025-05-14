@@ -10,21 +10,28 @@ public class Mover : MonoBehaviour
     private float VelocidadMovimiento = 3f; 
     Animator anim;
     public static GameObject instancia; //Creamos una gameObject
-
+    Rigidbody2D rb;
     void Awake()
     {
         
     }
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
+        if (SceneManager.GetActiveScene().buildIndex == 2) //Miramos si estamos en la plaza
+        {   
+            
+            if (GameManager.Instance.lugar == "CasaRico") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
+            transform.position = new Vector3(-8.62f, -0.50f, 0f);
+        }
     }
 
 
     void Update()
     {
-        
+        Vector3 posicionActual = transform.position;
+        Debug.Log("Posición actual: " + posicionActual);
 
     }
     void FixedUpdate()
@@ -34,11 +41,10 @@ public class Mover : MonoBehaviour
     }
     void MoverPersonaje()
     {
-
-        float movimientoY = Input.GetAxis("Vertical") * VelocidadMovimiento * Time.deltaTime; // Almacenamos la cantidad de mov en el eje vertical que vamos a ejercer mediante inputs (teclas)
-        transform.Translate(0, movimientoY, 0); //Lo movemos en esa dirección
-        float movimientoX = Input.GetAxis("Horizontal") * VelocidadMovimiento * Time.deltaTime; // Almacenamos la cantidad de mov en el eje horizontal que vamos a ejercer mediante inputs (teclas)
-        transform.Translate(movimientoX, 0, 0); //Lo movemos en esa dirección
+        float moverx = Input.GetAxis("Horizontal"); //Obtenemos el mov en el eje horizontal
+        float movery = Input.GetAxis("Vertical"); //Obtenemos el mov en el eje vertical
+        rb.velocity = new Vector2(moverx * VelocidadMovimiento, movery * VelocidadMovimiento); //Aplicamos al riggidBody
+       
 
         if (Input.GetKey(KeyCode.S))
         {

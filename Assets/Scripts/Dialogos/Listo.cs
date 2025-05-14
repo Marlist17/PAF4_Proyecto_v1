@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NiloDerrota : MonoBehaviour
+public class Listo : MonoBehaviour
 {
     [SerializeField] Dialogos dialog; //Accedemos al script dialogos.
-    private string[] lines =
+    private string[] InicioMision2 =
     {
-       " Qué, ¿lista para otro canutillo?"
-    };// Nuestras frases
-    public string nombre; //EL nombre del NPC
+        "¿Keaton me acaba de llamar enfermo?", "...", "En fin.", "La segunda misión tendrá lugar en un sitio un poco... distinto.",
+        "Te prometo que no dolerá mucho." 
+    };
+
+    private string nombre = "Freud"; //EL nombre del NPC
     public GameObject icono; //Señal de que puedes hablar con él
     bool conversacionFinalizada = false; //Comprobación de si la conversación ha finalizado
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
-  
-
+    bool transicion = false;
     void Start()
     {
-       
         dialog.FueradeRango(); //Marcamos que estamos fuera del rango para que no se muestre el canvas
         icono.SetActive(false); //Volvemos false el icono
     }
@@ -27,35 +27,35 @@ public class NiloDerrota : MonoBehaviour
     {
 
         dialog.PasarDialogo(); //Comprobamos todo el rato si el jugador pasa de diálogo
-
-        // Verifica si el jugador está en el área y presiona "E"
-        if (jugadorEnRango && Input.GetKeyDown(KeyCode.E) && GameManager.Instance.tiempoCompletado)
+         if (conversacionFinalizada && dialog.DialogoActivo == false && !transicion)
         {
-            
+            GameManager.Instance.ConversacionListo = true;
+            transicion = true;
+            Invoke("CambioEscena", 1.2f);
+           
+        }
+        // Verifica si el jugador está en el área y presiona "E"
+        else if (jugadorEnRango && Input.GetKeyDown(KeyCode.E) && GameManager.Instance.Mision_1)
+        {
+           
             icono.SetActive(false); //Desaparece el icono
             dialog.MostrarNombre(nombre); //Mostramos nombre
-            conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
-
+            conversacionFinalizada = dialog.ComenzarDialogo(InicioMision2, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
         }
-        if (conversacionFinalizada && dialog.DialogoActivo == false)
-        {
-            VolverMinijuego();
-            conversacionFinalizada = false; // Para que no se repita cada frame
-        }
+        
+        
+           
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //Si ha entrado en el trigger
     {
 
         // Verifica si el objeto que entra es el jugador
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && GameManager.Instance.Mision_1)
         {
-            if (!GameManager.Instance.MinijuegoBatalla)
-            {
-                jugadorEnRango = true; //Marca que si está en rango
-                icono.SetActive(true); //Y vuelve visible el icono
-            }
-           
+            jugadorEnRango = true; //Marca que si está en rango
+            icono.SetActive(true); //Y vuelve visible el icono
         }
     }
 
@@ -72,14 +72,12 @@ public class NiloDerrota : MonoBehaviour
             {
                 icono.SetActive(false);
             }
-
         }
-
     }
 
-    public void VolverMinijuego()
+    public void CambioEscena()
     {
-        int LugarBatalla = 9;
-        SceneManager.LoadScene(LugarBatalla);
+            int sala = 6;
+            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
     }
 }

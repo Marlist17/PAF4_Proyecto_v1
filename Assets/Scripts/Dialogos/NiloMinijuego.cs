@@ -38,7 +38,7 @@ public class NiloMinijuego : MonoBehaviour
       
         dialog.PasarDialogo();
         // Mostrar diálogo de derrota
-        if (GameManager.Instance.tiempoCompletado && !GameManager.Instance.Mision_2 && !dialogoMostrado)
+        if (GameManager.Instance.tiempoCompletado && !GameManager.Instance.MinijuegoBatalla && !dialogoMostrado)
         {
            
             dialog.MostrarNombre(nombre);
@@ -47,14 +47,14 @@ public class NiloMinijuego : MonoBehaviour
         }
 
         // Mostrar diálogo de victoria
-        else if (GameManager.Instance.Mision_2 && !dialogoMostrado)
+        else if (GameManager.Instance.MinijuegoBatalla && !dialogoMostrado)
         {
             
             dialog.MostrarNombre(nombre);
             conversacionFinalizada = dialog.ComenzarDialogo(respuesta_1, conversacionFinalizada);
             dialogoMostrado = conversacionFinalizada;
         }
-        if (!dialog.DialogoActivo && GameManager.Instance.Mision_2 || !dialog.DialogoActivo && GameManager.Instance.tiempoCompletado)
+        if (!dialog.DialogoActivo && GameManager.Instance.MinijuegoBatalla || !dialog.DialogoActivo && GameManager.Instance.tiempoCompletado)
         {
             Invoke("CargarEscena", 0.2f);
 

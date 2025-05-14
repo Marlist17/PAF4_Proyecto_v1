@@ -10,18 +10,40 @@ public class Tonti : MonoBehaviour
     [SerializeField] Dialogos dialog; //aceder a las funciones de dialogo.
 
    
-    public string[] lines; // Nuestras frases
-    public string[] respuesta_1; //Las respuestas dependiendo del objeto
-    public string[] respuesta_2; //Las respuestas dependiendo del objeto
-    public string[] respuesta_3; //Las respuestas dependiendo del objeto
+    private string[] mision1 =
+    {
+         "¡¡¡Holi!!!", "Vaya amargado el Freud eh... menos mal que estoy yo aquí para darle vidilla al asunto.",
+         "¡Bueno!¡misión!", "Em... A ver... qué te puedo pedir yo a ti...", "¡Ah, ya sé!", "Gata, escúchame atentamente...", "...",
+         "Necesito... que me traigas...", "LA MEJOR CAJA DE TODO EL REINO.", "Ya está, venga vete."
+    };
+    
+    private string[] cajaNormal =
+    {
+        "¡AY A VER LA CAJA!","...", "Mmm...", "Gata.", "Qué es lo que no has entendido de \"la mejor caja de todo el reino\".",
+        "Creo que es la caja más mediocre que he visto nunca.", "Y te aseguro que he visto muuuchas cajas...",
+        "Vete y no vuelvas hasta que me traigas la caja perfecta."
+    };
+    
+    private string[] cajaDorada =
+    {
+        "¡GATA!", "QUÉ COÑO ES ESTO", "Ugh... creo que voy a vomitar...", "¿De dónde has sacado esa atrocidad...?",
+        "Mira es que no quiero ni saberlo...", "Es tan limpia... y tan brillante y probablemente tan cara y valiosa...", "Realmente repulsivo...",
+        "Saca esto de mi vista, por Dios...", "Que asco... vete a por otra caja. PERO VETE."
+    };
 
-    private string nombre = "Keaton";
+   private string[] cajaSucia =
+   {
+        "...", "...", "Gata...", "Es...", "¡¡¡ES PERFECTA!!!", "Oh cajita... dónde has estado toda mi vida...", 
+        "*muac* *slurp slurp* ah... *slurp* *muac*", "Ay...", "Perdón me he dejado llevar un poco...", "Ejem.", "¡Enhorabuena gata!¡has superado la primera misión!", 
+        "Ahora tienes que hablar con Freud. Creo que él te va a dar la segunda...", "Ten cuidadín, a saber que te manda ese enfermo..."};
+
+private string nombre = "Keaton";
     public GameObject icono;
 
     bool conversacionFinalizada = false;
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
     public CajasCOM.TipoCaja c; // Creamos una variable de tipo enum creada en el otro script
-    bool ObjetoObtenido = false;
+  
     void Start()
     {
         dialog.OcultarNombre();
@@ -38,37 +60,48 @@ public class Tonti : MonoBehaviour
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
         {
             icono.SetActive(false);
-            if (!GameManager.Instance.CajaObtenida && GameManager.Instance.ConversacionCabecilla && !GameManager.Instance.Mision_1)
+            if (!GameManager.Instance.CajaObtenida && GameManager.Instance.ConversacionCabecilla)
             {
                 dialog.MostrarNombre(nombre);
-                conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
+                conversacionFinalizada = dialog.ComenzarDialogo(mision1, conversacionFinalizada);
                 GameManager.Instance.ConversacionTonti = true;
             }
-            else if (!GameManager.Instance.Mision_1)
+            else if (!GameManager.Instance.Mision_1 && GameManager.Instance.CajaObtenida)
             {
                 conversacionFinalizada = false;
                 switch (GameManager.Instance.Caja) //Dependiendo de la enum que tenemos.
                 {  
                     case CajasCOM.TipoCaja.CajaNormal: //Si es normal
                         {
+                            GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
+                            GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
-                            conversacionFinalizada = dialog.ComenzarDialogo(respuesta_1, conversacionFinalizada);
+                            conversacionFinalizada = dialog.ComenzarDialogo(cajaNormal, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
+                            objetoActivo.SetActive(false);
+
                             break;
                         }
                     case CajasCOM.TipoCaja.CajaSucia:
                         {
+                            GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
+                            GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
-                            conversacionFinalizada = dialog.ComenzarDialogo(respuesta_2, conversacionFinalizada);
+                            conversacionFinalizada = dialog.ComenzarDialogo(cajaSucia, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
                             GameManager.Instance.Mision_1 = true;
+                            objetoActivo.SetActive(false);
                             break;
                         }
                     case CajasCOM.TipoCaja.CajaOro: // Cambié este de "CajaNormal" a "CajaOro"
+
                         {
+                            GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
+                            GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
-                            conversacionFinalizada = dialog.ComenzarDialogo(respuesta_3, conversacionFinalizada);
+                            conversacionFinalizada = dialog.ComenzarDialogo(cajaDorada, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
+                            objetoActivo.SetActive(false);
                             break;
                         }
                 }

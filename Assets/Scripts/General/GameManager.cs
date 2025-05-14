@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transic
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
     public bool ObjetoObtenido = false;
     public bool TutorialRealizado = false;
     public bool NochePasada= false;
@@ -23,9 +24,17 @@ public class GameManager : MonoBehaviour
 
     public bool ConversacionCabecilla = false;
     public bool ConversacionTonti = false;
+    public bool ConversacionListo = false;
+
+    public bool MinijuegoBatalla = false;
     public bool Mision_1 = false;
     public bool Mision_2 = false;
+    public bool Mision_3 = false;
     public bool tiempoCompletado = false;
+
+    public string lugar ;
+   
+
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
 
 
@@ -83,7 +92,7 @@ public class GameManager : MonoBehaviour
     public void TransicionLobby_2()
     {
 
-        int lobby = 1;
+        int lobby = 2;
         SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
     }
     public void ReiniciarNivel()

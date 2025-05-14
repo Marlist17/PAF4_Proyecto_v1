@@ -116,7 +116,7 @@ public class ReyesDialogos : MonoBehaviour
         else if (indiceDialogo > 33)
         {
             GameManager.Instance.ConversacionCabecilla = true;
-            return Cabecilla; // Decimosexta línea (índice 15)
+            return Listo; // Decimosexta línea (índice 15)
         }
             
         
