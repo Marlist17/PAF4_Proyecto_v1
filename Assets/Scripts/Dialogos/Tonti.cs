@@ -62,13 +62,14 @@ private string nombre = "Keaton";
             icono.SetActive(false);
             if (!GameManager.Instance.CajaObtenida && GameManager.Instance.ConversacionCabecilla)
             {
+                GameManager.Instance.movimiento = false;
                 dialog.MostrarNombre(nombre);
                 conversacionFinalizada = dialog.ComenzarDialogo(mision1, conversacionFinalizada);
                 GameManager.Instance.ConversacionTonti = true;
             }
             else if (!GameManager.Instance.Mision_1 && GameManager.Instance.CajaObtenida)
             {
-                conversacionFinalizada = false;
+                
                 switch (GameManager.Instance.Caja) //Dependiendo de la enum que tenemos.
                 {  
                     case CajasCOM.TipoCaja.CajaNormal: //Si es normal
@@ -76,6 +77,7 @@ private string nombre = "Keaton";
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
+                            GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaNormal, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
                             objetoActivo.SetActive(false);
@@ -87,6 +89,7 @@ private string nombre = "Keaton";
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
+                            GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaSucia, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
                             GameManager.Instance.Mision_1 = true;
@@ -99,6 +102,7 @@ private string nombre = "Keaton";
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
+                            GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaDorada, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
                             objetoActivo.SetActive(false);
@@ -106,7 +110,13 @@ private string nombre = "Keaton";
                         }
                 }
             }
-           
+            
+
+        }
+       
+        if (!dialog.DialogoActivo && conversacionFinalizada)
+        {
+            GameManager.Instance.movimiento = true;
         }
     }
 

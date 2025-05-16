@@ -31,13 +31,14 @@ public class Listo : MonoBehaviour
         {
             GameManager.Instance.ConversacionListo = true;
             transicion = true;
+            GameManager.Instance.movimiento = true;
             Invoke("CambioEscena", 1.2f);
            
         }
         // Verifica si el jugador está en el área y presiona "E"
         else if (jugadorEnRango && Input.GetKeyDown(KeyCode.E) && GameManager.Instance.Mision_1)
         {
-           
+            GameManager.Instance.movimiento = false;
             icono.SetActive(false); //Desaparece el icono
             dialog.MostrarNombre(nombre); //Mostramos nombre
             conversacionFinalizada = dialog.ComenzarDialogo(InicioMision2, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo

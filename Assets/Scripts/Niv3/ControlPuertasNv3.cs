@@ -17,7 +17,7 @@ public class ControlPuertasNv3 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(GameManager.Instance.baldosaRota == 6)
+        if(GameManager.Instance.baldosaRota == 13)
         {
             Debug.Log("Has conseguido superar el primer nivel");
             Debug.Log("Puerta del nv 1 abriendose...");

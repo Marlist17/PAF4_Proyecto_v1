@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public bool mensajeCoger = false;
     public bool mensajeDejar = false;
     public bool HablarNPC = false;
-    public int baldosaRota = 0;
+    
 
     public bool cajaOroCogida = false;
     public bool cajaNormalCogida = false;
@@ -32,8 +32,11 @@ public class GameManager : MonoBehaviour
     public bool Mision_3 = false;
     public bool tiempoCompletado = false;
 
+    public int baldosaRota = 0;
+    public bool muerteCabecilla = false;
+
     public string lugar ;
-   
+    public bool movimiento = true;
 
     public CajasCOM.TipoCaja Caja = CajasCOM.TipoCaja.Nada;
 

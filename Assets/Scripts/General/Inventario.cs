@@ -12,6 +12,8 @@ public class Inventario : MonoBehaviour
     public GameObject cajaSucia;
     public GameObject cajaOro;
     public GameObject sardina;
+    public GameObject cuchillo;
+
     private GameObject objeto;
 
     void Awake()
@@ -37,6 +39,7 @@ public class Inventario : MonoBehaviour
         cajaOro.SetActive(false);
         cajaSucia.SetActive(false);
         sardina.SetActive(false);
+        cuchillo.SetActive(false);
     }
 
     
@@ -60,6 +63,10 @@ public class Inventario : MonoBehaviour
         else if (objeto.CompareTag("Sardina"))
         {
             sardina.SetActive(true);
+        }
+        else if (objeto.CompareTag("Cuchillo"))
+        {
+            cuchillo.SetActive(true);
         }
     }
     // Esta función te da el objeto visible en el inventario

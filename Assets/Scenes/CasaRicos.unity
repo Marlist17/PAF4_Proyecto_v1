@@ -6137,6 +6137,33 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 833700401}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: nombre
+      value: DeLuque
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Ahora no Mei, estoy intentando clutchear esta partida y no me paran
+        de rushear.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: "El mapa est\xE1 lleno de tryhards y como no encuentre una reboot van
+        ya me deletean\u2026  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: "A\xFAn encima los del team tienen aim de camionero\u2026 si es que
+        ya ver\xE1s, voy a acabar m\xE1s tilteado\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: "\xBFQu\xE9 dices? Ah, \xBFla caja esa? s\xED, s\xED\u2026 ll\xE9vatela\u2026 "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
