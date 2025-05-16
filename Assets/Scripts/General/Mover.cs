@@ -30,17 +30,27 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        Vector3 posicionActual = transform.position;
-        Debug.Log("Posición actual: " + posicionActual);
-
+       
     }
     void FixedUpdate()
     {
+        
         MoverPersonaje();
 
     }
     void MoverPersonaje()
     {
+        if (!GameManager.Instance.movimiento)
+        {
+            rb.velocity = Vector2.zero;
+           
+            anim.SetBool("ProtaCamArriba", false);
+            anim.SetBool("ProtaCamAbajo", false);
+            anim.SetBool("ProtaCamDerecha", false);
+            anim.SetBool("ProtaCamIzquierda", false);
+ 
+            return;
+        }
         float moverx = Input.GetAxis("Horizontal"); //Obtenemos el mov en el eje horizontal
         float movery = Input.GetAxis("Vertical"); //Obtenemos el mov en el eje vertical
         rb.velocity = new Vector2(moverx * VelocidadMovimiento, movery * VelocidadMovimiento); //Aplicamos al riggidBody

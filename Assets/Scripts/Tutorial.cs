@@ -6,7 +6,12 @@ public class Tutorial : MonoBehaviour
 {
     [SerializeField] Dialogos dialog;
     public string[] lines; // Nuestras frases
-   [SerializeField] bool conversacionFinalizada = false;
+    private string nombre = "Mei";
+    private string[] mensajeMei =
+    {
+        "Tengo sueño..."
+    };
+    [SerializeField] bool conversacionFinalizada = false;
     bool FueradeEscena = false;
     HashSet<GameObject> gameobjects;
     void Start()
@@ -46,8 +51,8 @@ public class Tutorial : MonoBehaviour
             }
             else if (GameManager.Instance.TutorialRealizado)
             {
-                GameManager.Instance.TransicionLobby();
-                FueradeEscena = true;
+                dialog.MostrarNombre(nombre);
+                conversacionFinalizada = dialog.ComenzarDialogo(mensajeMei, conversacionFinalizada);
                 return; //detiene la ejecución siguiente para poder transicionar al lobby
             }
             else

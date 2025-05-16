@@ -1800,6 +1800,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1456826037}
     - target: {fileID: 8715947865396128952, guid: aaa550df05fa60842b7eb015b3ac6c5a, type: 3}
+      propertyPath: textSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715947865396128952, guid: aaa550df05fa60842b7eb015b3ac6c5a, type: 3}
       propertyPath: CajaNombre
       value: 
       objectReference: {fileID: 1456826036}

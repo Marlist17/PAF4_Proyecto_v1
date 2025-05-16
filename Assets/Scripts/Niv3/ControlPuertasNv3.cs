@@ -17,22 +17,22 @@ public class ControlPuertasNv3 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(GameManager.Instance.baldosaRota == 6)
+        if(GameManager.Instance.baldosaRota == 48)
         {
-            Debug.Log("Has conseguido superar el primer nivel");
-            Debug.Log("Puerta del nv 1 abriendose...");
+            Debug.Log("Has conseguido superar el tercer nivel");
+            Debug.Log("Puerta del nv 3 abriendose...");
             GameManager.Instance.baldosaRota = 0; //Reseteamos para los proximos niveles.
         }
-        else if (GameManager.Instance.baldosaRota == 30)
+        else if (GameManager.Instance.baldosaRota == 27)
         {
             Debug.Log("Has conseguido superar el segundo nivel");
             Debug.Log("Puerta del nv 2 abriendose...");
             GameManager.Instance.baldosaRota = 0; //Reseteamos para los proximos niveles.
         }
-        else if (GameManager.Instance.baldosaRota == 55)
+        else if (GameManager.Instance.baldosaRota == 13)
         {
-            Debug.Log("Has conseguido superar el tercer nivel");
-            Debug.Log("Puerta del nv 3 abriendose...");
+            Debug.Log("Has conseguido superar el pprimer nivel");
+            Debug.Log("Puerta del nv 1 abriendose...");
             GameManager.Instance.baldosaRota = 0; //Reseteamos para los proximos niveles.
         }
     }

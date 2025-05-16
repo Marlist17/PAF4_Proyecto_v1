@@ -25,7 +25,12 @@ public class Transicion : MonoBehaviour
             Invoke("MostrarTransicion", 0.2f); //Mostramos la transición
             GameManager.Instance.ConversacionListo = false;
         }
-
+        if( escena == 6 && GameManager.Instance.muerteCabecilla)
+        {
+            MostrarTransicion(); //Mostramos la transición
+            Invoke("QuitarTransicion", 1.5f); //La quitamos
+            GameManager.Instance.muerteCabecilla = false;
+        }
 
     }
 

@@ -31,6 +31,7 @@ TagManager:
   - Transicion
   - Callejon
   - CallejonInterior
+  - Cuchillo
   layers:
   - Default
   - TransparentFX

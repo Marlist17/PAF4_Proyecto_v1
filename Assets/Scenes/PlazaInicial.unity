@@ -31767,7 +31767,7 @@ PrefabInstance:
       objectReference: {fileID: 833700401}
     - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: lines.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: lines.Array.data[0]
@@ -31795,6 +31795,11 @@ PrefabInstance:
       propertyPath: lines.Array.data[5]
       value: " Yo me acerco en un ratillo\u2026 tengo que convencer a Akira de que
         socialice un poco hoy\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: "Aunque si te aburres, despu\xE9s de entregar la ofrenda puedes irte
+        a casa\u2026 "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -38,13 +38,16 @@ public class NPCCOM : MonoBehaviour
             icono.SetActive(false); //Desaparece el icono
             if(escenaActual == 9 || escenaActual == 7) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
             {
-                GameManager.Instance.HablarNPC = true; //Marcamos verdadera la condición para poder coger caja
                 dialog.LimpiarDialogos(); //Pos si acaso limpiamos posibles diálogos
 
             }
             Debug.Log(nombre);
             dialog.MostrarNombre(nombre); //Mostramos nombre
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
+        }
+        if (!dialog.DialogoActivo && conversacionFinalizada && (escenaActual == 7 || escenaActual == 9))
+        {
+            GameManager.Instance.HablarNPC = true;
         }
     }
 

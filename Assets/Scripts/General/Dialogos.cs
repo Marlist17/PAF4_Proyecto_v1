@@ -23,11 +23,19 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     public void FueradeRango()
     {
-            raton.SetActive(false); //Dejamos que no sea visible el ratón
-            cajaTexto.SetActive(false); //Dejamos que no sea visible la caja de tex
+
+        if (raton != null && raton.gameObject != null)
+            raton.SetActive(false);
+
+        if (cajaTexto != null && cajaTexto.gameObject != null)
+            cajaTexto.SetActive(false);
+
+        if (miTexto != null && miTexto.gameObject != null)
+        {
             miTexto.text = string.Empty;
-            miTexto.gameObject.SetActive(false); //Dejamos que deje de ser visible el texto
-            index = 0;  
+            miTexto.gameObject.SetActive(false);
+        }
+        index = 0;  
     }
 
 

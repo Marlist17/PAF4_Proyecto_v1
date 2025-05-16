@@ -74,11 +74,13 @@ public class ReyesDialogos : MonoBehaviour
         if (!GameManager.Instance.ConversacionCabecilla)
         {
             if (dialog == null) return;
+          
             dialog.PasarDialogo();
 
             // Verifica si el jugador está en el área y presiona "E"
             if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
             {
+                GameManager.Instance.movimiento = false;
                 icono.SetActive(false);
                 int indiceActual = dialog.index;
                 string nombre = determinarNombreSegunIndice(indiceActual);
@@ -91,6 +93,11 @@ public class ReyesDialogos : MonoBehaviour
                 int indiceActual = dialog.index;
                 string nombre = determinarNombreSegunIndice(indiceActual);
                 dialog.MostrarNombre(nombre);
+            }
+            if (!dialog.DialogoActivo && conversacionFinalizada)
+            {
+                GameManager.Instance.movimiento = true;
+                GameManager.Instance.ConversacionCabecilla = true;
             }
         }
         
@@ -115,12 +122,10 @@ public class ReyesDialogos : MonoBehaviour
         else if (indiceDialogo > 31 && indiceDialogo < 34) return Tonti; // Decimoquinta línea (índice 14)
         else if (indiceDialogo > 33)
         {
-            GameManager.Instance.ConversacionCabecilla = true;
             return Listo; // Decimosexta línea (índice 15)
         }
-            
         
-        return Cabecilla; // Añadido valor por defecto por si algún caso no está cubierto
+            return Cabecilla; // Añadido valor por defecto por si algún caso no está cubierto
 
 
     }
