@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -202,27 +202,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Fumando_4
-      rect:
-        serializedVersion: 2
-        x: 3456
-        y: 3654
-        width: 4
-        height: 6
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b5536a4f782a8b48ae195e0864ecce5
-      internalID: -36223003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Prota_Fumando_5
       rect:
         serializedVersion: 2
@@ -307,27 +286,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Fumando_9
-      rect:
-        serializedVersion: 2
-        x: 3466
-        y: 2937
-        width: 4
-        height: 6
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e27af3f5937fe1a4a9b2c95ee316b387
-      internalID: -1802236625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Prota_Fumando_10
       rect:
         serializedVersion: 2
@@ -370,27 +328,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Fumando_12
-      rect:
-        serializedVersion: 2
-        x: 1787
-        y: 2203
-        width: 4
-        height: 6
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c19a9fb7a1806614288d49258afdaef7
-      internalID: -617741854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Prota_Fumando_13
       rect:
         serializedVersion: 2
@@ -428,27 +365,6 @@ TextureImporter:
       bones: []
       spriteID: 1ad1686aafba43948b992482bf2818f1
       internalID: -1050424984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prota_Fumando_15
-      rect:
-        serializedVersion: 2
-        x: 916
-        y: 2181
-        width: 4
-        height: 6
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38f61c646b0b3224e8dfbc9c53f54f15
-      internalID: -1659949421
       vertices: []
       indices: 
       edges: []
