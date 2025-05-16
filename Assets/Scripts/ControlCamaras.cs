@@ -1,38 +1,47 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ControlCamaras : MonoBehaviour
 {
     public CinemachineVirtualCamera camaraPrincipal;
     public CinemachineVirtualCamera camaraSecundariaNv1;
+
+    
     void Start()
     {
-        camaraPrincipal.enabled = true;
-        camaraSecundariaNv1.enabled = false;
+        ActivarCamaraPrincipal(); //Siempre ponemos la cámara principal
+       
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ActivarCamaraPrincipal()
     {
-        
+        if (camaraPrincipal != null) //Si es diferente de null:
+            camaraPrincipal.enabled = true; //Activamos que se vea esta cámara
+
+        if (camaraSecundariaNv1 != null) //Desactivamos la cámara secundaria
+            camaraSecundariaNv1.enabled = false;
     }
+
+    private void ActivarCamaraSecundaria()
+    {
+        if (camaraPrincipal != null)
+            camaraPrincipal.enabled = false; //desactivamos la cámara principal
+
+        if (camaraSecundariaNv1 != null)
+            camaraSecundariaNv1.enabled = true; //Activamos la camara secundaria
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Esoty en el trigger");
-        if (other.CompareTag("Player")) // Asegúrate de que el jugador tenga el tag "Player"
-        {
-            camaraPrincipal.enabled = false;
-            camaraSecundariaNv1.enabled = true;
-        }
+    
+
+        ActivarCamaraSecundaria(); //Si entramos en la zona específica: ponemos la nueva cámara
     }
-    private void OnTriggerExit2D(Collider2D other)
+
+    private void OnTriggerExit2D(Collider2D other) //Si no volvemos a la principal
     {
-        if (other.CompareTag("Player"))
-        {
-            camaraPrincipal.enabled = true;
-            camaraSecundariaNv1.enabled = false;
-        }
+
+
+        ActivarCamaraPrincipal();
     }
 }
