@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 5665075934848312502}
   m_Layer: 0
   m_Name: Caja
-  m_TagString: CajaSucia
+  m_TagString: CajaNormal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,9 +105,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingLayerID: -858246385
+  m_SortingLayer: 6
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 07d518a8e48dc09429b61b1059b5bb29, type: 3}
   m_Color: {r: 0.7171031, g: 0.7735849, b: 0, a: 1}
   m_FlipX: 0
@@ -232,6 +232,14 @@ PrefabInstance:
     - target: {fileID: 5278292227338381900, guid: 6fa9dc2e88f2be2429567a509c75bfe1, type: 3}
       propertyPath: m_Name
       value: Borde interactivo caja
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403554911240511423, guid: 6fa9dc2e88f2be2429567a509c75bfe1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403554911240511423, guid: 6fa9dc2e88f2be2429567a509c75bfe1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -858246385
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

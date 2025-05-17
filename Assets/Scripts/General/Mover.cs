@@ -27,6 +27,8 @@ public class Mover : MonoBehaviour
 
             if (GameManager.Instance.lugar == "Callejon") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
                 transform.position = new Vector3(29.85f, -29.67f, 0f);
+            if (GameManager.Instance.lugar == "CasaFrikis") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
+                transform.position = new Vector3(-21.39f, -45.89f, 0f);
         }
     }
 
@@ -34,7 +36,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         Vector2 playerPosition = transform.position;
-        Debug.Log("Posición del jugador: " + playerPosition);
+      //  Debug.Log("Posición del jugador: " + playerPosition);
 
     }
     void FixedUpdate()

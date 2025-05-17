@@ -101,6 +101,14 @@ public class CajasCOM : MonoBehaviour
             Caja = TipoCaja.CajaNormal;
            
         }
+      
+        if (CompareTag("CajaOro"))
+        {
+            Caja = TipoCaja.CajaOro;
+           
+
+        }
+
         if (CompareTag("CajaSucia"))
         {
             Caja = TipoCaja.CajaSucia;
@@ -108,22 +116,16 @@ public class CajasCOM : MonoBehaviour
             {
                 Debug.Log("caja sucia clickada");
                 GameManager.Instance.cajaSuciaCogida = true;
-                return; 
+                return;
             }
-          
-          
-              
-        }
-        if (CompareTag("CajaOro"))
-        {
-            Caja = TipoCaja.CajaOro;
-           
+
+
 
         }
-        Debug.Log("caja cogida");
         GameManager.Instance.mensajeCoger = true; //Convertimos en true la variable MensajeCoger para usarlo en otro script y mostrar el mensaje por pantalla
         bordes.SetActive(false); //"Cogemos el Objeto"
         caja.SetActive(false);
+
         if (Caja == TipoCaja.CajaNormal)
         {
             GameManager.Instance.cajaNormalCogida = true;

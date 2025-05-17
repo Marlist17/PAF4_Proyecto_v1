@@ -36,6 +36,18 @@ public class TransicionCasas : MonoBehaviour
             GameManager.Instance.TransicionLobby_2();
            
         }
+        else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
+        {
+
+            int sala = 10;
+            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
+        }
+        else if (collision.gameObject.tag == "CasaFrikis")
+        {
+
+            GameManager.Instance.lugar = "CasaFrikis";
+            GameManager.Instance.TransicionLobby_2();
+        }
         else if (collision.gameObject.tag == "CasaRico")
         {
             AudioManager.Instance.PlaySound(miClip);

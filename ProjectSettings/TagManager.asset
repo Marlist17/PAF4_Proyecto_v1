@@ -32,6 +32,7 @@ TagManager:
   - Callejon
   - CallejonInterior
   - Cuchillo
+  - CasaFrikis
   layers:
   - Default
   - TransparentFX
@@ -79,13 +80,13 @@ TagManager:
     uniqueID: 4078680499
     locked: 0
   - name: Pie de pared
-    uniqueID: 2476904843
+    uniqueID: 2955557269
     locked: 0
   - name: Bordes
-    uniqueID: 2570189985
+    uniqueID: 2303163961
     locked: 0
   - name: Muebles
-    uniqueID: 2721946161
+    uniqueID: 3436720911
     locked: 0
   - name: Personajes
     uniqueID: 288759361
