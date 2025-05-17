@@ -23,14 +23,19 @@ public class Mover : MonoBehaviour
         {   
             
             if (GameManager.Instance.lugar == "CasaRico") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
-            transform.position = new Vector3(-8.62f, -0.50f, 0f);
+            transform.position = new Vector3(0.05f, 14.28f, 0f);
+
+            if (GameManager.Instance.lugar == "Callejon") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
+                transform.position = new Vector3(29.85f, -29.67f, 0f);
         }
     }
 
 
     void Update()
     {
-       
+        Vector2 playerPosition = transform.position;
+        Debug.Log("Posición del jugador: " + playerPosition);
+
     }
     void FixedUpdate()
     {

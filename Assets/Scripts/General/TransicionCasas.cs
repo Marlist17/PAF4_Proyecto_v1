@@ -25,11 +25,13 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
+          
             int sala = 8;
             SceneManager.LoadScene(sala); //Cargame la siguiente escena.
         }
         else if (collision.gameObject.tag == "CallejonInterior")
         {
+            GameManager.Instance.lugar = "Callejon";
             GameManager.Instance.TransicionLobby_2();
            
         }
