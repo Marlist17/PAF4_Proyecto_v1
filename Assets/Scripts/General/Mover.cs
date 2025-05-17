@@ -36,7 +36,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         Vector2 playerPosition = transform.position;
-        Debug.Log("Posición del jugador: " + playerPosition);
+      //  Debug.Log("Posición del jugador: " + playerPosition);
 
     }
     void FixedUpdate()
