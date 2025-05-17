@@ -184,6 +184,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6803630833852241280}
     m_Modifications:
+    - target: {fileID: 8259208660446908297, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259208660446908297, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 288759361
+      objectReference: {fileID: 0}
     - target: {fileID: 8862752006479538310, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
       propertyPath: m_Name
       value: Letra interaccion

@@ -69,3 +69,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 1686227197
+    locked: 0
+  - name: Grid
+    uniqueID: 3393360177
+    locked: 0
+  - name: Casas
+    uniqueID: 4078680499
+    locked: 0
+  - name: Personajes
+    uniqueID: 288759361
+    locked: 0

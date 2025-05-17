@@ -7,7 +7,9 @@ public class Pausa : MonoBehaviour
 {
     [SerializeField] GameObject menuPausa;
     [SerializeField] GameObject botonPausa;
+    [SerializeField] GameObject controles;
     private bool pausa = false;
+    private bool controlesAbierto = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,8 @@ public class Pausa : MonoBehaviour
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
         Time.timeScale = 1;
+        controles.SetActive(false);
+        controlesAbierto = false;
         pausa = false;
     }
     public void Pausar()
@@ -46,9 +50,18 @@ public class Pausa : MonoBehaviour
         pausa = true;
     }
 
-    public void MenuP()
+    public void Controles()
     {
-        SceneManager.LoadScene(4);
+        if (!controlesAbierto)
+        {
+            controles.SetActive(true);
+            controlesAbierto = true;
+        }
+        else
+        {
+            controles.SetActive(false);
+            controlesAbierto = false;
+        }
     }
 
 }
