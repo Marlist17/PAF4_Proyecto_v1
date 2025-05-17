@@ -78,6 +78,15 @@ TagManager:
   - name: Casas
     uniqueID: 4078680499
     locked: 0
+  - name: Pie de pared
+    uniqueID: 2476904843
+    locked: 0
+  - name: Bordes
+    uniqueID: 2570189985
+    locked: 0
+  - name: Muebles
+    uniqueID: 2721946161
+    locked: 0
   - name: Personajes
     uniqueID: 288759361
     locked: 0
