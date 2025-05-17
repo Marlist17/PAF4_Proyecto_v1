@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 5665075934848312502}
   m_Layer: 0
   m_Name: Caja
-  m_TagString: CajaSucia
+  m_TagString: CajaNormal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
