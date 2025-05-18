@@ -40,6 +40,14 @@ public class AudioManager : MonoBehaviour
     {
         return puertas != null ? puertas.length : 0f;
     }
+
+    public void PlaySound(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            GetComponent<AudioSource>().PlayOneShot(clip);
+        }
+    }
 }
 
 
