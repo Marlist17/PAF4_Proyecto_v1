@@ -21,20 +21,17 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFAPrincipal.unity"
     guid: 12b7e2f77decc8e4798997652ec2f6d4
   - enabled: 1
-    path: Assets/Scenes/CasaNPC.unity
-    guid: d0c1c779d440a9a4693e9ae3bdd334d2
-  - enabled: 1
     path: Assets/Scenes/Nivel_3.unity
     guid: 54fb6a3a218024d4ab3cda3e3f7ed00b
   - enabled: 1
     path: Assets/Scenes/CasaRicos.unity
     guid: 2447841bc9c3fe84f8fe3b900f6774c1
   - enabled: 1
-    path: Assets/Scenes/Callejon.unity
-    guid: d0ded5052ec57534980666827ac0951a
-  - enabled: 1
     path: Assets/Scenes/Batalla.unity
     guid: c73e8285b0a4287469e119dac4576e69
+  - enabled: 1
+    path: Assets/Scenes/Callejon.unity
+    guid: d0ded5052ec57534980666827ac0951a
   - enabled: 1
     path: Assets/Scenes/CasaFrikis.unity
     guid: 7a9e755ff1a448e4297151ebc1145bd0

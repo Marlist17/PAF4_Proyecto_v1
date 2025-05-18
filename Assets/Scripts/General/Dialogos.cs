@@ -132,18 +132,6 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
         
     }
 
-    public void DialogoConcreto(string[] lineasNuevas)
-    {
-        miTexto.text = string.Empty;
-        lines = new string[lineasNuevas.Length]; // Creamos un nuevo array con el tamaño adecuado
-        lineasNuevas.CopyTo(lines, 0); // Copiamos las líneas en el array local
-        raton.SetActive(true); //Dejamos que sea visible el ratón
-        miTexto.gameObject.SetActive(true); //Dejamos que deje de ser visible el texto
-        cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
-        index = lines.Length -1;
-        StartCoroutine(TypeLine());
-
-    }
     public void LimpiarDialogos()
     {
         miTexto.text = string.Empty;

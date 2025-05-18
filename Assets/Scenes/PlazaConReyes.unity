@@ -28294,6 +28294,7 @@ GameObject:
   - component: {fileID: 1631673823}
   - component: {fileID: 1631673822}
   - component: {fileID: 1631673821}
+  - component: {fileID: 1631673825}
   m_Layer: 0
   m_Name: Altar
   m_TagString: Altar
@@ -28473,6 +28474,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1631673825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631673819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19198f4dd4c2b5a4da4f823686247154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transcicion: {fileID: 1816447407}
 --- !u!1 &1650417517
 GameObject:
   m_ObjectHideFlags: 0
@@ -30124,6 +30138,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1816447407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2927975928693210768, guid: 3aa3c81381b4c9d4989274cc3086dde3, type: 3}
+  m_PrefabInstance: {fileID: 1524183715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869552033
 GameObject:
   m_ObjectHideFlags: 3

@@ -41,7 +41,7 @@ public class CajasCOM : MonoBehaviour
     }
     void OnMouseDown() //Cuando clickemos 
     {
-        if(escenaActual == 10 || escenaActual == 7)
+        if(escenaActual == 9 || escenaActual == 6)
         {
              
             if (!GameManager.Instance.HablarNPC)

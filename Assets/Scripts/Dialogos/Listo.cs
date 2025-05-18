@@ -85,7 +85,7 @@ public class Listo : MonoBehaviour
 
     public void CambioEscena()
     {
-        int sala = 6;
+        int sala = 5;
         SceneManager.LoadScene(sala);
     }
 }

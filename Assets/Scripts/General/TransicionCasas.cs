@@ -29,23 +29,25 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
         {
-            StartCoroutine(TransicionConSonido(10));
+            StartCoroutine(TransicionConSonido(9));
         }
         else if (collision.gameObject.tag == "CasaFrikis")
         {
             GameManager.Instance.lugar = "CasaFrikis";
-            StartCoroutine(TransicionConSonido(10));
+            StartCoroutine(TransicionConSonido(9));
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "CasaRico")
         {
             GameManager.Instance.lugar = "CasaRico";
-            StartCoroutine(TransicionConSonido(10));
+            StartCoroutine(TransicionConSonido(9));
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
         {
-            StartCoroutine(TransicionConSonido(7));
+            int casa = 6;
+            SceneManager.LoadScene(casa); //Cargame la siguiente escena.
+            StartCoroutine(TransicionConSonido(6));
         }
     }
 
