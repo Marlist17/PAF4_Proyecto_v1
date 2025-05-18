@@ -1,6 +1,51 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    [Tooltip("Clip que se reproducirá al tocar este objeto")]
+    public AudioClip soundClip;
+    private AudioSource audioSource;
+    public static AudioManager Instance;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+            audioSource.playOnAwake = false;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void PlayDoorSound()
+    {
+        if (soundClip != null)
+        {
+            audioSource.PlayOneShot(soundClip);
+        }
+    }
+
+    public float GetSoundDuration()
+    {
+        return soundClip != null ? soundClip.length : 0f;
+    }
+}
+
+
+
+
+/*using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,6 +53,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip soundClip;
     private AudioSource puerta;
     public static AudioManager Instance;
+    public GameObject casaRicos;
     void Awake()
     {
         if (Instance == null)
@@ -23,7 +69,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         // Usa el AudioSource existente o lo agrega
-        puerta = GetComponent<AudioSource>();
+        AudioSource puerta = casaRicos.GetComponent<AudioSource>();
         if (puerta == null)
             puerta = gameObject.AddComponent<AudioSource>();
 
@@ -32,8 +78,12 @@ public class AudioManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Opcional: verifica que el que entra tenga cierto tag
         if (other.CompareTag("Player")) // O elimina esta línea para que funcione con cualquier cosa
+        {
+                puerta.PlayOneShot(soundClip);
+        }
+        // Opcional: verifica que el que entra tenga cierto tag
+        /*if (other.CompareTag("Player")) // O elimina esta línea para que funcione con cualquier cosa
         {
             if (soundClip != null)
                 puerta.PlayOneShot(soundClip);
@@ -43,5 +93,5 @@ public class AudioManager : MonoBehaviour
     {
         puerta.PlayOneShot(clip);
     }
-}
+}*/
 

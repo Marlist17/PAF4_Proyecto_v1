@@ -1,10 +1,70 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
 
+
+
 public class TransicionCasas : MonoBehaviour
 {
-    public AudioClip miClip;
+    [SerializeField] private float delayBeforeTransition = 0.2f; // Ajusta este valor para hacerlo más rápido
+    private bool isTransitioning = false;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isTransitioning) return;
+
+        if (collision.gameObject.tag == "CasaProtaExterior" && GameManager.Instance.TutorialRealizado)
+        {
+            StartCoroutine(QuickTransitionWithSound(3));
+        }
+        else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
+        {
+            SceneManager.LoadScene(8);
+        }
+        else if (collision.gameObject.tag == "CallejonInterior")
+        {
+            GameManager.Instance.lugar = "Callejon";
+            GameManager.Instance.TransicionLobby_2();
+        }
+        else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
+        {
+            StartCoroutine(QuickTransitionWithSound(10));
+        }
+        else if (collision.gameObject.tag == "CasaFrikis")
+        {
+            GameManager.Instance.lugar = "CasaFrikis";
+            GameManager.Instance.TransicionLobby_2();
+        }
+        else if (collision.gameObject.tag == "CasaRico")
+        {
+            GameManager.Instance.lugar = "CasaRico";
+            GameManager.Instance.TransicionLobby_2();
+        }
+        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
+        {
+            StartCoroutine(QuickTransitionWithSound(7));
+        }
+    }
+
+    private IEnumerator QuickTransitionWithSound(int sceneIndex)
+    {
+        isTransitioning = true;
+
+        // Reproducir sonido de puerta
+        AudioManager.Instance.PlayDoorSound();
+
+        // Pequeña espera antes de cambiar de escena
+        yield return new WaitForSeconds(delayBeforeTransition);
+
+        // Cargar escena mientras el sonido sigue reproduciéndose
+        SceneManager.LoadScene(sceneIndex);
+
+        // No necesitamos resetear isTransitioning porque se destruye este objeto al cargar la nueva escena
+    }
+}
+/*public class TransicionCasas : MonoBehaviour
+{
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +86,7 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
-          
+
             int sala = 8;
             SceneManager.LoadScene(sala); //Cargame la siguiente escena.
         }
@@ -34,7 +94,7 @@ public class TransicionCasas : MonoBehaviour
         {
             GameManager.Instance.lugar = "Callejon";
             GameManager.Instance.TransicionLobby_2();
-           
+
         }
         else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
         {
@@ -50,7 +110,6 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "CasaRico")
         {
-            AudioManager.Instance.PlaySound(miClip);
             GameManager.Instance.lugar = "CasaRico";
             GameManager.Instance.TransicionLobby_2();
         }
@@ -59,10 +118,5 @@ public class TransicionCasas : MonoBehaviour
             int casa = 7;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
-     
-
     }
-
-}
-
-
+}*/
