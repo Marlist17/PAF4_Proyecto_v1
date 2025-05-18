@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [Tooltip("Clip que se reproducirá al tocar este objeto")]
-    public AudioClip soundClip;
+    public AudioClip puertas;
     private AudioSource audioSource;
     public static AudioManager Instance;
 
@@ -30,15 +30,15 @@ public class AudioManager : MonoBehaviour
 
     public void PlayDoorSound()
     {
-        if (soundClip != null)
+        if (puertas != null)
         {
-            audioSource.PlayOneShot(soundClip);
+            audioSource.PlayOneShot(puertas);
         }
     }
 
     public float GetSoundDuration()
     {
-        return soundClip != null ? soundClip.length : 0f;
+        return puertas != null ? puertas.length : 0f;
     }
 }
 
@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
 public class AudioManager : MonoBehaviour
 {
     [Tooltip("Clip que se reproducirá al tocar este objeto")]
-    public AudioClip soundClip;
+    public AudioClip puertas;
     private AudioSource puerta;
     public static AudioManager Instance;
     public GameObject casaRicos;
@@ -80,13 +80,13 @@ public class AudioManager : MonoBehaviour
     {
         if (other.CompareTag("Player")) // O elimina esta línea para que funcione con cualquier cosa
         {
-                puerta.PlayOneShot(soundClip);
+                puerta.PlayOneShot(puertas);
         }
         // Opcional: verifica que el que entra tenga cierto tag
         /*if (other.CompareTag("Player")) // O elimina esta línea para que funcione con cualquier cosa
         {
-            if (soundClip != null)
-                puerta.PlayOneShot(soundClip);
+            if (puertas != null)
+                puerta.PlayOneShot(puertas);
         }
     }
     public void PlaySound(AudioClip clip)

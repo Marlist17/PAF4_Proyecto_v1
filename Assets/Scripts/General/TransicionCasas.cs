@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transic
 
 public class TransicionCasas : MonoBehaviour
 {
-    [SerializeField] private float delayBeforeTransition = 0.2f; // Ajusta este valor para hacerlo más rápido
+    [SerializeField] private float delay = 0.2f; // Ajusta este valor para hacerlo más rápido
     private bool isTransitioning = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,7 +16,7 @@ public class TransicionCasas : MonoBehaviour
 
         if (collision.gameObject.tag == "CasaProtaExterior" && GameManager.Instance.TutorialRealizado)
         {
-            StartCoroutine(QuickTransitionWithSound(3));
+            StartCoroutine(TransicionConSonido(3));
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
@@ -29,25 +29,27 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
         {
-            StartCoroutine(QuickTransitionWithSound(10));
+            StartCoroutine(TransicionConSonido(10));
         }
         else if (collision.gameObject.tag == "CasaFrikis")
         {
             GameManager.Instance.lugar = "CasaFrikis";
+            StartCoroutine(TransicionConSonido(10));
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "CasaRico")
         {
             GameManager.Instance.lugar = "CasaRico";
+            StartCoroutine(TransicionConSonido(10));
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
         {
-            StartCoroutine(QuickTransitionWithSound(7));
+            StartCoroutine(TransicionConSonido(7));
         }
     }
 
-    private IEnumerator QuickTransitionWithSound(int sceneIndex)
+    private IEnumerator TransicionConSonido(int sceneIndex)
     {
         isTransitioning = true;
 
@@ -55,7 +57,7 @@ public class TransicionCasas : MonoBehaviour
         AudioManager.Instance.PlayDoorSound();
 
         // Pequeña espera antes de cambiar de escena
-        yield return new WaitForSeconds(delayBeforeTransition);
+        yield return new WaitForSeconds(delay);
 
         // Cargar escena mientras el sonido sigue reproduciéndose
         SceneManager.LoadScene(sceneIndex);
