@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giovanni Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -6,13 +6,13 @@ public class MinijuegoBaldosas : MonoBehaviour
 {
     public GameObject señal;
     public GameObject baldosa;
-
+    private Animator animator;
     public int contador = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,6 +38,8 @@ public class MinijuegoBaldosas : MonoBehaviour
 
             señal.SetActive(false);
             contador++;
+            animator.SetBool("inicial", false);
+            animator.SetBool("roto", true);
             GameManager.Instance.baldosaRota++;
         }
 
@@ -45,6 +47,8 @@ public class MinijuegoBaldosas : MonoBehaviour
     void reiniciar()
     {
         GameManager.Instance.baldosaRota = 0;
+        animator.SetBool("roto",true);
+        animator.SetBool("inicial", true);
         GameManager.Instance.ReiniciarNivel();
 
     }
