@@ -5007,14 +5007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1105455021}
   - component: {fileID: 1105455020}
-<<<<<<< Updated upstream
   - component: {fileID: 1105455022}
-=======
-<<<<<<< Updated upstream
-  - component: {fileID: 1105455022}
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: TriggerCasaFrikis
   m_TagString: CasaFrikisExterior
@@ -5054,15 +5047,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< Updated upstream
   m_Offset: {x: 0.14340289, y: 0.20237985}
-=======
-<<<<<<< Updated upstream
-  m_Offset: {x: 0.14340289, y: 0.20237985}
-=======
-  m_Offset: {x: 0.16615997, y: 0.1638682}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5073,15 +5058,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
   m_Size: {x: 0.73231554, y: 0.30342352}
-=======
-<<<<<<< Updated upstream
-  m_Size: {x: 0.73231554, y: 0.30342352}
-=======
-  m_Size: {x: 0.9528806, y: 0.38044682}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!4 &1105455021
 Transform:
@@ -5098,10 +5075,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
 --- !u!82 &1105455022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5198,11 +5171,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 --- !u!1 &1187594290
 GameObject:
   m_ObjectHideFlags: 0

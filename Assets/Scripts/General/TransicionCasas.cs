@@ -99,21 +99,6 @@ public class TransicionCasas : MonoBehaviour
             GameManager.Instance.lugar = "Callejon";
             GameManager.Instance.TransicionLobby_2();
 
-<<<<<<< Updated upstream
-=======
-        }
-        else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
-        {
-
-            int sala = 10;
-            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
-        }
-        else if (collision.gameObject.tag == "CasaFrikis")
-        {
-
-            GameManager.Instance.lugar = "CasaFrikis";
-            GameManager.Instance.TransicionLobby_2();
->>>>>>> Stashed changes
         }
         else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
         {

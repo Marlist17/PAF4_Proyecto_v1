@@ -4999,9 +4999,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_IsActive
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7627847534238332819, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
@@ -5027,7 +5024,6 @@ PrefabInstance:
     - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: lines.Array.data[0]
       value: " Ryo me ha obligado a venir\u2026 Quiero irme a casa\u2026"
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5290,7 +5286,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12087837, y: -0.2827839}
+  m_Offset: {x: -0.09172201, y: -0.2827839}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5301,7 +5297,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0161173, y: 0.4344322}
+  m_Size: {x: 1.4009812, y: 0.4344322}
   m_EdgeRadius: 0
 --- !u!4 &823988823
 Transform:
@@ -5312,11 +5308,7 @@ Transform:
   m_GameObject: {fileID: 823988820}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -0.12, y: 3.54, z: -0.1041078}
-=======
-  m_LocalPosition: {x: -0.25, y: 3.67, z: -0.1041078}
->>>>>>> Stashed changes
   m_LocalScale: {x: 2.3718, y: 2.3718, z: 2.3718}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6328,11 +6320,11 @@ Transform:
   m_GameObject: {fileID: 920103680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.4, y: -39.64, z: 0}
+  m_LocalPosition: {x: 20.781126, y: -41.639534, z: -0.47219956}
   m_LocalScale: {x: 2.2138042, y: 2.2138042, z: 2.2138042}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1482072937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936188059 stripped
 GameObject:
@@ -8114,9 +8106,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_IsActive
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7627847534238332819, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
@@ -8142,7 +8131,6 @@ PrefabInstance:
     - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: lines.Array.data[1]
       value: "Si no hubiera perdido no estar\xEDa tocando c\xE9sped\u2026"
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8696,6 +8684,7 @@ Transform:
   - {fileID: 1259656691}
   - {fileID: 912634813}
   - {fileID: 965177914}
+  - {fileID: 920103683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571468069
@@ -30198,10 +30187,7 @@ Transform:
   - {fileID: 2052436340}
   - {fileID: 1123449343}
   - {fileID: 940897439}
-<<<<<<< Updated upstream
-=======
   - {fileID: 5839952223294804813}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637827440
@@ -30215,6 +30201,7 @@ GameObject:
   - component: {fileID: 1637827441}
   - component: {fileID: 1637827443}
   - component: {fileID: 1637827442}
+  - component: {fileID: 1637827444}
   m_Layer: 0
   m_Name: CasaMei
   m_TagString: Untagged
@@ -30345,6 +30332,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1637827444
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637827440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08670819, y: -2.0397875}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.6386719, y: 4.5722656}
+    newSize: {x: 3.6386719, y: 4.5722656}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2929847, y: 0.49269056}
+  m_EdgeRadius: 0
 --- !u!1 &1666531198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5278292227338381900, guid: 6fa9dc2e88f2be2429567a509c75bfe1, type: 3}
@@ -32109,8 +32141,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2398924142278796687, guid: 5d4a1133478358a408c61da36be2f9fe, type: 3}
       propertyPath: dialog
       value: 
@@ -32128,13 +32158,10 @@ PrefabInstance:
       value: "\xA1Deber\xEDas estar no m\xEDo ristorante\u2026! \xA1\xA1Las ofrendas
         non si pagaren solas!! "
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3924510225254440770, guid: 5d4a1133478358a408c61da36be2f9fe, type: 3}
       propertyPath: m_Name
       value: Giovanni
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4062820454626290269, guid: 5d4a1133478358a408c61da36be2f9fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14
@@ -32143,7 +32170,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.07
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32218,19 +32244,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1635558969}
     m_Modifications:
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 517555011694116085, guid: 02d00ce85c0643047adf0c8c5b3654d6, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 639167923132904683, guid: 02d00ce85c0643047adf0c8c5b3654d6, type: 3}
       propertyPath: m_Name
       value: Morfeo
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2297643243009347110, guid: 02d00ce85c0643047adf0c8c5b3654d6, type: 3}
       propertyPath: dialog
       value: 
@@ -32247,7 +32268,6 @@ PrefabInstance:
       propertyPath: lines.Array.data[0]
       value: "Zzzzz\u2026 Zzz\u2026 Zz\u2026 "
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3565359845139882983, guid: 02d00ce85c0643047adf0c8c5b3654d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.01
@@ -32345,8 +32365,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aria
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3201801628633877926, guid: 2835dfe9f621b1842ae2ac2b1872778e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -32375,7 +32393,6 @@ PrefabInstance:
       propertyPath: lines.Array.data[1]
       value: MIAU MIAU, MIAU.
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32389,8 +32406,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1635558969}
     m_Modifications:
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2744653947943407002, guid: c0156be31b81d704582bdfaa2f7c691b, type: 3}
       propertyPath: m_Radius
       value: 0.97
@@ -32431,13 +32446,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.08
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6147426365445373245, guid: c0156be31b81d704582bdfaa2f7c691b, type: 3}
       propertyPath: m_Name
       value: Madden
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6530349107416200483, guid: c0156be31b81d704582bdfaa2f7c691b, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -32450,7 +32462,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.889
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7851040238466361905, guid: c0156be31b81d704582bdfaa2f7c691b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.7
@@ -32518,11 +32529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6803630833852241280, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: 1.22
-=======
       value: -8.799999
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6803630833852241280, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32566,9 +32573,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511811058997742226, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_IsActive
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7627847534238332819, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
@@ -32578,7 +32582,6 @@ PrefabInstance:
     - target: {fileID: 7627847534238332819, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.93
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8138910019724736577, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       propertyPath: dialog
@@ -32754,8 +32757,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DJNeko
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5236165187901857250, guid: 27a44ac9d9801b94db27c21f348b5421, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -32784,7 +32785,6 @@ PrefabInstance:
       propertyPath: lines.Array.data[0]
       value: "\xA1Mueve el esqueleto, Mei! \xA1Dale a ese body! "
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 9150912120880694000, guid: 27a44ac9d9801b94db27c21f348b5421, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.71
@@ -32854,12 +32854,4 @@ SceneRoots:
   - {fileID: 551085151}
   - {fileID: 1863370568}
   - {fileID: 112051367}
-<<<<<<< Updated upstream
   - {fileID: 1635558969}
-=======
-<<<<<<< Updated upstream
-  - {fileID: 1635558969}
-=======
-  - {fileID: 920103683}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
