@@ -33,6 +33,10 @@ TagManager:
   - CallejonInterior
   - Cuchillo
   - CasaFrikis
+<<<<<<< Updated upstream
+=======
+  - CasaFrikisExterior
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -80,6 +84,7 @@ TagManager:
     uniqueID: 4078680499
     locked: 0
   - name: Pie de pared
+<<<<<<< Updated upstream
     uniqueID: 2955557269
     locked: 0
   - name: Bordes
@@ -87,6 +92,15 @@ TagManager:
     locked: 0
   - name: Muebles
     uniqueID: 3436720911
+=======
+    uniqueID: 3624336743
+    locked: 0
+  - name: Bordes
+    uniqueID: 2195694379
+    locked: 0
+  - name: Muebles
+    uniqueID: 39277261
+>>>>>>> Stashed changes
     locked: 0
   - name: Personajes
     uniqueID: 288759361

@@ -92,7 +92,7 @@ public class Nilo : MonoBehaviour
 
     public void TransicionBatalla() //Función para cargar otra escena:
     {
-        int LugarBatalla = 9;
+        int LugarBatalla = 7;
         SceneManager.LoadScene(LugarBatalla);
     }
 }

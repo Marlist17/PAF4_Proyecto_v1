@@ -71,7 +71,7 @@ public class ReyesDialogos : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager.Instance.ConversacionCabecilla)
+        if (!GameManager.Instance.ConversacionCabecilla) //Si no se ha hablado todavía con ellos
         {
             if (dialog == null) return;
           
@@ -80,49 +80,49 @@ public class ReyesDialogos : MonoBehaviour
             // Verifica si el jugador está en el área y presiona "E"
             if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
             {
-                GameManager.Instance.movimiento = false;
+                GameManager.Instance.movimiento = false; //Desactivamos el mov
                 icono.SetActive(false);
-                int indiceActual = dialog.index;
-                string nombre = determinarNombreSegunIndice(indiceActual);
+                int indiceActual = dialog.index; //Sacamos el índice de nuestro array de líneas
+                string nombre = determinarNombreSegunIndice(indiceActual); //El nombre correspondiente a la línea de diálogo
 
-                dialog.MostrarNombre(nombre);
-                conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada);
+                dialog.MostrarNombre(nombre); //Mosstramos el nombre
+                conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Mostramos el diálogo
             }
-            if (dialog.DialogoActivo)
+            if (dialog.DialogoActivo) //Mientras siga el diálogo
             {
-                int indiceActual = dialog.index;
+                int indiceActual = dialog.index; //Se segurá calculando el indice y el nombre correspondiente
                 string nombre = determinarNombreSegunIndice(indiceActual);
                 dialog.MostrarNombre(nombre);
             }
-            if (!dialog.DialogoActivo && conversacionFinalizada)
+            if (!dialog.DialogoActivo && conversacionFinalizada) //Si se ha terminado:
             {
-                GameManager.Instance.movimiento = true;
-                GameManager.Instance.ConversacionCabecilla = true;
+                GameManager.Instance.movimiento = true; //Permitimos mov
+                GameManager.Instance.ConversacionCabecilla = true; //Y que ya no pueda volver a escuchar la conversación
             }
         }
         
     }
-    public string determinarNombreSegunIndice(int indiceDialogo)
+    public string determinarNombreSegunIndice(int indiceDialogo) //Dependiendo de la línea devolvemos un nombre diferente
     {
         if (indiceDialogo < 3)
             return Cabecilla;
-        if (indiceDialogo == 3) return Tonti;    // Primera línea
-        else if (indiceDialogo == 4) return Listo; // Tercera línea (índice 2)
-        else if (indiceDialogo > 4 && indiceDialogo < 8) return Cabecilla; // Quinta línea (índice 4)
-        else if (indiceDialogo == 8) return Tonti; // Sexta línea (índice 5)
-        else if (indiceDialogo == 9) return Cabecilla; // Séptima línea (índice 6)
-        else if (indiceDialogo == 10) return Listo; // Octava línea (índice 7)
-        else if (indiceDialogo > 10 && indiceDialogo < 18) return Cabecilla; // Novena línea (índice 8)
-        else if (indiceDialogo > 18 && indiceDialogo < 21) return Tonti; // Décima línea (índice 9)
-        else if (indiceDialogo > 20 && indiceDialogo < 26) return Cabecilla; // Corregido aquí
-        else if (indiceDialogo > 25 && indiceDialogo < 28) return Listo; // Undécima línea (índice 10)
-        else if (indiceDialogo == 28) return Cabecilla; // Duodécima línea (índice 11)
-        else if (indiceDialogo > 28 && indiceDialogo < 31) return Listo; // Decimotercera línea (índice 12)
-        else if (indiceDialogo == 31) return Cabecilla; // Decimocuarta línea (índice 13)
-        else if (indiceDialogo > 31 && indiceDialogo < 34) return Tonti; // Decimoquinta línea (índice 14)
+        if (indiceDialogo == 3) return Tonti;    
+        else if (indiceDialogo == 4) return Listo; 
+        else if (indiceDialogo > 4 && indiceDialogo < 8) return Cabecilla; 
+        else if (indiceDialogo == 8) return Tonti; 
+        else if (indiceDialogo == 9) return Cabecilla; 
+        else if (indiceDialogo == 10) return Listo; 
+        else if (indiceDialogo > 10 && indiceDialogo < 18) return Cabecilla;
+        else if (indiceDialogo > 18 && indiceDialogo < 21) return Tonti; 
+        else if (indiceDialogo > 20 && indiceDialogo < 26) return Cabecilla; 
+        else if (indiceDialogo > 25 && indiceDialogo < 28) return Listo; 
+        else if (indiceDialogo == 28) return Cabecilla; 
+        else if (indiceDialogo > 28 && indiceDialogo < 31) return Listo; 
+        else if (indiceDialogo == 31) return Cabecilla; 
+        else if (indiceDialogo > 31 && indiceDialogo < 34) return Tonti; 
         else if (indiceDialogo > 33)
         {
-            return Listo; // Decimosexta línea (índice 15)
+            return Listo; // Devolvemos en las últimas líneas el nombre correspondiente
         }
         
             return Cabecilla; // Añadido valor por defecto por si algún caso no está cubierto

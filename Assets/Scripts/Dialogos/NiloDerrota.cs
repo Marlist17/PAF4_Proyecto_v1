@@ -79,7 +79,7 @@ public class NiloDerrota : MonoBehaviour
 
     public void VolverMinijuego()
     {
-        int LugarBatalla = 9;
+        int LugarBatalla = 7;
         SceneManager.LoadScene(LugarBatalla);
     }
 }

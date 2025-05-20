@@ -33,6 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Callejon.unity
     guid: d0ded5052ec57534980666827ac0951a
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/Batalla.unity
+    guid: c73e8285b0a4287469e119dac4576e69
+  - enabled: 1
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     path: Assets/Scenes/CasaFrikis.unity
     guid: 7a9e755ff1a448e4297151ebc1145bd0
   m_configObjects: {}
