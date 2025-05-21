@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertas: {fileID: 8300000, guid: 76d1ed3d1f202df4daa30b0e345de962, type: 3}
+  sonidomuerte: {fileID: 8300000, guid: a23294144559202458ed5ed1b1ad0e74, type: 3}
+  agarrar: {fileID: 8300000, guid: e0acfb26e7345c74594c21c026ec4ea1, type: 3}
+  dejar: {fileID: 8300000, guid: 66153aecdc2059d47ba0763f4cf719c2, type: 3}
+  baldosas: {fileID: 8300000, guid: ea9dd925187eafa41b738df1411064ce, type: 3}
   defaultMusicVolume: 0.1
   debugLogs: 0
   sceneMusicList:
@@ -87,35 +91,35 @@ MonoBehaviour:
     firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
-    loopRegular: 0
+    loopRegular: 1
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: Callejon
     firstTimeMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
-    loopFirstTime: 0
+    loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: Batalla
     firstTimeMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
-    loopFirstTime: 1
+    loopFirstTime: 0
     regularMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
-    loopRegular: 1
+    loopRegular: 0
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: Nivel_3
     firstTimeMusic: {fileID: 8300000, guid: b4f0f62e74f50614ea0680b829e022ff, type: 3}
     loopFirstTime: 1
-    regularMusic: {fileID: 0}
-    loopRegular: 0
+    regularMusic: {fileID: 8300000, guid: b4f0f62e74f50614ea0680b829e022ff, type: 3}
+    loopRegular: 1
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: CasaProta2
     firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
-    loopRegular: 0
+    loopRegular: 1
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: MuerteCabecilla

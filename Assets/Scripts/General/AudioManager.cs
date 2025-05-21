@@ -28,8 +28,16 @@ public class AudioManager : MonoBehaviour
         [Range(0f, 1f)] public float customVolume = -1f;
     }
 
-    [Header("Efectos de Sonido")]
+    [Header("Efectos de sonido")]
     public AudioClip puertas;
+    
+    public AudioClip sonidoMuerte;
+    
+    public AudioClip error;
+    public AudioClip agarrar;
+    public AudioClip dejar;
+    
+    public AudioClip baldosas;
 
     [Header("Configuración Global")]
     [Range(0f, 1f)] public float defaultMusicVolume = 0.5f;
@@ -46,7 +54,10 @@ public class AudioManager : MonoBehaviour
     // Estado
     private HashSet<string> visitedScenes = new HashSet<string>();
     public static AudioManager Instance { get; private set; }
-
+    public void Update()
+    {
+        MuerteCabecilla();
+    }
     #region Inicialización
     void Awake()
     {
@@ -223,6 +234,16 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
     #endregion
+
+    public void MuerteCabecilla()
+    {
+        if (GameManager.Instance.muerteCabecilla = true)
+        {
+            soundEffectSource.PlayOneShot(sonidoMuerte);
+
+            
+        }
+    }
 }
 
 

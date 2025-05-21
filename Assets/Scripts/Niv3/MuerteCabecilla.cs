@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class MuerteCabecilla : MonoBehaviour
 {
 
-   
+    [SerializeField] GameObject transicion; //Variable para la transición de escena
     public GameObject icono; //Señal de que puedes hablar con él
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
-  
+    
     void Start()
     {
         icono.SetActive(false); //Volvemos false el icono
+        
     }
 
     void Update()
@@ -28,7 +29,11 @@ public class MuerteCabecilla : MonoBehaviour
 
         if (GameManager.Instance.muerteCabecilla == true) 
         {
-            SceneManager.LoadScene(10); //Cargamos la escena de muerte
+            transicion.SetActive(true); //Activamos la transición
+            EsperaEscena(); //Llamamos a la función de espera
+
+
+
         }
     }
 
@@ -50,5 +55,15 @@ public class MuerteCabecilla : MonoBehaviour
             jugadorEnRango = false; //Volvemos falsa la condición
             icono.SetActive(false); //Y vuelve invisible el icono
         }
+    }
+    public void EsperaEscena()
+    {
+        Invoke("CambiarEscena", 2f);
+
+
+    }
+    private void CambiarEscena()
+    {
+        SceneManager.LoadScene(10); // Cambia a la escena deseada
     }
 }
