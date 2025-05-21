@@ -6,7 +6,7 @@ using TMPro;
 public class TiempoCountdown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI TextoTiempo; // Metemos el texto que mostrará el tiempo
-    private float Tiempo = 25f; // Tiempo inicial para la cuenta atrás
+    private float Tiempo = 26f; // Tiempo inicial para la cuenta atrás
 
     void Start()
     {

@@ -25,6 +25,11 @@ public class MuerteCabecilla : MonoBehaviour
         {
             GameManager.Instance.muerteCabecilla = true;
         }
+
+        if (GameManager.Instance.muerteCabecilla == true) 
+        {
+            SceneManager.LoadScene(10); //Cargamos la escena de muerte
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //Si ha entrado en el trigger

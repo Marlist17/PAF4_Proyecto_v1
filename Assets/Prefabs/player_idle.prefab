@@ -186,7 +186,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8259208660446908297, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8259208660446908297, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
       propertyPath: m_SortingLayerID
@@ -195,6 +195,10 @@ PrefabInstance:
     - target: {fileID: 8862752006479538310, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
       propertyPath: m_Name
       value: Letra interaccion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862752006479538310, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870419248017823111, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
       propertyPath: m_LocalPosition.x

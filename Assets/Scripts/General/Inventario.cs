@@ -76,7 +76,6 @@ public class Inventario : MonoBehaviour
         if (cajaSucia.activeSelf) return cajaSucia;
         if (cajaOro.activeSelf) return cajaOro;
         if (sardina.activeSelf) return sardina;
-        if (cuchillo.activeSelf) return cuchillo;
         return null;
     }
 

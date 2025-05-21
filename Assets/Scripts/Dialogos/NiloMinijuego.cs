@@ -63,7 +63,6 @@ public class NiloMinijuego : MonoBehaviour
     public void CargarEscena()
     {
         int callejon = 8;
-        GameManager.Instance.lugar = "CallejonBatalla";
         GameManager.Instance.cajaSuciaCogida = false;
         SceneManager.LoadScene(callejon); //Cargame la siguiente escena.
 

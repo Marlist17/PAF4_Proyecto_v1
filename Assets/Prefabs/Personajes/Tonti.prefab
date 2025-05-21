@@ -75,15 +75,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 288759361
+  m_SortingLayer: 7
   m_SortingOrder: 1
-  m_Sprite: {fileID: -228132177, guid: c69e87a51b33a134c86ad7a322c0dcaf, type: 3}
+  m_Sprite: {fileID: 2104509327, guid: a82c5ac42fb17f34b83cbd7b5df07f91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8, y: 1.1}
+  m_Size: {x: 1.4921875, y: 2.9628906}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -141,8 +141,7 @@ MonoBehaviour:
   - Buenas te gustaria comprar algo
   - Gracias por tu visita
   nombre: 
-  indice: 0
-  escenaActual: 0
+  icono: {fileID: 0}
 --- !u!95 &7786810698473369818
 Animator:
   serializedVersion: 5
@@ -360,8 +359,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 2.9609375}
-    newSize: {x: 0.8, y: 1.1}
+    oldSize: {x: 1.4921875, y: 2.9628906}
+    newSize: {x: 1.4921875, y: 2.9628906}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

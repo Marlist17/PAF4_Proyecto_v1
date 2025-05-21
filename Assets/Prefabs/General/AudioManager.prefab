@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5348962764102546225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132982054720695769}
+  - component: {fileID: 2019143221401210501}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1132982054720695769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348962764102546225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.66749513, y: -0.35360026, z: 0.009789741}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019143221401210501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348962764102546225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d0fbb5d98d9c44abe6791e1537f52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertas: {fileID: 8300000, guid: 76d1ed3d1f202df4daa30b0e345de962, type: 3}
+  defaultMusicVolume: 0.5
+  debugLogs: 0
+  sceneMusicList:
+  - sceneName: "Men\xFAPrincipal"
+    firstTimeMusic: {fileID: 8300000, guid: f20fa1023532a0540aafe1eb928063c8, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: f20fa1023532a0540aafe1eb928063c8, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: CasaProta
+    firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: PlazaInicial
+    firstTimeMusic: {fileID: 8300000, guid: e7b0112d08ace634c85e6c10e60b0954, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: e7b0112d08ace634c85e6c10e60b0954, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: PlazaConReyes
+    firstTimeMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: 3cac989c0971bba40bc7761f5b9bcd6d, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0.22
+    customVolume: 1
+  - sceneName: CasaFrikis
+    firstTimeMusic: {fileID: 8300000, guid: 5ed344278fa43884e9e8cab65d7627a0, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: 5ed344278fa43884e9e8cab65d7627a0, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: CasaRicos
+    firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopRegular: 0
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: Callejon
+    firstTimeMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
+    loopFirstTime: 0
+    regularMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: Batalla
+    firstTimeMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: Nivel_3
+    firstTimeMusic: {fileID: 8300000, guid: b4f0f62e74f50614ea0680b829e022ff, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 0}
+    loopRegular: 0
+    crossfadeDuration: 0
+    customVolume: 1
+  - sceneName: CasaProta2
+    firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopRegular: 0
+    crossfadeDuration: 0
+    customVolume: 1

@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     public bool MinijuegoBatalla = false;
     public bool Mision_1 = false;
+    public bool Mision_2 = false;
+    public bool Mision_3 = false;
     public bool tiempoCompletado = false;
 
     public int baldosaRota = 0;

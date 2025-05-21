@@ -1,11 +1,12 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement; //Poner esta configuracion para hacer transición entre escenas (Todas las escenas)
 
+
+
 public class TransicionCasas : MonoBehaviour
 {
-<<<<<<< Updated upstream
-=======
     [SerializeField] private float delay = 0.2f; // Ajusta este valor para hacerlo más rápido
     private bool isTransitioning = false;
 
@@ -19,7 +20,6 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
-            GameManager.Instance.lugar = "CallejonInterior";
             SceneManager.LoadScene(8);
         }
         else if (collision.gameObject.tag == "CallejonInterior")
@@ -69,7 +69,6 @@ public class TransicionCasas : MonoBehaviour
 }
 /*public class TransicionCasas : MonoBehaviour
 {
->>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -91,7 +90,7 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
-          
+
             int sala = 8;
             SceneManager.LoadScene(sala); //Cargame la siguiente escena.
         }
@@ -99,7 +98,7 @@ public class TransicionCasas : MonoBehaviour
         {
             GameManager.Instance.lugar = "Callejon";
             GameManager.Instance.TransicionLobby_2();
-           
+
         }
         else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
         {
@@ -123,9 +122,5 @@ public class TransicionCasas : MonoBehaviour
             int casa = 7;
             SceneManager.LoadScene(casa); //Cargame la siguiente escena.
         }
-     
-
     }
-}
-
-
+}*/

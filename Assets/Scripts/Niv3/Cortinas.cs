@@ -7,7 +7,7 @@ public class Cortinas : MonoBehaviour
     Animator animator;
     [SerializeField] Collider2D collider;
     [SerializeField] Collider2D colliderD;
-
+    public GameObject cuchillo;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +19,13 @@ public class Cortinas : MonoBehaviour
     void Update()
     {
         AbrirCortinas();
-      
+        OnTriggerEnter2D(colliderD);
     }
 
     public void AbrirCortinas()
     {
        
-        if (Inventario.instancia.ObtenerObjetoActivo() == Inventario.instancia.cuchillo)
+        if (cuchillo.activeInHierarchy)
         {
             collider.enabled = false;
             animator.SetBool("cerrada", false);
