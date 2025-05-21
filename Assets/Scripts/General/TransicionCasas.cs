@@ -20,6 +20,7 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
+            GameManager.Instance.lugar = "CallejonInterior";
             SceneManager.LoadScene(8);
         }
         else if (collision.gameObject.tag == "CallejonInterior")

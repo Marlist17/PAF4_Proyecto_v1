@@ -7,31 +7,30 @@ public class Cortinas : MonoBehaviour
     Animator animator;
     [SerializeField] Collider2D collider;
     [SerializeField] Collider2D colliderD;
-    public GameObject cuchillo;
 
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         AbrirCortinas();
-        OnTriggerEnter2D(colliderD);
+        
     }
 
     public void AbrirCortinas()
     {
-       
-        if (cuchillo.activeInHierarchy)
+        GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
+
+        if (objetoActivo != null && objetoActivo == Inventario.instancia.cuchillo)
         {
             collider.enabled = false;
             animator.SetBool("cerrada", false);
             animator.SetBool("abrir", true);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -40,6 +39,5 @@ public class Cortinas : MonoBehaviour
             animator.SetBool("abrir", false);
             collider.enabled = true;
         }
-
     }
 }
