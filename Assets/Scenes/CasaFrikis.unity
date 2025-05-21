@@ -2821,7 +2821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_Name
-      value: CajaOro
+      value: CajaNormal
       objectReference: {fileID: 0}
     - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_LocalScale.x
@@ -2948,6 +2948,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+--- !u!1 &1273472084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+  m_PrefabInstance: {fileID: 1273472083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274067831
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,6 +4144,7 @@ GameObject:
   - component: {fileID: 1740780261}
   - component: {fileID: 1740780260}
   - component: {fileID: 1740780262}
+  - component: {fileID: 1740780263}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -4218,6 +4224,19 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 31893112}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!114 &1740780263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740780259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caja: {fileID: 1273472084}
 --- !u!1 &1759570055
 GameObject:
   m_ObjectHideFlags: 0
