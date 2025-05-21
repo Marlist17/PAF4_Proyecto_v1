@@ -2562,6 +2562,57 @@ PrefabInstance:
     - target: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_Name
       value: CajaNormal
+<<<<<<< Updated upstream
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9486078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8901496
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9486078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0329
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6365
+      objectReference: {fileID: 0}
+    - target: {fileID: 3021178859470766413, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0469
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.785838
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.49445558
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0019806474
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.031125307
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.7890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490584432534881766, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.5761719
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5181587215031375845, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3847,14 +3898,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 14ac6ddd560be7244802215f43e5d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 =======
+=======
+>>>>>>> Stashed changes
   m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   caja: {fileID: 1273472084}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1759570055
 GameObject:

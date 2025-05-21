@@ -1892,8 +1892,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &724298292
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &633044303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
@@ -4644,7 +4647,10 @@ MonoBehaviour:
   m_ConfineScreenEdges: 1
   m_Damping: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1740780263
 MonoBehaviour:
   m_ObjectHideFlags: 0
