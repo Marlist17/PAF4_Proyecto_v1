@@ -15,6 +15,7 @@ public class Inventario : MonoBehaviour
     public GameObject cuchillo;
 
     private GameObject objeto;
+    private int escena;
 
     void Awake()
     {
@@ -40,6 +41,7 @@ public class Inventario : MonoBehaviour
         cajaSucia.SetActive(false);
         sardina.SetActive(false);
         cuchillo.SetActive(false);
+       
     }
 
     
@@ -84,7 +86,13 @@ public class Inventario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        escena = SceneManager.GetActiveScene().buildIndex;
+        if (escena == 10 || escena == 11)
+        {
+            Inventario.instancia.gameObject.SetActive(false);
+        }
+        else
+             Inventario.instancia.gameObject.SetActive(true);
     }
 
 }
