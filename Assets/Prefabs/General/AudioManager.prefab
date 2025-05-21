@@ -44,8 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d0fbb5d98d9c44abe6791e1537f52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesToStopMusic:
+  - MuerteCabecilla
   puertas: {fileID: 8300000, guid: 76d1ed3d1f202df4daa30b0e345de962, type: 3}
-  sonidomuerte: {fileID: 8300000, guid: a23294144559202458ed5ed1b1ad0e74, type: 3}
+  sonidoTransformacion: {fileID: 8300000, guid: 11d1be7c6b5122e4fa1e4157af180644, type: 3}
+  sonidoMuerte: {fileID: 8300000, guid: a23294144559202458ed5ed1b1ad0e74, type: 3}
+  error: {fileID: 8300000, guid: d67de243accfe5d4899697a35e5d1b01, type: 3}
   agarrar: {fileID: 8300000, guid: e0acfb26e7345c74594c21c026ec4ea1, type: 3}
   dejar: {fileID: 8300000, guid: 66153aecdc2059d47ba0763f4cf719c2, type: 3}
   baldosas: {fileID: 8300000, guid: ea9dd925187eafa41b738df1411064ce, type: 3}
@@ -123,12 +127,19 @@ MonoBehaviour:
     crossfadeDuration: 0
     customVolume: 0.1
   - sceneName: MuerteCabecilla
-    firstTimeMusic: {fileID: 8300000, guid: 11d1be7c6b5122e4fa1e4157af180644, type: 3}
+    firstTimeMusic: {fileID: 0}
     loopFirstTime: 0
-    regularMusic: {fileID: 8300000, guid: 11d1be7c6b5122e4fa1e4157af180644, type: 3}
+    regularMusic: {fileID: 0}
     loopRegular: 0
     crossfadeDuration: 0
     customVolume: 0.1
+  - sceneName: CreditosyPantallaFinal
+    firstTimeMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 0.3
   - sceneName: AnimFinal
     firstTimeMusic: {fileID: 8300000, guid: 765120e7bfd1e3d4884d30af19216104, type: 3}
     loopFirstTime: 0

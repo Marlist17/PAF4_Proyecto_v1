@@ -27,16 +27,18 @@ public class AudioManager : MonoBehaviour
         [Tooltip("Volumen específico para esta escena (opcional)")]
         [Range(0f, 1f)] public float customVolume = -1f;
     }
+    [Header("Escenas donde detener la música")]
+    public string[] scenesToStopMusic;
 
     [Header("Efectos de sonido")]
     public AudioClip puertas;
-    
+
+    public AudioClip sonidoTransformacion;
     public AudioClip sonidoMuerte;
-    
     public AudioClip error;
     public AudioClip agarrar;
     public AudioClip dejar;
-    
+
     public AudioClip baldosas;
 
     [Header("Configuración Global")]
@@ -54,11 +56,8 @@ public class AudioManager : MonoBehaviour
     // Estado
     private HashSet<string> visitedScenes = new HashSet<string>();
     public static AudioManager Instance { get; private set; }
-    public void Update()
-    {
-        MuerteCabecilla();
-    }
-    #region Inicialización
+
+
     void Awake()
     {
         if (Instance == null)
@@ -88,14 +87,39 @@ public class AudioManager : MonoBehaviour
         musicSource1.loop = musicSource2.loop = true;
         musicSource1.volume = musicSource2.volume = 0f;
     }
-    #endregion
-
-    #region Manejo de Escenas
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
-        PlayMusicForScene(sceneName);
+
+        // Verificar si debemos detener la música en esta escena
+        bool shouldStopMusic = false;
+        foreach (string sceneToStop in scenesToStopMusic)
+        {
+            if (sceneName == sceneToStop)
+            {
+                shouldStopMusic = true;
+                break;
+            }
+        }
+
+        if (shouldStopMusic)
+        {
+            if (debugLogs) Debug.Log($"Deteniendo música en escena: {sceneName}");
+            StopMusic();
+        }
+        else
+        {
+            // Comportamiento normal - reproducir música de la escena
+            PlayMusicForScene(sceneName);
+        }
+
+        
     }
+    /*void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        string sceneName = scene.name;
+        PlayMusicForScene(sceneName);
+    }*/
 
     public void PlayMusicForScene(string sceneName)
     {
@@ -126,9 +150,7 @@ public class AudioManager : MonoBehaviour
             Debug.Log($"No se encontró configuración de música para: {sceneName}");
         }
     }
-    #endregion
 
-    #region Control de Música
     public void PlayMusic(AudioClip clip, bool loop, float volume, float fadeTime)
     {
         if (clip == null) return;
@@ -189,9 +211,7 @@ public class AudioManager : MonoBehaviour
         musicSource1.Stop();
         musicSource2.Stop();
     }
-    #endregion
 
-    #region Funciones Originales
     public void PlayDoorSound()
     {
         if (puertas != null)
@@ -214,9 +234,7 @@ public class AudioManager : MonoBehaviour
             if (debugLogs) Debug.Log($"Sonido reproducido: {clip.name}");
         }
     }
-    #endregion
 
-    #region Utilidades
     public void ResetSceneMemory()
     {
         visitedScenes.Clear();
@@ -233,74 +251,36 @@ public class AudioManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-    #endregion
 
-    public void MuerteCabecilla()
+    public void PlayTransformSound()
     {
-        if (GameManager.Instance.muerteCabecilla = true)
-        {
-            soundEffectSource.PlayOneShot(sonidoMuerte);
-
-            
-        }
+        PlaySound(sonidoTransformacion);
     }
+    public void PlayDeath()
+    {
+        PlaySound(sonidoMuerte);
+    }
+    public void PlaySoundIndependent(AudioClip clip, float volumeScale = 1.0f)
+    {
+        if (clip == null) return;
+
+        // Crear un GameObject temporal para el sonido
+        GameObject tempSoundObj = new GameObject("TempAudio");
+        AudioSource tempSource = tempSoundObj.AddComponent<AudioSource>();
+
+        // Configurar para ignorar efectos de tiempo
+        tempSource.ignoreListenerPause = true;
+        tempSource.bypassEffects = true;
+        tempSource.bypassListenerEffects = true;
+        tempSource.bypassReverbZones = true;
+        tempSource.pitch = 1.0f; // Fuerza pitch normal
+
+        // Reproducir y destruir después
+        tempSource.PlayOneShot(clip, volumeScale);
+        Destroy(tempSoundObj, clip.length + 0.1f);
+    }
+
 }
-
-
-/*using System.Collections;
-using UnityEngine.SceneManagement;
-using UnityEngine;
-
-public class AudioManager : MonoBehaviour
-{
-    [Tooltip("Clip que se reproducirá al tocar este objeto")]
-    public AudioClip puertas;
-    private AudioSource audioSource;
-    public static AudioManager Instance;
-
-    void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            audioSource = GetComponent<AudioSource>();
-            if (audioSource == null)
-            {
-                audioSource = gameObject.AddComponent<AudioSource>();
-            }
-            audioSource.playOnAwake = false;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    public void PlayDoorSound()
-    {
-        if (puertas != null)
-        {
-            audioSource.PlayOneShot(puertas);
-        }
-    }
-
-    public float GetSoundDuration()
-    {
-        return puertas != null ? puertas.length : 0f;
-    }
-
-    public void PlaySound(AudioClip clip)
-    {
-        if (clip != null)
-        {
-            GetComponent<AudioSource>().PlayOneShot(clip);
-        }
-    }
-
-
-}*/
-
 
 
 

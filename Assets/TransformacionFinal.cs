@@ -2,27 +2,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class EscenaFinal : MonoBehaviour
+public class TransformacionFinal : MonoBehaviour
 {
     Animator animator;
     bool animacionTerminada = false;
     [SerializeField] GameObject cuadro;
-     AudioClip sonidoMuerte;
-     AudioClip sonidoTransformacion;
+    AudioClip sonidoMuerte;
+    AudioClip sonidoTransformacion;
 
     void Start()
     {
-        /*animator = GetComponent<Animator>();
-        AudioManager.Instance.PlaySound(sonidoMuerte);
-        EsperarYEjecutar();
-        cuadro.SetActive(false);*/
-        AudioManager.Instance.PlaySound(sonidoTransformacion);
-        
+        animator = GetComponent<Animator>();
+        StartCoroutine(EsperarYDesactivarCuadro());
+
     }
 
     void Update()
     {
-
+        
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         // Si la animación ha terminado (normalizedTime >= 1) y no se ha cambiado de escena
         if (stateInfo.normalizedTime >= 1.0f && !animacionTerminada)
@@ -33,13 +30,20 @@ public class EscenaFinal : MonoBehaviour
         }
     }
 
-    IEnumerator EsperarYEjecutar()
+    IEnumerator EsperarYDesactivarCuadro()
     {
-        Debug.Log("Inicio de la espera");
-
-        yield return new WaitForSeconds(4f); // Espera 2.5 segundos
-
-        Debug.Log("Pasaron 2.5 segundos");
-
+        AudioManager.Instance.PlaySound(sonidoMuerte);
+        // Espera 2 segundos
+        yield return new WaitForSeconds(5f);
+        // Desactiva el objeto
+        cuadro.SetActive(false);
+ 
+        AudioManager.Instance.PlayTransformSound();
+        yield return new WaitForSeconds(2f);
     }
+   
+        
+        
+       
+
 }
