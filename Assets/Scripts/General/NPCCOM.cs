@@ -30,25 +30,35 @@ public class NPCCOM : MonoBehaviour
 
         // Verifica si el jugador está en el área y presiona "E"
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
-        {   
+        {
+           
+            dialog.LimpiarDialogos();
             if (nombre == "Ryo" && escenaActual == 0) //Si hemos hablado con ryo:
             {
                 GameManager.Instance.HablarNPC = true; //Se volverá true la condición
             }
             icono.SetActive(false); //Desaparece el icono
-            if(escenaActual == 10 || escenaActual == 7) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
+            if(escenaActual == 9 || escenaActual == 6) //Si la escena es aquella en la que si o si es necesario hablar con el NPC para interactuar con el objeto:
             {
                 dialog.LimpiarDialogos(); //Pos si acaso limpiamos posibles diálogos
 
             }
+            
             Debug.Log(nombre);
             dialog.MostrarNombre(nombre); //Mostramos nombre
             conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Empezamos el dialogo y si ya se ha realizado una vez, llama al último dialogo
         }
-        if (!dialog.DialogoActivo && conversacionFinalizada && (escenaActual == 7 || escenaActual == 10))
+
+        if (!dialog.DialogoActivo && conversacionFinalizada && (escenaActual == 6 || escenaActual == 9))
         {
-            GameManager.Instance.HablarNPC = true;
+            if (escenaActual == 9 && nombre == "Ryo")
+            {
+                GameManager.Instance.HablarNPC = true;
+            }
+            else if (escenaActual == 6)
+                GameManager.Instance.HablarNPC = true;
         }
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //Si ha entrado en el trigger

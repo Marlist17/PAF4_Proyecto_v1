@@ -8,8 +8,11 @@ public class ReyesDialogos : MonoBehaviour
 {
     public Dialogos dialog;
     public GameObject icono;
+    private string Cabecilla = "Schrödinger";
+    private string Tonti = "Keaton";
+    private string Listo = "Freud";
     private string[] lines =
-   
+   // Nuestras frases
 {
     "Mm hm hm...",
     "Pero bueno... ¡Freud, Keaton! Mirad qué cosita tan mona ha venido a visitarnos...",
@@ -48,13 +51,12 @@ public class ReyesDialogos : MonoBehaviour
     "...",
     "Habla con Keaton, él te dará la primera misión.",
     "Buena suerte, gata."
-}; // Nuestras frases
-    private string Cabecilla = "Schrödinger";
-    private string Tonti = "Keaton";
-    private string Listo = "Freud";
+}; 
+   
     bool conversacionFinalizada = false;
     bool jugadorEnRango = false; // Variable para detectar si el jugador está en el trigger
     public int escenaActual;
+    [SerializeField] bool hablarReyes = false;
 
     void Start()
     {
@@ -73,12 +75,11 @@ public class ReyesDialogos : MonoBehaviour
     {
         if (!GameManager.Instance.ConversacionCabecilla) //Si no se ha hablado todavía con ellos
         {
-            if (dialog == null) return;
-          
+         
             dialog.PasarDialogo();
 
             // Verifica si el jugador está en el área y presiona "E"
-            if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
+            if (jugadorEnRango && Input.GetKeyDown(KeyCode.E) && hablarReyes)
             {
                 GameManager.Instance.movimiento = false; //Desactivamos el mov
                 icono.SetActive(false);
@@ -88,7 +89,7 @@ public class ReyesDialogos : MonoBehaviour
                 dialog.MostrarNombre(nombre); //Mosstramos el nombre
                 conversacionFinalizada = dialog.ComenzarDialogo(lines, conversacionFinalizada); //Mostramos el diálogo
             }
-            if (dialog.DialogoActivo) //Mientras siga el diálogo
+            if (dialog.DialogoActivo && hablarReyes) //Mientras siga el diálogo
             {
                 int indiceActual = dialog.index; //Se segurá calculando el indice y el nombre correspondiente
                 string nombre = determinarNombreSegunIndice(indiceActual);
@@ -136,6 +137,7 @@ public class ReyesDialogos : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorEnRango = true;
+            hablarReyes = true;
             if (GameManager.Instance.ConversacionCabecilla)
                 icono.SetActive(false);
             else
@@ -150,6 +152,7 @@ public class ReyesDialogos : MonoBehaviour
             jugadorEnRango = false;
             dialog.FueradeRango();
             icono.SetActive(false); //Y vuelve invisible el icono
+
         }
     }
 }

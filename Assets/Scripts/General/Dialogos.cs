@@ -6,7 +6,7 @@ using UnityEngine;
 public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los mensajes de acción).
 {
     public TextMeshProUGUI miTexto; // Referencia pública a nuestro objeto texto
-    public TextMeshProUGUI TextoNombre; // Referencia pública a nuestro objeto texto
+    [SerializeField] TextMeshProUGUI TextoNombre; // Referencia pública a nuestro objeto texto
     public GameObject cajaTexto;
     public GameObject CajaNombre;
     public GameObject raton;
@@ -14,11 +14,11 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     public float textSpeed; // Velocidad del texto
     public int index; // Índice del diálogo en curso
     public bool DialogoActivo = false;
-    Animator anim; // Referencia al componente Animator
+   
 
     void Start()
     {
-      
+        TextoNombre.text = "";
     }
 
     public void FueradeRango()
@@ -87,13 +87,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
 
     IEnumerator TypeLine()
     {
-        /*for(int i = 0;  i < lines[index].Length; i++)
-        {
-            miTexto.text = lines[index][..i];
-            yield return new WaitForSeconds(textSpeed);
-
-        }*/
-        
+      
         foreach (char c in lines[index].ToCharArray())
         {
             miTexto.text += c; // Aparece letra a letra
@@ -139,7 +133,6 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     public void MostrarNombre(string nombre)
     {
 
-      
         TextoNombre.text = nombre;
         TextoNombre.enabled = true;
         CajaNombre.SetActive(true);
@@ -151,15 +144,5 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
         CajaNombre.SetActive(false);
        
     }
-
-    public void CambiarNombreDuranteDialogo(string nuevoNombre)
-    {
-        if (TextoNombre != null && CajaNombre != null)
-        {
-            TextoNombre.text = nuevoNombre;
-        }
-    }
-
-
 }
 

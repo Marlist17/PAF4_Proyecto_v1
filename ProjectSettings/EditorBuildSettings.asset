@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CasaFrikis.unity
     guid: 7a9e755ff1a448e4297151ebc1145bd0
+  - enabled: 1
+    path: Assets/Scenes/MuerteCabecilla.unity
+    guid: 6324dd58bbf43854680557aaa23b2a25
+  - enabled: 1
+    path: Assets/Scenes/AnimFinal.unity
+    guid: d8ee2eb07e2f7974a90d34819d12e6e2
   m_configObjects: {}

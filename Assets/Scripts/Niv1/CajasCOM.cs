@@ -46,8 +46,10 @@ public class CajasCOM : MonoBehaviour
              
             if (!GameManager.Instance.HablarNPC)
             {
+                dialog.OcultarNombre();
                 dialog.LimpiarDialogos();
                 conversacionFinalizada = dialog.ComenzarDialogo(Aviso1, conversacionFinalizada);
+
             }
             else
             {

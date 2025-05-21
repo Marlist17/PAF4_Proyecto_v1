@@ -113,27 +113,19 @@ TextureImporter:
       name: Prota_Fumando_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 3304
-        width: 826
+        x: 0
+        y: 3376
+        width: 824
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -2049}
-        - {x: 2049, y: 0}
-        - {x: 0, y: 2049}
-        - {x: -2049, y: 0}
-      physicsShape:
-      - - {x: 0, y: -2049}
-        - {x: 2049, y: 0}
-        - {x: 0, y: 2049}
-        - {x: -2049, y: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3bccdc42ec5b1c41bdb7dcff632df98
-      internalID: -556544620
+      spriteID: ed431a6811b75564da321b6e8022a13c
+      internalID: 330327174
       vertices: []
       indices: 
       edges: []
@@ -142,19 +134,19 @@ TextureImporter:
       name: Prota_Fumando_1
       rect:
         serializedVersion: 2
-        x: 898
-        y: 3308
+        x: 842
+        y: 3374
         width: 825
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa572cf934b60341a06b3ca2904974f
-      internalID: 1738524564
+      spriteID: e502310f17f0d10409a71db92e421b7b
+      internalID: -1777260291
       vertices: []
       indices: 
       edges: []
@@ -163,19 +155,19 @@ TextureImporter:
       name: Prota_Fumando_2
       rect:
         serializedVersion: 2
-        x: 1775
-        y: 3292
-        width: 826
+        x: 1689
+        y: 3374
+        width: 824
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bfb751fccf695f49ab700cbd87ab6a0
-      internalID: -1648542288
+      spriteID: b749e0aec69539e4c8ac546ceab65a44
+      internalID: 2142991953
       vertices: []
       indices: 
       edges: []
@@ -184,19 +176,19 @@ TextureImporter:
       name: Prota_Fumando_3
       rect:
         serializedVersion: 2
-        x: 2655
-        y: 3288
+        x: 2523
+        y: 3380
         width: 803
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8da46548b78be3e46b6738c569e8c7a6
-      internalID: -208330330
+      spriteID: 0e3649db8ac6d89488313d13f60192c4
+      internalID: -829818033
       vertices: []
       indices: 
       edges: []
@@ -205,19 +197,19 @@ TextureImporter:
       name: Prota_Fumando_5
       rect:
         serializedVersion: 2
-        x: 94
-        y: 2559
+        x: 46
+        y: 2609
         width: 802
         height: 703
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 114188e6bbfeed644b0235f71696906a
-      internalID: -889739969
+      spriteID: 0022ce3c6ee45ca4a977a896ee448287
+      internalID: 1929299786
       vertices: []
       indices: 
       edges: []
@@ -226,19 +218,19 @@ TextureImporter:
       name: Prota_Fumando_6
       rect:
         serializedVersion: 2
-        x: 914
-        y: 2555
-        width: 839
+        x: 920
+        y: 2635
+        width: 805
         height: 703
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac731d683411fe84eb224aa8940e0fe6
-      internalID: -1481553946
+      spriteID: c999264dffd93454b949a4f0aac2495e
+      internalID: -1752282794
       vertices: []
       indices: 
       edges: []
@@ -247,19 +239,19 @@ TextureImporter:
       name: Prota_Fumando_7
       rect:
         serializedVersion: 2
-        x: 1831
-        y: 2545
-        width: 802
+        x: 1743
+        y: 2615
+        width: 810
         height: 703
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79f689e1cf67d843b9c8868d631fb01
-      internalID: -1980241082
+      spriteID: 5be0ff0c4a1fd18499d5be1252898307
+      internalID: 799726157
       vertices: []
       indices: 
       edges: []
@@ -268,40 +260,19 @@ TextureImporter:
       name: Prota_Fumando_8
       rect:
         serializedVersion: 2
-        x: 2651
-        y: 2571
-        width: 817
+        x: 2571
+        y: 2629
+        width: 807
         height: 703
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c334f6a2457b2ac48aec2ae082ba57d9
-      internalID: -75768309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prota_Fumando_10
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 1817
-        width: 802
-        height: 700
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01f90891cce7b334e8d2e81a3ab3074e
-      internalID: 784490837
+      spriteID: 4774ff42d9cc0e847825d3d9123ad8bb
+      internalID: -1315492709
       vertices: []
       indices: 
       edges: []
@@ -310,40 +281,40 @@ TextureImporter:
       name: Prota_Fumando_11
       rect:
         serializedVersion: 2
-        x: 986
-        y: 1837
-        width: 803
-        height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+        x: 58
+        y: 1881
+        width: 802
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f25061eb4ccdb8f4ca1567488c56326d
-      internalID: 1906975469
+      spriteID: 81924d14ad185714c83401829b9558c7
+      internalID: 155048647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Fumando_13
+      name: Prota_Fumando_12
       rect:
         serializedVersion: 2
-        x: 1813
-        y: 1821
-        width: 802
+        x: 878
+        y: 1897
+        width: 803
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d99421378e33a94abdb585a72241e13
-      internalID: 538908725
+      spriteID: a322a35efe5e6b24bbdab73631f78f64
+      internalID: 1103117897
       vertices: []
       indices: 
       edges: []
@@ -352,19 +323,40 @@ TextureImporter:
       name: Prota_Fumando_14
       rect:
         serializedVersion: 2
-        x: 2671
-        y: 1829
-        width: 803
+        x: 1747
+        y: 1897
+        width: 804
         height: 702
-      alignment: 9
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ad1686aafba43948b992482bf2818f1
-      internalID: -1050424984
+      spriteID: 48cd0700dc71b8c4cbbd6f05b5c2654a
+      internalID: 477580190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Fumando_15
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 1901
+        width: 803
+        height: 702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dd0f415b346b446b1649a912ee07ef
+      internalID: 1487001600
       vertices: []
       indices: 
       edges: []
@@ -380,22 +372,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Prota_Fumando_0: -556544620
-      Prota_Fumando_1: 1738524564
-      Prota_Fumando_10: 784490837
-      Prota_Fumando_11: 1906975469
-      Prota_Fumando_12: -617741854
-      Prota_Fumando_13: 538908725
-      Prota_Fumando_14: -1050424984
-      Prota_Fumando_15: -1659949421
-      Prota_Fumando_2: -1648542288
-      Prota_Fumando_3: -208330330
-      Prota_Fumando_4: -36223003
-      Prota_Fumando_5: -889739969
-      Prota_Fumando_6: -1481553946
-      Prota_Fumando_7: -1980241082
-      Prota_Fumando_8: -75768309
-      Prota_Fumando_9: -1802236625
+      Prota_Fumando_0: 330327174
+      Prota_Fumando_1: -1777260291
+      Prota_Fumando_10: -902922371
+      Prota_Fumando_11: 155048647
+      Prota_Fumando_12: 1103117897
+      Prota_Fumando_13: 733804541
+      Prota_Fumando_14: 477580190
+      Prota_Fumando_15: 1487001600
+      Prota_Fumando_16: 1763589712
+      Prota_Fumando_17: -953191327
+      Prota_Fumando_2: 2142991953
+      Prota_Fumando_3: -829818033
+      Prota_Fumando_4: 1533745502
+      Prota_Fumando_5: 1929299786
+      Prota_Fumando_6: -1752282794
+      Prota_Fumando_7: 799726157
+      Prota_Fumando_8: -1315492709
+      Prota_Fumando_9: 1657708137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

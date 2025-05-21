@@ -33,6 +33,8 @@ TagManager:
   - CallejonInterior
   - Cuchillo
   - CasaFrikis
+  - CasaFrikisExterior
+  - Cabecilla
   layers:
   - Default
   - TransparentFX
