@@ -5,8 +5,8 @@ using UnityEngine;
 public class ControlPuertasNv3 : MonoBehaviour
 {
     Animator anim; // Referencia al componente Animator de la puerta
-                   // Start is called before the first frame update
     [SerializeField] Collider2D collider; // Collider para la puerta
+
     void Start()
     {
         anim = GetComponent<Animator>(); // Obtenemos el componente Animator de la puerta
