@@ -2561,7 +2561,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_Name
-      value: CajaOro
+      value: CajaNormal
       objectReference: {fileID: 0}
     - target: {fileID: 5181587215031375845, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2612,6 +2612,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+--- !u!1 &1273472084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180659273911087486, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+  m_PrefabInstance: {fileID: 1273472083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274067831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,6 +3757,7 @@ GameObject:
   - component: {fileID: 1740780260}
   - component: {fileID: 1740780263}
   - component: {fileID: 1740780262}
+  - component: {fileID: 1740780263}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -3840,9 +3846,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1740780259}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 14ac6ddd560be7244802215f43e5d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caja: {fileID: 1273472084}
+>>>>>>> Stashed changes
 --- !u!1 &1759570055
 GameObject:
   m_ObjectHideFlags: 0

@@ -5225,8 +5225,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1740780261}
   - component: {fileID: 1740780260}
-  - component: {fileID: 1740780263}
   - component: {fileID: 1740780262}
+  - component: {fileID: 1740780263}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -5315,9 +5315,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1740780259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ac6ddd560be7244802215f43e5d29c, type: 3}
+  m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  caja: {fileID: 950299092}
 --- !u!1 &1805342414
 GameObject:
   m_ObjectHideFlags: 0

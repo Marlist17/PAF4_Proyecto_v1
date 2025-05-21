@@ -30,13 +30,23 @@ public class Mover : MonoBehaviour
             if (GameManager.Instance.lugar == "CasaFrikis") //Dependiendo de donde hemos salido movemos las coordenadas del jugador
                 transform.position = new Vector3(-21.39f, -45.89f, 0f);
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 8)
+            
+        {
+            if (GameManager.Instance.lugar == "CallejonInterior")
+            {
+                transform.position = new Vector3(-5.25f, -1.52f, 0f);
+            }
+            else if (GameManager.Instance.lugar =="CallejonBatalla")
+                transform.position = new Vector3(-4.89f, 35.40f, 0f);
+        }
     }
 
 
     void Update()
     {
         Vector2 playerPosition = transform.position;
-      //  Debug.Log("Posición del jugador: " + playerPosition);
+        Debug.Log("Posición del jugador: " + playerPosition);
 
     }
     void FixedUpdate()

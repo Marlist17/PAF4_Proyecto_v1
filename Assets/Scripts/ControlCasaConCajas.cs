@@ -17,13 +17,19 @@ public class ControlCasaConCajas : MonoBehaviour
     void Update()
     {
         int escenaActual = SceneManager.GetActiveScene().buildIndex; //Miramos en que escena estamos
-        if ((escenaActual == 7 && GameManager.Instance.cajaOroCogida) || GameManager.Instance.Mision_1) //Si volvemos ha casa tras haber cogido la ofrenda:
+        if ((escenaActual == 6 && GameManager.Instance.cajaOroCogida) || GameManager.Instance.Mision_1) //Si volvemos ha casa tras haber cogido la ofrenda:
         {
             Destroy(caja); //Lo destruimos para que no vuelva a aparecer y no lo veamos
            
 
         }
         if ((escenaActual == 8 && GameManager.Instance.cajaSuciaCogida && GameManager.Instance.MinijuegoBatalla) || GameManager.Instance.Mision_1) //Si volvemos ha casa tras haber cogido la ofrenda:
+        {
+            Destroy(caja); //Lo destruimos para que no vuelva a aparecer y no lo veamos
+
+
+        }
+        if ((escenaActual == 9 && GameManager.Instance.cajaNormalCogida) || GameManager.Instance.Mision_1) //Si volvemos ha casa tras haber cogido la ofrenda:
         {
             Destroy(caja); //Lo destruimos para que no vuelva a aparecer y no lo veamos
 
