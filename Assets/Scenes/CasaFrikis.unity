@@ -697,7 +697,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d0fbb5d98d9c44abe6791e1537f52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesToStopMusic: []
   puertas: {fileID: 0}
+  sonidoTransformacion: {fileID: 0}
+  sonidoMuerte: {fileID: 0}
+  error: {fileID: 0}
+  agarrar: {fileID: 0}
+  dejar: {fileID: 0}
+  baldosas: {fileID: 0}
   defaultMusicVolume: 0.5
   debugLogs: 0
   sceneMusicList: []
@@ -2912,9 +2919,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: dejar
+      value: 
+      objectReference: {fileID: 8300000, guid: 66153aecdc2059d47ba0763f4cf719c2, type: 3}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: error
+      value: 
+      objectReference: {fileID: 8300000, guid: d67de243accfe5d4899697a35e5d1b01, type: 3}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 833700401}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: agarrar
+      value: 
+      objectReference: {fileID: 8300000, guid: e0acfb26e7345c74594c21c026ec4ea1, type: 3}
     - target: {fileID: 7179110267518700621, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_Sprite
       value: 

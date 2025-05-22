@@ -8,7 +8,7 @@ using UnityEngine;
 public class Tonti : MonoBehaviour
 {
     [SerializeField] Dialogos dialog; //aceder a las funciones de dialogo.
-
+    [SerializeField] AudioClip dejar; 
    
     private string[] mision1 =
     {
@@ -71,9 +71,10 @@ private string nombre = "Keaton";
             {
                 
                 switch (GameManager.Instance.Caja) //Dependiendo de la enum que tenemos.
-                {  
+                {
                     case CajasCOM.TipoCaja.CajaNormal: //Si es normal
                         {
+                            AudioManager.Instance.PlaySoundIndependent(dejar);
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
@@ -86,6 +87,7 @@ private string nombre = "Keaton";
                         }
                     case CajasCOM.TipoCaja.CajaSucia:
                         {
+                            AudioManager.Instance.PlaySoundIndependent(dejar);
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
@@ -97,8 +99,8 @@ private string nombre = "Keaton";
                             break;
                         }
                     case CajasCOM.TipoCaja.CajaOro: // Cambié este de "CajaNormal" a "CajaOro"
-
                         {
+                            AudioManager.Instance.PlaySoundIndependent(dejar);
                             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
                             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla
                             dialog.MostrarNombre(nombre);
@@ -108,12 +110,10 @@ private string nombre = "Keaton";
                             objetoActivo.SetActive(false);
                             break;
                         }
+
                 }
             }
-            
-
         }
-       
         if (!dialog.DialogoActivo && conversacionFinalizada)
         {
             GameManager.Instance.movimiento = true;

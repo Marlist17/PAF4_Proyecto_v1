@@ -2753,9 +2753,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: dejar
+      value: 
+      objectReference: {fileID: 8300000, guid: 66153aecdc2059d47ba0763f4cf719c2, type: 3}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: error
+      value: 
+      objectReference: {fileID: 8300000, guid: d67de243accfe5d4899697a35e5d1b01, type: 3}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 833700401}
+    - target: {fileID: 5665075934848312502, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
+      propertyPath: agarrar
+      value: 
+      objectReference: {fileID: 8300000, guid: e0acfb26e7345c74594c21c026ec4ea1, type: 3}
     - target: {fileID: 6957588886266006804, guid: a95f6b77da97f454a8e684c2efc793b5, type: 3}
       propertyPath: m_TagString
       value: CajaOro

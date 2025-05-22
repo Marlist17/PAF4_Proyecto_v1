@@ -261,6 +261,19 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound(sonidoMuerte);
     }
+
+    public void PlayError()
+    {
+        PlaySound(error);
+    }
+    public void PlayAgarrar()
+    {
+        PlaySound(agarrar);
+    }
+    public void PlayDejar()
+    {
+        PlaySound(dejar);
+    }
     public void PlaySoundIndependent(AudioClip clip, float volumeScale = 1.0f)
     {
         if (clip == null) return;

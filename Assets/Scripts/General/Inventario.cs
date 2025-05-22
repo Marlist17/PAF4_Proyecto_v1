@@ -13,6 +13,8 @@ public class Inventario : MonoBehaviour
     public GameObject cajaOro;
     public GameObject sardina;
     public GameObject cuchillo;
+   
+
 
     private GameObject objeto;
 
@@ -47,6 +49,7 @@ public class Inventario : MonoBehaviour
     public void MeterObjetoInventario(GameObject objetoInteractivo) //Función para almacenar que objeto hemos clickado
     {
         objeto = objetoInteractivo;
+        
 
         if (objeto.CompareTag("CajaNormal"))
         {
@@ -72,6 +75,7 @@ public class Inventario : MonoBehaviour
     // Esta función te da el objeto visible en el inventario
     public GameObject ObtenerObjetoActivo()
     {
+        
         if (cajaNormal.activeSelf) return cajaNormal;
         if (cajaSucia.activeSelf) return cajaSucia;
         if (cajaOro.activeSelf) return cajaOro;

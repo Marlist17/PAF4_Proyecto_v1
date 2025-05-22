@@ -16,6 +16,9 @@ public class CajasCOM : MonoBehaviour
     private string[] Aviso1 = {"¡No deberías coger cosas ajenas!, deberías pedir permiso"}; // Nuestras frases
     private string[] Aviso2 = {"Ya tienes una caja, ¡No puedes llevar más!"}; // Nuestras frases
     bool conversacionFinalizada = false;
+    [SerializeField] AudioClip agarrar;
+    [SerializeField] AudioClip error;
+    [SerializeField] AudioClip dejar;
 
     // Start is called before the first frame update
     void Start()
@@ -124,6 +127,7 @@ public class CajasCOM : MonoBehaviour
 
 
         }
+        AudioManager.Instance.PlaySoundIndependent(agarrar);
         GameManager.Instance.mensajeCoger = true; //Convertimos en true la variable MensajeCoger para usarlo en otro script y mostrar el mensaje por pantalla
         bordes.SetActive(false); //"Cogemos el Objeto"
         caja.SetActive(false);

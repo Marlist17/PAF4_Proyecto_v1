@@ -9,7 +9,9 @@ public class IntactuarObjetos : MonoBehaviour
     [SerializeField] Dialogos dialog; //Metemos el objeto del dialogManager para acceder a todas las funciones
     private string[] Aviso1 = { "Ya llevas un objeto, ¡No puedes llevar más!" }; // Nuestro aviso
     bool conversacionFinalizada = false; //Condición de si ya ha salido el aviso
-
+    [SerializeField] AudioClip error; //Sonido de no se puede coger el objeto
+    [SerializeField] AudioClip dejar; //Sonido de dejar el objeto
+    [SerializeField] AudioClip agarrar; //Sonido de coger el objeto
 
     void Start()
     {
@@ -43,7 +45,7 @@ public class IntactuarObjetos : MonoBehaviour
             }
             else
             {
-
+                AudioManager.Instance.PlaySoundIndependent(agarrar); //Sonido de coger el objeto
                 GameManager.Instance.CogerObjeto(); //Hacemos true que hemos cogido el objeto
                 gameObject.SetActive(false); //Volvemos invisible el objeto que hemos cogido
                 bordes.SetActive(false); //Volvemos invisible los bordes
@@ -70,6 +72,7 @@ public class IntactuarObjetos : MonoBehaviour
         else //Si hemos cogido el objeto y clickamos en otros sitios interactuables que no sean para dejar el objeto
         {
             dialog.LimpiarDialogos(); //Limpiamos por si queda algo de texto
+            AudioManager.Instance.PlaySoundIndependent(error);
             conversacionFinalizada = dialog.ComenzarDialogo(Aviso1, conversacionFinalizada); //Mostramos el aviso para que deje primero el objeto para coger otro
 
         }
