@@ -819,6 +819,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2019143221401210501, guid: 244b51a045a4c3346a5debdefde9d12b, type: 3}
+      propertyPath: scenesToStopMusic.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019143221401210501, guid: 244b51a045a4c3346a5debdefde9d12b, type: 3}
+      propertyPath: scenesToStopMusic.Array.data[0]
+      value: MuerteCabecilla
+      objectReference: {fileID: 0}
     - target: {fileID: 5348962764102546225, guid: 244b51a045a4c3346a5debdefde9d12b, type: 3}
       propertyPath: m_Name
       value: AudioManager

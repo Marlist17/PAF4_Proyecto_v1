@@ -44,8 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d0fbb5d98d9c44abe6791e1537f52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesToStopMusic:
+  - MuerteCabecilla
   puertas: {fileID: 8300000, guid: 76d1ed3d1f202df4daa30b0e345de962, type: 3}
-  defaultMusicVolume: 0.5
+  sonidoTransformacion: {fileID: 8300000, guid: 11d1be7c6b5122e4fa1e4157af180644, type: 3}
+  sonidoMuerte: {fileID: 8300000, guid: a23294144559202458ed5ed1b1ad0e74, type: 3}
+  error: {fileID: 8300000, guid: d67de243accfe5d4899697a35e5d1b01, type: 3}
+  agarrar: {fileID: 8300000, guid: e0acfb26e7345c74594c21c026ec4ea1, type: 3}
+  dejar: {fileID: 8300000, guid: 66153aecdc2059d47ba0763f4cf719c2, type: 3}
+  baldosas: {fileID: 8300000, guid: ea9dd925187eafa41b738df1411064ce, type: 3}
+  defaultMusicVolume: 0.1
   debugLogs: 0
   sceneMusicList:
   - sceneName: "Men\xFAPrincipal"
@@ -54,67 +62,88 @@ MonoBehaviour:
     regularMusic: {fileID: 8300000, guid: f20fa1023532a0540aafe1eb928063c8, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: CasaProta
     firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: PlazaInicial
     firstTimeMusic: {fileID: 8300000, guid: e7b0112d08ace634c85e6c10e60b0954, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: e7b0112d08ace634c85e6c10e60b0954, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: PlazaConReyes
     firstTimeMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 3cac989c0971bba40bc7761f5b9bcd6d, type: 3}
     loopRegular: 1
     crossfadeDuration: 0.22
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: CasaFrikis
     firstTimeMusic: {fileID: 8300000, guid: 5ed344278fa43884e9e8cab65d7627a0, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 5ed344278fa43884e9e8cab65d7627a0, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: CasaRicos
     firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
-    loopRegular: 0
+    loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: Callejon
     firstTimeMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
-    loopFirstTime: 0
+    loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: dbaa725f1bf2da84ab2db5b9649c24c8, type: 3}
     loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: Batalla
     firstTimeMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
-    loopFirstTime: 1
+    loopFirstTime: 0
     regularMusic: {fileID: 8300000, guid: e41359b489abf4e40a13c096f31e11dd, type: 3}
-    loopRegular: 1
+    loopRegular: 0
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: Nivel_3
     firstTimeMusic: {fileID: 8300000, guid: b4f0f62e74f50614ea0680b829e022ff, type: 3}
     loopFirstTime: 1
-    regularMusic: {fileID: 0}
-    loopRegular: 0
+    regularMusic: {fileID: 8300000, guid: b4f0f62e74f50614ea0680b829e022ff, type: 3}
+    loopRegular: 1
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
   - sceneName: CasaProta2
     firstTimeMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
     loopFirstTime: 1
     regularMusic: {fileID: 8300000, guid: 98377b93d12237b4bad1f1eb19730b23, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 0.1
+  - sceneName: MuerteCabecilla
+    firstTimeMusic: {fileID: 0}
+    loopFirstTime: 0
+    regularMusic: {fileID: 0}
     loopRegular: 0
     crossfadeDuration: 0
-    customVolume: 1
+    customVolume: 0.1
+  - sceneName: CreditosyPantallaFinal
+    firstTimeMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
+    loopFirstTime: 1
+    regularMusic: {fileID: 8300000, guid: a368a632cd8845e48a0f777f0ed1fb27, type: 3}
+    loopRegular: 1
+    crossfadeDuration: 0
+    customVolume: 0.3
+  - sceneName: AnimFinal
+    firstTimeMusic: {fileID: 8300000, guid: 765120e7bfd1e3d4884d30af19216104, type: 3}
+    loopFirstTime: 0
+    regularMusic: {fileID: 8300000, guid: 765120e7bfd1e3d4884d30af19216104, type: 3}
+    loopRegular: 0
+    crossfadeDuration: 0
+    customVolume: 0.3
