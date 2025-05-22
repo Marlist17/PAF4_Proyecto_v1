@@ -39,7 +39,7 @@ public class Transicion : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.TutorialRealizado && !GameManager.Instance.NochePasada) //Si el jugador entra en el trigger tras realizar el tutorial, y es la priemra vez:
         {
             Invoke("MostrarTransicion", 0.2f); //Mostramos la transición
-            Invoke("QuitarTransicion", 1f); //La quitamos
+            Invoke("QuitarTransicion", 3f); //La quitamos
             GameManager.Instance.TutorialRealizado = false; //desactivamos esta condición
             GameManager.Instance.NochePasada = true; //Activamos esta otra condición
         }
