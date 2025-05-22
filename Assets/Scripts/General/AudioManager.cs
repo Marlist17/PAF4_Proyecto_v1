@@ -150,6 +150,7 @@ public class AudioManager : MonoBehaviour
             Debug.Log($"No se encontró configuración de música para: {sceneName}");
         }
     }
+   
 
     public void PlayMusic(AudioClip clip, bool loop, float volume, float fadeTime)
     {

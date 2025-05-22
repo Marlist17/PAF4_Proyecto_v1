@@ -8,13 +8,17 @@ public class Pausa : MonoBehaviour
     [SerializeField] GameObject menuPausa;
     [SerializeField] GameObject botonPausa;
     [SerializeField] GameObject controles;
+    [SerializeField] GameObject botonSinsonido;
+    [SerializeField] GameObject botonSonido;
+   
+    [SerializeField] AudioSource audioSource; // Cambia GameObject por AudioSource
     private bool pausa = false;
     private bool controlesAbierto = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        botonSonido.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,6 +35,7 @@ public class Pausa : MonoBehaviour
                 Pausar();
             }
         }
+
     }
 
     public void Reanudar()
@@ -62,6 +67,24 @@ public class Pausa : MonoBehaviour
             controles.SetActive(false);
             controlesAbierto = false;
         }
+    }
+    public void Sonido()
+    {
+        Debug.Log("Suena");
+        botonSinsonido.SetActive(true);
+        botonSonido.SetActive(false);
+        AudioListener.volume = 1f;
+        //AudioManager.Instance.enableAudio(true);
+        //SubirVolumen();
+    }
+    public void SinSonido()
+    {
+        Debug.Log("Silencio");
+        botonSinsonido.SetActive(false);  
+        botonSonido.SetActive(true);
+        AudioListener.volume = 0f;
+        //BajarVolumen();
+        //AudioManager.Instance.enableAudio(false);
     }
 
 }
