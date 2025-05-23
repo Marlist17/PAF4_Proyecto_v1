@@ -345,6 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 103578579}
   - component: {fileID: 103578580}
+  - component: {fileID: 103578581}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -419,6 +420,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &103578581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103578578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caja: {fileID: 950299092}
 --- !u!1 &172880931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,7 +4978,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1656536169}
   - component: {fileID: 1656536168}
-  - component: {fileID: 1656536170}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -5001,19 +5014,6 @@ Transform:
   - {fileID: 604507224}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1656536170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656536167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  caja: {fileID: 950299092}
 --- !u!1 &1719819237
 GameObject:
   m_ObjectHideFlags: 0

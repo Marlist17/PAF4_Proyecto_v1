@@ -4162,7 +4162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1e0cbfacd7d5b418f554dcf9f6f015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caja: {fileID: 0}
+  caja: {fileID: 1273472084}
 --- !u!1 &1737633903
 GameObject:
   m_ObjectHideFlags: 0
