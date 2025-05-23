@@ -20,9 +20,9 @@ public class TransicionCasas : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
-            GameManager.Instance.lugar = "CallejonInterior";
-            SceneManager.LoadScene(8);
-        }
+            GameManager.Instance.lugar = "CallejonInterior"; //Guardamos en que lugar vamos a parar 
+            SceneManager.LoadScene(8);                       // Para poner unas coordenadas concretas 
+        }                                                    //Quedándo en la entrada o salida
         else if (collision.gameObject.tag == "CallejonInterior")
         {
             GameManager.Instance.lugar = "Callejon";
@@ -68,60 +68,3 @@ public class TransicionCasas : MonoBehaviour
         // No necesitamos resetear isTransitioning porque se destruye este objeto al cargar la nueva escena
     }
 }
-/*public class TransicionCasas : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "CasaProtaExterior" && GameManager.Instance.TutorialRealizado)
-        {
-
-            int casa = 3;
-            SceneManager.LoadScene(casa); //Cargame la siguiente escena.
-        }
-        else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
-        {
-
-            int sala = 8;
-            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
-        }
-        else if (collision.gameObject.tag == "CallejonInterior")
-        {
-            GameManager.Instance.lugar = "Callejon";
-            GameManager.Instance.TransicionLobby_2();
-
-        }
-        else if (collision.gameObject.tag == "CasaFrikisExterior" && GameManager.Instance.ConversacionTonti)
-        {
-
-            int sala = 10;
-            SceneManager.LoadScene(sala); //Cargame la siguiente escena.
-        }
-        else if (collision.gameObject.tag == "CasaFrikis")
-        {
-
-            GameManager.Instance.lugar = "CasaFrikis";
-            GameManager.Instance.TransicionLobby_2();
-        }
-        else if (collision.gameObject.tag == "CasaRico")
-        {
-            GameManager.Instance.lugar = "CasaRico";
-            GameManager.Instance.TransicionLobby_2();
-        }
-        else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)
-        {
-            int casa = 7;
-            SceneManager.LoadScene(casa); //Cargame la siguiente escena.
-        }
-    }
-}*/

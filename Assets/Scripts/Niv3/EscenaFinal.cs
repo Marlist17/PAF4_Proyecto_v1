@@ -12,10 +12,7 @@ public class EscenaFinal : MonoBehaviour
 
     void Start()
     {
-        /*animator = GetComponent<Animator>();
-        AudioManager.Instance.PlaySound(sonidoMuerte);
-        EsperarYEjecutar();
-        cuadro.SetActive(false);*/
+       
         AudioManager.Instance.PlaySound(sonidoTransformacion);
         
     }

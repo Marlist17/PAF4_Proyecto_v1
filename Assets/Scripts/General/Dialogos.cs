@@ -55,20 +55,20 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             {
                 if (miTexto.text == lines[index]) // Si se ha colocado todo el texto que tiene guardado el array.
                 {
-                    Debug.Log("Siguietne dialogo");
-                    SiguienteDialogo();
+           
+                    SiguienteDialogo(); //Pasar al siguiente diálogo cuando se pulse clic
                 }
             }
         }
 
     }
 
-    public bool ComenzarDialogo(string[] lineasNuevas, bool finalizado)
+    public bool ComenzarDialogo(string[] lineasNuevas, bool finalizado) 
     {
-        Debug.Log("Comenzar dialogo");
+
         DialogoActivo =true;
         if (finalizado)
-            UltimoDialogo(lineasNuevas);
+            UltimoDialogo(lineasNuevas); //Si ya hemos habaldo con el personaje, suelta la última linea
         else
         {
            
@@ -77,8 +77,7 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
             raton.SetActive(true); //Dejamos que sea visible el ratón
             miTexto.gameObject.SetActive(true); //Dejamos que sea visible el texto
             cajaTexto.SetActive(true); //Dejamos que no sea visible la caja de texto
-            Debug.Log($"index:{index}");
-            StartCoroutine(TypeLine());
+            StartCoroutine(TypeLine()); //Empezamos la corrutina para mostrar letra por letra
 
         }
         return true;
@@ -88,10 +87,10 @@ public class Dialogos : MonoBehaviour //Diálogos con trigger (la puerta y los me
     IEnumerator TypeLine()
     {
       
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray()) //Recorremos todas las letras de nuestro array 
         {
             miTexto.text += c; // Aparece letra a letra
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(textSpeed); //tarda el tiempo que queremos en aparecer cada letra
         } 
     }
 
