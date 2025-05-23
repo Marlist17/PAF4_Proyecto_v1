@@ -115,11 +115,7 @@ public class AudioManager : MonoBehaviour
 
         
     }
-    /*void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        string sceneName = scene.name;
-        PlayMusicForScene(sceneName);
-    }*/
+
 
     public void PlayMusicForScene(string sceneName)
     {
