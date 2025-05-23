@@ -16,7 +16,7 @@ public class TransicionCasas : MonoBehaviour
 
         if (collision.gameObject.tag == "CasaProtaExterior" && GameManager.Instance.TutorialRealizado)
         {
-            StartCoroutine(TransicionConSonido(3));
+            StartCoroutine(TransicionConSonido(4));
         }
         else if (collision.gameObject.tag == "Callejon" && GameManager.Instance.ConversacionTonti)
         {
@@ -41,7 +41,7 @@ public class TransicionCasas : MonoBehaviour
         else if (collision.gameObject.tag == "CasaRico")
         {
             GameManager.Instance.lugar = "CasaRico";
-            StartCoroutine(TransicionConSonido(9));
+            StartCoroutine(TransicionConSonido(6));
             GameManager.Instance.TransicionLobby_2();
         }
         else if (collision.gameObject.tag == "ExteriorCasaRico" && GameManager.Instance.ConversacionTonti)

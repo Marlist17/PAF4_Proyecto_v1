@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        if (SceneManager.GetActiveScene().buildIndex == 2) //Miramos si estamos en la plaza
+        if (SceneManager.GetActiveScene().buildIndex == 3) //Miramos si estamos en la plaza
         {   
             
             if (GameManager.Instance.lugar == "CasaRico") //Dependiendo de donde hemos salido movemos las coordenadas del jugador

@@ -20,7 +20,7 @@ public class Transicion : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.ConversacionListo && escena == 2 )
+        if (GameManager.Instance.ConversacionListo && escena == 3 )
         {
             Invoke("MostrarTransicion", 0.2f); //Mostramos la transición
             GameManager.Instance.ConversacionListo = false;

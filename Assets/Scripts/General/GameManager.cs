@@ -87,13 +87,13 @@ public class GameManager : MonoBehaviour
     public void TransicionLobby()
     {
         
-        int lobby = 0;
+        int lobby = 1;
         SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
     }
     public void TransicionLobby_2()
     {
 
-        int lobby = 2;
+        int lobby = 3;
         SceneManager.LoadScene(lobby); //Cargame la siguiente escena.
     }
     public void ReiniciarNivel()

@@ -689,10 +689,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1960297962320649234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 351.24, y: 175.4073}
-  m_SizeDelta: {x: 87.678, y: 66.8459}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -48.76001, y: -49.592697}
+  m_SizeDelta: {x: 87.67801, y: 66.84589}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6474732688609720061
 CanvasRenderer:
@@ -912,7 +912,7 @@ MonoBehaviour:
   controles: {fileID: 4024271234358509590}
   botonSinsonido: {fileID: 2772336556561808250}
   botonSonido: {fileID: 5682763383495383973}
-  AudioManager: {fileID: 5348962764102546225, guid: 244b51a045a4c3346a5debdefde9d12b, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &5682763383495383973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,9 +1211,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1960297962320649234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359.9, y: -190}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -40.100006, y: 35}
   m_SizeDelta: {x: 68.664, y: 68.664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4771309221564362511

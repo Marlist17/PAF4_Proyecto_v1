@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/Men\xFAPrincipal.unity"
+    guid: 12b7e2f77decc8e4798997652ec2f6d4
+  - enabled: 1
     path: Assets/Scenes/PlazaInicial.unity
     guid: ccb34cba104f151479a6fdd0b526e770
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CasaProta2.unity
     guid: 987c5a0cc2c6d944a83123c6ac3ab454
-  - enabled: 1
-    path: "Assets/Scenes/Men\xFAPrincipal.unity"
-    guid: 12b7e2f77decc8e4798997652ec2f6d4
   - enabled: 1
     path: Assets/Scenes/Nivel_3.unity
     guid: 54fb6a3a218024d4ab3cda3e3f7ed00b

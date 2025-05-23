@@ -33,7 +33,7 @@ public class NPCCOM : MonoBehaviour
         {
            
             dialog.LimpiarDialogos();
-            if (nombre == "Ryo" && escenaActual == 0) //Si hemos hablado con ryo:
+            if (nombre == "Ryo" && escenaActual == 1) //Si hemos hablado con ryo:
             {
                 GameManager.Instance.HablarNPC = true; //Se volverá true la condición
             }

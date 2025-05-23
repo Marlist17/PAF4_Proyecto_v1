@@ -74,8 +74,7 @@ public class Pausa : MonoBehaviour
         botonSinsonido.SetActive(true);
         botonSonido.SetActive(false);
         AudioListener.volume = 1f;
-        //AudioManager.Instance.enableAudio(true);
-        //SubirVolumen();
+       
     }
     public void SinSonido()
     {
@@ -83,8 +82,7 @@ public class Pausa : MonoBehaviour
         botonSinsonido.SetActive(false);  
         botonSonido.SetActive(true);
         AudioListener.volume = 0f;
-        //BajarVolumen();
-        //AudioManager.Instance.enableAudio(false);
+        
     }
 
 }

@@ -19,7 +19,7 @@ public class MenúCambioDeEscena : MonoBehaviour
 
     public void BotonComenzar()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void BotonSalir()
