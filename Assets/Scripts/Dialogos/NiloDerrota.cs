@@ -50,7 +50,7 @@ public class NiloDerrota : MonoBehaviour
         // Verifica si el objeto que entra es el jugador
         if (collision.CompareTag("Player"))
         {
-            if (!GameManager.Instance.MinijuegoBatalla)
+            if (!GameManager.Instance.MinijuegoBatalla && GameManager.Instance.tiempoCompletado)
             {
                 jugadorEnRango = true; //Marca que si está en rango
                 icono.SetActive(true); //Y vuelve visible el icono
