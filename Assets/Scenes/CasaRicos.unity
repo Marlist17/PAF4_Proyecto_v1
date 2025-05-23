@@ -4017,6 +4017,115 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!68 &1546349145
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546349138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.31029028, y: -0.521954}
+  - {x: 0.34428883, y: -0.54945654}
+  - {x: 0.4376154, y: -0.5546271}
+  - {x: 0.42565155, y: -0.31428128}
+  - {x: 0.49447823, y: -0.19927102}
+  - {x: 0.69078445, y: -0.19490844}
+  - {x: 0.83972645, y: -0.3942023}
+  - {x: 0.7949505, y: -0.61447877}
+  - {x: 0.68093634, y: -0.6743668}
+  - {x: 0.4382758, y: -0.67409235}
+  - {x: 0.27566528, y: -0.6681966}
+  - {x: 0.06235218, y: -0.71328825}
+  - {x: -0.08202076, y: -0.78454083}
+  - {x: -0.17944908, y: -0.83207566}
+  - {x: -0.25715542, y: -0.8220102}
+  - {x: -0.27950382, y: -0.7036975}
+  - {x: -0.3707819, y: -0.6890448}
+  - {x: -0.43427753, y: -0.6698552}
+  - {x: -0.47230148, y: -0.6169079}
+  - {x: -0.39997864, y: -0.5521477}
+  - {x: -0.2989025, y: -0.55822664}
+  - {x: -0.2716732, y: -0.52152973}
+  - {x: -0.31307125, y: -0.370138}
+  - {x: -0.4221468, y: -0.24340338}
+  - {x: -0.6214113, y: -0.26430994}
+  - {x: -0.6965656, y: -0.31570476}
+  - {x: -0.8003912, y: -0.31087595}
+  - {x: -0.8309984, y: -0.27099615}
+  - {x: -0.83004856, y: -0.22099155}
+  - {x: -0.8293457, y: -0.09332901}
+  - {x: -0.80350685, y: -0.033806384}
+  - {x: -0.7785187, y: -0.017745078}
+  - {x: -0.7026272, y: -0.014566243}
+  - {x: -0.68389225, y: -0.028774083}
+  - {x: -0.616807, y: -0.0108734965}
+  - {x: -0.59531784, y: -0.0016636848}
+  - {x: -0.5853157, y: 0.10585356}
+  - {x: -0.5437403, y: 0.19549757}
+  - {x: -0.5779114, y: 0.25398886}
+  - {x: -0.6214304, y: 0.313087}
+  - {x: -0.6264677, y: 0.37957335}
+  - {x: -0.6609621, y: 0.3892656}
+  - {x: -0.68489075, y: 0.44526416}
+  - {x: -0.6834688, y: 0.49691767}
+  - {x: -0.71165466, y: 0.53122324}
+  - {x: -0.71175385, y: 0.5744355}
+  - {x: -0.6953964, y: 0.60154295}
+  - {x: -0.66856384, y: 0.81984055}
+  - {x: -0.63558483, y: 0.83866704}
+  - {x: -0.56824684, y: 0.7608886}
+  - {x: -0.41230965, y: 0.7828531}
+  - {x: -0.28765202, y: 0.7581111}
+  - {x: -0.20924091, y: 0.83793503}
+  - {x: -0.18479538, y: 0.8364256}
+  - {x: -0.13091087, y: 0.6160173}
+  - {x: -0.121827126, y: 0.5849932}
+  - {x: -0.13885498, y: 0.53026104}
+  - {x: -0.13266563, y: 0.4384689}
+  - {x: -0.19401073, y: 0.39289832}
+  - {x: -0.20612049, y: 0.331397}
+  - {x: -0.22875404, y: 0.2384398}
+  - {x: -0.15938568, y: 0.19790137}
+  - {x: -0.10652733, y: 0.12593079}
+  - {x: -0.08328056, y: 0.06489986}
+  - {x: -0.036969185, y: 0.001614511}
+  - {x: 0.115571976, y: -0.07010716}
+  - {x: 0.22023678, y: -0.15359718}
+  - {x: 0.27364826, y: -0.2794879}
+  - {x: 0.30798244, y: -0.40222245}
+  - {x: 0.30931145, y: -0.5165019}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1617433525
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,13 +6173,17 @@ PrefabInstance:
       propertyPath: lines.Array.data[3]
       value: "\xBFQu\xE9 dices? Ah, \xBFla caja esa? s\xED, s\xED\u2026 ll\xE9vatela\u2026 "
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7148168427800095443, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1546349144}
+    - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1546349145}
   m_SourcePrefab: {fileID: 100100000, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

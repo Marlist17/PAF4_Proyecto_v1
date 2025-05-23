@@ -81,6 +81,7 @@ private string nombre = "Keaton";
                             GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaNormal, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
+                            GameManager.Instance.HablarNPC = false;
                             objetoActivo.SetActive(false);
 
                             break;
@@ -94,6 +95,7 @@ private string nombre = "Keaton";
                             GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaSucia, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
+                            GameManager.Instance.HablarNPC = false;
                             GameManager.Instance.Mision_1 = true;
                             objetoActivo.SetActive(false);
                             break;
@@ -107,6 +109,7 @@ private string nombre = "Keaton";
                             GameManager.Instance.movimiento = false;
                             conversacionFinalizada = dialog.ComenzarDialogo(cajaDorada, conversacionFinalizada);
                             GameManager.Instance.CajaEntregada();
+                            GameManager.Instance.HablarNPC = false;
                             objetoActivo.SetActive(false);
                             break;
                         }

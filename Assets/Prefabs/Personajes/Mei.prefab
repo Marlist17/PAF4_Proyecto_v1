@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 5512222930045517740}
   - component: {fileID: 2901395961187717107}
   - component: {fileID: 5368414776373425701}
-  - component: {fileID: 4041447388047706063}
-  - component: {fileID: 4220042756094902303}
   - component: {fileID: 3326591315780835911}
   m_Layer: 0
   m_Name: Mei
@@ -163,76 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd50bcf153fb38489a0fc31a946aa4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!70 &4041447388047706063
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7781413470512970170}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.03872773, y: 0.19499266}
-  m_Size: {x: 0.43149215, y: 1.0227978}
-  m_Direction: 0
---- !u!70 &4220042756094902303
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7781413470512970170}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010390371, y: -0.21011746}
-  m_Size: {x: 0.65441245, y: 1.0530474}
-  m_Direction: 0
+  delay: 0.2
 --- !u!70 &3326591315780835911
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -265,6 +194,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0010313094, y: -0.02153784}
-  m_Size: {x: 0.7501567, y: 1.0059694}
+  m_Offset: {x: -0.044067264, y: -0.01832223}
+  m_Size: {x: 1.2176611, y: 1.4926109}
   m_Direction: 0

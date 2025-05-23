@@ -340,5 +340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 0}
-  icono: {fileID: 0}
+  icono: {fileID: 8862752006479538310, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
   escenaActual: 0
+  hablarReyes: 0

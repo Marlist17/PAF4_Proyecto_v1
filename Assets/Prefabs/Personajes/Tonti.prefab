@@ -141,7 +141,7 @@ MonoBehaviour:
   - Buenas te gustaria comprar algo
   - Gracias por tu visita
   nombre: 
-  icono: {fileID: 0}
+  icono: {fileID: 8862752006479538310, guid: d5bdc920f25a890409167e040f2a114b, type: 3}
 --- !u!95 &7786810698473369818
 Animator:
   serializedVersion: 5

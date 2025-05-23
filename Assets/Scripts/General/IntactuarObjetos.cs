@@ -45,7 +45,7 @@ public class IntactuarObjetos : MonoBehaviour
             }
             else
             {
-                AudioManager.Instance.PlaySoundIndependent(agarrar); //Sonido de coger el objeto
+                AudioManager.Instance.PlaySoundIndependent(agarrar, 1f); //Sonido de coger el objeto
                 GameManager.Instance.CogerObjeto(); //Hacemos true que hemos cogido el objeto
                 gameObject.SetActive(false); //Volvemos invisible el objeto que hemos cogido
                 bordes.SetActive(false); //Volvemos invisible los bordes
@@ -58,6 +58,7 @@ public class IntactuarObjetos : MonoBehaviour
 
         else if (GameManager.Instance.ObjetoObtenido && CompareTag("Altar") && GameManager.Instance.HablarNPC)//Dejamos objeto en el altar cuando tenemos la condicion de ObjetoObtenido y hemos hablado con Ryo
         {
+            AudioManager.Instance.PlaySoundIndependent(dejar, 1f); //Sonido de dejar el objeto
             GameManager.Instance.TutorialRealizado = true;
             GameObject objetoActivo = Inventario.instancia.ObtenerObjetoActivo();
             GameManager.Instance.mensajeDejar = true; //Convertimos en true la variable MensajeDejar para usarlo en otro script y mostrar el mensaje por pantalla

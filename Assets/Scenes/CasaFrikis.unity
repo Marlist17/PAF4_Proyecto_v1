@@ -2107,13 +2107,17 @@ PrefabInstance:
       propertyPath: lines.Array.data[3]
       value: "\xBFQu\xE9 dices? Ah, \xBFla caja esa? s\xED, s\xED\u2026 ll\xE9vatela\u2026 "
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7148168427800095443, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1565851795}
+    - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1565851796}
   m_SourcePrefab: {fileID: 100100000, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
 --- !u!1 &783259795
 GameObject:
@@ -3871,6 +3875,75 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!68 &1560654142
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560654140}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.13239288, y: -0.5566503}
+  - {x: 0.2555709, y: -0.5050589}
+  - {x: 0.3306074, y: -0.38708484}
+  - {x: 0.3497646, y: -0.2259816}
+  - {x: 0.3222499, y: -0.077325225}
+  - {x: 0.22362614, y: 0.08226347}
+  - {x: 0.20530987, y: 0.1887095}
+  - {x: -0.19331264, y: 0.18177915}
+  - {x: -0.32110834, y: 0.17722726}
+  - {x: -0.3880453, y: 0.03895712}
+  - {x: -0.3847928, y: -0.09364426}
+  - {x: -0.45244932, y: -0.23275328}
+  - {x: -0.43693066, y: -0.35900354}
+  - {x: -0.36305428, y: -0.4755603}
+  - {x: -0.22219515, y: -0.539744}
+  - {x: -0.08592749, y: -0.5695095}
+  - {x: 0.03170252, y: -0.63261485}
+  - {x: 0.04534483, y: -0.71186924}
+  - {x: -0.01573515, y: -0.77247}
+  - {x: -0.114377975, y: -0.7901921}
+  - {x: -0.18986893, y: -0.7687905}
+  - {x: -0.27171135, y: -0.7956722}
+  - {x: -0.31198788, y: -0.86854994}
+  - {x: -0.23359966, y: -0.9642217}
+  - {x: -0.12235832, y: -0.9873605}
+  - {x: 0.04158163, y: -0.9504094}
+  - {x: 0.17943192, y: -0.855706}
+  - {x: 0.22362375, y: -0.7157284}
+  - {x: 0.20786047, y: -0.63363016}
+  - {x: 0.1374495, y: -0.5548166}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1565851794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
@@ -3897,6 +3970,74 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!68 &1565851796
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565851794}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.37092042, y: 0.0083914995}
+  - {x: 0.31242537, y: 0.2501576}
+  - {x: -0.2084117, y: 0.25277376}
+  - {x: -0.21441102, y: 0.17971087}
+  - {x: -0.30104184, y: 0.06360841}
+  - {x: -0.36416388, y: -0.05142641}
+  - {x: -0.38015676, y: -0.30102348}
+  - {x: -0.33417177, y: -0.47509503}
+  - {x: -0.22583365, y: -0.55239284}
+  - {x: -0.24090767, y: -0.5768225}
+  - {x: -0.3163309, y: -0.6811526}
+  - {x: -0.32211757, y: -0.7854042}
+  - {x: -0.23953342, y: -0.92773426}
+  - {x: -0.093882084, y: -1.0110089}
+  - {x: 0.04624796, y: -1.0255599}
+  - {x: 0.19980478, y: -0.974768}
+  - {x: 0.22494006, y: -0.9216198}
+  - {x: 0.18859911, y: -0.8705486}
+  - {x: 0.1126163, y: -0.85577035}
+  - {x: -0.0346694, y: -0.8435155}
+  - {x: -0.11864114, y: -0.79102385}
+  - {x: -0.1207912, y: -0.7084973}
+  - {x: -0.08655715, y: -0.64233804}
+  - {x: -0.0044546127, y: -0.5894939}
+  - {x: 0.14625382, y: -0.5611428}
+  - {x: 0.32903147, y: -0.47427547}
+  - {x: 0.36064124, y: -0.31236637}
+  - {x: 0.3418603, y: -0.2197262}
+  - {x: 0.36924124, y: 0.015196443}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &1617692895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5658,13 +5799,17 @@ PrefabInstance:
       propertyPath: lines.Array.data[3]
       value: "\xBFQu\xE9 dices? Ah, \xBFla caja esa? s\xED, s\xED\u2026 ll\xE9vatela\u2026 "
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7148168427800095443, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1560654141}
+    - targetCorrespondingSourceObject: {fileID: 7480248115069469324, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1560654142}
   m_SourcePrefab: {fileID: 100100000, guid: 35a9196f672cf03428cd5642116924a9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
